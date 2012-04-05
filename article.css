@@ -3,9 +3,9 @@ article { margin:0; padding:0; width:18em; }
 a { white-space:nowrap; text-decoration:none; color:#666; }
 em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
 #background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
-ul, ol { -webkit-padding-start:0; }
+ul, ol { padding-left:0; }
 blockquote, q { color:#222; quotes:"\00BB""\00AB""\203A""\2039"; -webkit-margin-start:0; }
-blockquote { clear:both; margin-bottom:3em; }
+blockquote { padding-left:0; clear:both; margin:0 0 3em 0; }
 blockquote:before { content:"\00BB"; position:absolute; margin:-.05em 0 0 -.5em; font-size:3em; }
 blockquote>p { margin-bottom:0; }
 blockquote>p+p { margin-top:0; }
