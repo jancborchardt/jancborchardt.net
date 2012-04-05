@@ -24,3 +24,6 @@ p strong+a { white-space:normal; }
 h2 a, h3 a { color:#000; }
 h2 { margin-top:3em; }
 h3 { margin-top:2em; }
+
+.taken { list-style:none; color:#d33; margin-left:-1.2em; }
+.taken:before { content:"\2718\0020"; }
