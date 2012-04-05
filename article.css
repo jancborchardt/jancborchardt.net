@@ -1,0 +1,26 @@
+body { width:30em; margin:3em auto; padding:0; background:#fff; color:#000; font:normal 1.5em/150% FreeSans,Helvetica,sans-serif; }
+article { margin:0; padding:0; width:18em; }
+a { white-space:nowrap; text-decoration:none; color:#666; }
+em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
+#background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
+ul, ol { -webkit-padding-start:0; }
+blockquote, q { color:#222; quotes:"\00BB""\00AB""\203A""\2039"; -webkit-margin-start:0; }
+blockquote { clear:both; margin-bottom:3em; }
+blockquote:before { content:"\00BB"; position:absolute; margin:-.05em 0 0 -.5em; font-size:3em; }
+blockquote>p { margin-bottom:0; }
+blockquote>p+p { margin-top:0; }
+blockquote a { font-style:normal; position:relative; float:right; clear:left; }
+
+#index { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:bold; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+#index:hover, #index:focus { opacity:1; }
+#index a { display:block; }
+#index ol { list-style:none; font-weight:normal; }
+#index li a:hover, #index li a:focus { background:#eee; color:#000; }
+#index ol li:hover, #index ol li:focus { list-style:decimal; }
+#index>strong a { font-size:1.4em; color:#000; margin-bottom:.2em; }
+#index>em a { font-size:1.2em; color:#000; margin-bottom:.5em; }
+
+p strong+a { white-space:normal; }
+h2 a, h3 a { color:#000; }
+h2 { margin-top:3em; }
+h3 { margin-top:2em; }
