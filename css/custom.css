@@ -1,0 +1,40 @@
+body { width:30em; margin:4em auto; padding:0; background:#fff; color:#000; font:normal 1.5em/150% FreeSans,Helvetica,sans-serif; }
+a { white-space:nowrap; text-decoration:none; color:#444; }
+a:hover, a:focus { color:#111; }
+em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
+#background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
+ul, ol { padding-left:0; }
+blockquote, q { color:#222; quotes:"\00BB""\00AB""\203A""\2039"; -webkit-margin-start:0; }
+blockquote { padding-left:0; clear:both; margin:0 0 3em 0; }
+blockquote:before { content:"\00BB"; position:absolute; margin:-.53em 0 0 -.6em; font-size:3em; }
+blockquote>p { margin-bottom:0; }
+blockquote>p+p { margin-top:0; }
+blockquote a, blockquote span { font-style:normal; position:relative; float:right; clear:left; }
+
+#index, #indextitle { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:bold; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+#index { top:5em; }
+#index:hover, #index:focus { opacity:1; }
+#index a { display:block; }
+#index ol { list-style:none; font-weight:normal; }
+#index li a:hover, #index li a:focus, #index li a:active, #index li.current>a { background:#eee; color:#000; }
+#index ol li:hover, #index ol li:focus, #index ol li:active, #index li.current { list-style:decimal; }
+#indextitle strong a { font-size:1.4em; color:#000; margin-bottom:.2em; }
+#indextitle em a { font-size:1.2em; color:#000; margin-bottom:.5em; }
+
+p strong+a { white-space:normal; }
+h2 a, h3 a { color:#000; }
+h2 { margin-top:3em; }
+h3 { margin-top:2em; }
+
+#jan { margin:6em 3em; width:27em; text-shadow:#eee 0 1px 0; }
+#jan h1 { margin-bottom:.2em; }
+#jan h1+em { margin-top:0; }
+#jan ul { font-size:.7em; }
+#jan li { height:1.5em; }
+#jan #unhosted { list-style-image:url('http://unhosted.org/img/favicon.png'); }
+#jan #owncloud { list-style-image:url('http://owncloud.org/favicon.png'); }
+#jan #libreprojects { list-style-image:url('http://libreprojects.net/images/favicon.png'); }
+#jan p { margin-top:2em; font-size:.5em; line-height:2em; }
+
+#stuff .taken { list-style:none; color:#d33; margin-left:-1.2em; }
+#stuff .taken:before { content:"\2718\0020"; }
