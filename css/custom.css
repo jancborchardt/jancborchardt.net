@@ -26,14 +26,14 @@ h2 a, h3 a { color:#000; }
 h2 { margin-top:3em; }
 h3 { margin-top:2em; }
 
-#jan { background:#f98d3d; margin:3em; width:27em; }
+#jan { background:#ff8d2d; margin:3em; width:27em; }
 #jan * { color:#000; opacity:.8; }
 #jan a { font-weight:bold; opacity:1; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
 #jan a:hover, #jan a:focus { opacity:.5; }
-#jan img { opacity:.3; }
+#jan img { opacity:.5; }
 #jan h1 { margin-bottom:.2em; }
 #jan h1+em { margin-top:0; }
-#jan ul { font-size:.7em; opacity:.8; }
+#jan ul { font-size:.7em; }
 #jan li { height:1.5em; }
 #jan #unhosted { list-style-image:url('http://unhosted.org/img/favicon.png'); }
 #jan #owncloud { list-style-image:url('http://owncloud.org/favicon.png'); }

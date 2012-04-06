@@ -29,7 +29,7 @@ $(document).ready(function() {
 	spectrum();
 
 	function spectrum(){
-		var rainbow = 'rgb('+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*256))+')';
+		var rainbow = 'rgb('+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*100))+','+(Math.floor(Math.random()*100))+')';
 		$('#jan').animate( { backgroundColor: rainbow }, 50000);
 		setTimeout(spectrum, 0);
 	}
