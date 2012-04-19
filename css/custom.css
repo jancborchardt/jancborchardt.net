@@ -44,3 +44,5 @@ h3 { margin-top:2em; }
 #stuff .taken:before { content:"\2718\0020"; }
 #stuff .taken a { color:#933; }
 #stuff .taken a:hover { color:#a00; }
+
+.external { color:#999; }
