@@ -1,6 +1,6 @@
 body { width:30em; margin:4em auto; padding:0; background:#fff; color:#000; font:normal 1.5em/150% FreeSans,Helvetica,sans-serif; }
-a { white-space:nowrap; text-decoration:none; color:#444; }
-a:hover, a:focus { color:#111; }
+a { white-space:nowrap; text-decoration:none; color:#000; opacity:.6; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+a:hover, a:focus { opacity:.9; outline:0; }
 em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
 #background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
 ul, ol { padding-left:0; }
@@ -27,9 +27,7 @@ h2 { margin-top:3em; }
 h3 { margin-top:2em; }
 
 #jan { background:#ff8d2d; margin:3em; width:27em; }
-#jan * { color:#000; opacity:.8; }
-#jan a { font-weight:bold; opacity:1; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
-#jan a:hover, #jan a:focus { opacity:.5; }
+#jan a { font-weight:bold; }
 #jan img { opacity:.5; }
 #jan h1 { margin-bottom:.2em; }
 #jan h1+em { margin-top:0; }
