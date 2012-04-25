@@ -1,78 +1,77 @@
 <!DOCTYPE html>
-<html><head>
+	<meta charset="utf-8">
 	<title>Usability in Free Software, a guide by Jan-Christoph Borchardt</title>
 	<meta name="description" content="For a software to truly be free, people need to be able to easily use it without help. This is a quick start to usability testing in a distributed and independent development environment: A collection of usability methods applicable especially in free and open source software projects.">
 	<link rel="stylesheet" href="css/custom.css">
-</head><body id="usability-in-free-software" data-spy="scroll" data-target="#index">
 
-
+<body id="usability-in-free-software" data-spy="scroll" data-target="#index">
 <h1>Usability in Free Software</h1>
-<p><em>Freedom 4: The freedom to use the program effectively, efficiently and satisfactory.</em> A guide by <a href="http://jancborchardt.net">Jan-Christoph Borchardt</a>.</p>
+<p><em>Freedom 4: The freedom to use the program effectively, efficiently and satisfactory.</em> A guide by <a href="http://jancborchardt.net">Jan-Christoph Borchardt</a>.
 
 <h3 id="Abstract"><a href="#Abstract">Abstract</a></h3>
-<p>For a software to truly be free, people need to be able to easily use it without help. This is a quick start to usability testing in a distributed and independent development environment: A collection of usability methods applicable especially in free &amp; open source software projects. No matter if you are a developer, usability person or just enthusiastic about making software easier to use, this document should help you get going.</p>
-<p>This started out in Summer 2011 as a bachelor&apos;s thesis concluding my studies of information design at <a href="http://www.hdm-stuttgart.de">Stuttgart Media University</a>. The original title was <cite>Coordinating low-cost usability testing in independent free &amp; open source software projects</cite>. Now it&apos;s an <a href="http://creativecommons.org/licenses/by-sa/3.0/">open</a> document, everyone can use it &amp; contribute.</p>
+<p>For a software to truly be free, people need to be able to easily use it without help. This is a quick start to usability testing in a distributed and independent development environment: A collection of usability methods applicable especially in free & open source software projects. No matter if you are a developer, usability person or just enthusiastic about making software easier to use, this document should help you get going.
+<p>This started out in Summer 2011 as a bachelor’s thesis concluding my studies of information design at <a href="http://www.hdm-stuttgart.de">Stuttgart Media University</a>. The original title was <cite>Coordinating low-cost usability testing in independent free & open source software projects</cite>. Now it’s an <a href="http://creativecommons.org/licenses/by-sa/3.0/">open</a> document, everyone can use it & contribute.
 
 <p id="indextitle"><strong><a href="#">Usability in Free Software</a></strong><br />
-<em><a href="http://jancborchardt.net">by Jan-Christoph Borchardt</a></em></p>
+<em><a href="http://jancborchardt.net">by Jan-Christoph Borchardt</a></em>
 <ol id="index">
 	<li><a href="#Introduction">Introduction</a><ol>
-		<li><a href="#About-the-author">About the author</a></li>
-		<li><a href="#About-this-document">About this document</a></li>
-		<li><a href="#Problem">Problem</a></li>
-		<li><a href="#Goal">Goal</a></li>
-	</ol></li>
-	<li><a href="#The-project-and-you">The project &amp; you</a><ol>
-		<li><a href="#You-are-a-usability-person">You are a usability person</a></li>
-		<li><a href="#You-are-a-developer">You are a developer</a></li>
-	</ol></li>
+		<li><a href="#About-the-author">About the author</a>
+		<li><a href="#About-this-document">About this document</a>
+		<li><a href="#Problem">Problem</a>
+		<li><a href="#Goal">Goal</a>
+	</ol>
+	<li><a href="#The-project-and-you">The project & you</a><ol>
+		<li><a href="#You-are-a-usability-person">You are a usability person</a>
+		<li><a href="#You-are-a-developer">You are a developer</a>
+	</ol>
 	<li><a href="#Project-aspects">Project aspects</a><ol>
-		<li><a href="#Website-and-information">Website &amp; information</a></li>
-		<li><a href="#Application-itself">Application itself</a></li>
-		<li><a href="#Installation">Installation</a></li>
-		<li><a href="#Getting-help">Getting help</a></li>
-		<li><a href="#Contributing">Contributing</a></li>
-	</ol></li>
+		<li><a href="#Website-and-information">Website & information</a>
+		<li><a href="#Application-itself">Application itself</a>
+		<li><a href="#Installation">Installation</a>
+		<li><a href="#Getting-help">Getting help</a>
+		<li><a href="#Contributing">Contributing</a>
+	</ol>
 	<li><a href="#Technology">Technology</a><ol>
-		<li><a href="#Test-device">Test device</a></li>
-		<li><a href="#Test-object">Test object</a></li>
-		<li><a href="#Recording">Recording</a></li>
-	</ol></li>
+		<li><a href="#Test-device">Test device</a>
+		<li><a href="#Test-object">Test object</a>
+		<li><a href="#Recording">Recording</a>
+	</ol>
 	<li><a href="#Participants">Participants</a><ol>
-		<li><a href="#Family-friends-coworkers-flatmates">Family, friends, coworkers, flatmates</a></li>
-		<li><a href="#Traveling-rideshare-hostel">Traveling, rideshare, hostel</a></li>
-		<li><a href="#Public-places">Public places, at the mall, on the street</a></li>
-	</ol></li>
+		<li><a href="#Family-friends-coworkers-flatmates">Family, friends, coworkers, flatmates</a>
+		<li><a href="#Traveling-rideshare-hostel">Traveling, rideshare, hostel</a>
+		<li><a href="#Public-places">Public places, at the mall, on the street</a>
+	</ol>
 	<li><a href="#Research">Research</a><ol>
-		<li><a href="#Dogfood">Dogfood</a></li>
-		<li><a href="#Be-a-new-user">Be a new user</a></li>
-		<li><a href="#Review">Review</a></li>
-		<li><a href="#Benchmark-other-software">Benchmark other software</a></li>
-		<li><a href="#Benchmark-opinions">Benchmark opinions</a></li>
-		<li><a href="#Hear-users">Hear users</a></li>
-		<li><a href="#Ask-users">Ask users</a></li>
-		<li><a href="#Make-things-differently">Make things differently</a></li>
-		<li><a href="#Test-mockups">Test mockups</a></li>
-		<li><a href="#Watch-people-use-the-software">Watch people use the software</a></li>
-		<li><a href="#Call-for-testing">Call for testing</a></li>
-		<li><a href="#Get-longtime-users">Get longtime users</a></li>
-		<li><a href="#Monitor-users">Monitor users</a></li>
-	</ol></li>
+		<li><a href="#Dogfood">Dogfood</a>
+		<li><a href="#Be-a-new-user">Be a new user</a>
+		<li><a href="#Review">Review</a>
+		<li><a href="#Benchmark-other-software">Benchmark other software</a>
+		<li><a href="#Benchmark-opinions">Benchmark opinions</a>
+		<li><a href="#Hear-users">Hear users</a>
+		<li><a href="#Ask-users">Ask users</a>
+		<li><a href="#Make-things-differently">Make things differently</a>
+		<li><a href="#Test-mockups">Test mockups</a>
+		<li><a href="#Watch-people-use-the-software">Watch people use the software</a>
+		<li><a href="#Call-for-testing">Call for testing</a>
+		<li><a href="#Get-longtime-users">Get longtime users</a>
+		<li><a href="#Monitor-users">Monitor users</a>
+	</ol>
 	<li><a href="#Reporting">Reporting</a><ol>
-		<li><a href="#List-issues">List issues</a></li>
-		<li><a href="#List-tasks">List tasks</a></li>
-		<li><a href="#Tag-bugs">Tag bugs</a></li>
-		<li><a href="#Identify-paper-cuts">Identify paper cuts</a></li>
-		<li><a href="#Provide-guidelines">Provide guidelines</a></li>
-		<li><a href="#Sketch-ideas">Sketch ideas</a></li>
-		<li><a href="#Fix-small-problems-yourself">Fix small problems yourself</a></li>
-		<li><a href="#Work-with-one-developer">Work with one developer</a></li>
-		<li><a href="#Evaluate-new-features">Evaluate new features</a></li>
-		<li><a href="#Have-a-hackfest">Have a hackfest</a></li>
-	</ol></li>
-	<li><a href="#Conclusion">Conclusion</a></li>
-	<li><a href="#References">References</a></li>
-	<li><a href="#Thanks">Thanks</a></li>
+		<li><a href="#List-issues">List issues</a>
+		<li><a href="#List-tasks">List tasks</a>
+		<li><a href="#Tag-bugs">Tag bugs</a>
+		<li><a href="#Identify-paper-cuts">Identify paper cuts</a>
+		<li><a href="#Provide-guidelines">Provide guidelines</a>
+		<li><a href="#Sketch-ideas">Sketch ideas</a>
+		<li><a href="#Fix-small-problems-yourself">Fix small problems yourself</a>
+		<li><a href="#Work-with-one-developer">Work with one developer</a>
+		<li><a href="#Evaluate-new-features">Evaluate new features</a>
+		<li><a href="#Have-a-hackfest">Have a hackfest</a>
+	</ol>
+	<li><a href="#Conclusion">Conclusion</a>
+	<li><a href="#References">References</a>
+	<li><a href="#Thanks">Thanks</a>
 </ol>
 
 
@@ -80,482 +79,482 @@
 <h2 id="Introduction"><a href="#Introduction">1. Introduction</a></h2>
 
 <h3 id="About-the-author"><a href="#About-the-author">1.1 About the author</a></h3>
-<p>This guidebook is a result of being heavily involved with both free software and usability. Most of the learnings come from working on two free &amp; open source software projects.</p>
+<p>This guidebook is a result of being heavily involved with both free software and usability. Most of the learnings come from working on two free & open source software projects.
 <ol>
-	<li><a href="http://owncloud.org">ownCloud</a>, a personal web platform for data and applications, roughly similar to Dropbox, Google Apps and MobileMe. I work on user experience in its many facets: interface design, frontend coding, user research, community, support and also do some backend programming.</li>
-	<li><a href="http://joindiaspora.com">Diaspora</a>, a decentralized social network roughly similar to Facebook and Twitter. It is a bigger project already, there I build a workflow for user experience design &amp; testing and establish a user experience team.</li>
+	<li><a href="http://owncloud.org">ownCloud</a>, a personal web platform for data and applications, roughly similar to Dropbox, Google Apps and MobileMe. I work on user experience in its many facets: interface design, frontend coding, user research, community, support and also do some backend programming.
+	<li><a href="http://joindiaspora.com">Diaspora</a>, a decentralized social network roughly similar to Facebook and Twitter. It is a bigger project already, there I build a workflow for user experience design & testing and establish a user experience team.
 </ol>
-<p>In Fall&ndash;Winter 2010 I interned at relevantive in Berlin and did user tests in the lab, in the car and by foot. I also got involved with <a href="http://openusability.org">OpenUsability</a>.</p>
-<p>I did interaction design for <a href="http://launchpad.net/cardapio">Cardapio</a>, a menu and launcher similar to the Windows start menu and Mac OS Spotlight.</p>
-<p>In Summer 2009, I worked together with Canonical&apos;s Charline Poirier on usability testing for <a href="http://yorba.org/shotwell">Shotwell</a> before it became Ubuntu&apos;s default photo application. The results are published on <a href="http://jancborchardt.wordpress.com/shotwell">my blog</a>.</p>
+<p>In Fall–Winter 2010 I interned at relevantive in Berlin and did user tests in the lab, in the car and by foot. I also got involved with <a href="http://openusability.org">OpenUsability</a>.
+<p>I did interaction design for <a href="http://launchpad.net/cardapio">Cardapio</a>, a menu and launcher similar to the Windows start menu and Mac OS Spotlight.
+<p>In Summer 2009, I worked together with Canonical’s Charline Poirier on usability testing for <a href="http://yorba.org/shotwell">Shotwell</a> before it became Ubuntu’s default photo application. The results are published on <a href="http://jancborchardt.wordpress.com/shotwell">my blog</a>.
 
 <h3 id="About-this-document"><a href="#About-this-document">1.2 About this document</a></h3>
-<p>This document aims to be concise and at the same time include the essential info which I find important in working on the projects. Rather than theory and analysis of the current state, which is already widely discussed, I want to compile a set of actionable methods because this is what I see as lacking at the moment.</p>
-<p>It is in no way complete or fixed in its form, I encourage feedback and will evolve the document.</p>
-<p>As references, I use openly available sources so everyone is able to read up more on the same documents I use. Also to honor authors who make their material available to the community, much like free software developers.</p>
-<p>The subtitle is a reference to the <q><em>four freedoms</em></q> of free software (<a href="#Stallman-1986">Stallman, 1986</a>).</p>
+<p>This document aims to be concise and at the same time include the essential info which I find important in working on the projects. Rather than theory and analysis of the current state, which is already widely discussed, I want to compile a set of actionable methods because this is what I see as lacking at the moment.
+<p>It is in no way complete or fixed in its form, I encourage feedback and will evolve the document.
+<p>As references, I use openly available sources so everyone is able to read up more on the same documents I use. Also to honor authors who make their material available to the community, much like free software developers.
+<p>The subtitle is a reference to the <q><em>four freedoms</em></q> of free software (<a href="#Stallman-1986">Stallman, 1986</a>).
 <p>This document is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution-ShareAlike</a>:<br />
-You are free to share and remix the work as long as you attribute Jan-Christoph Borchardt as the author and distribute the resulting work under a similar license.</p>
+You are free to share and remix the work as long as you attribute Jan-Christoph Borchardt as the author and distribute the resulting work under a similar license.
 
 <h3 id="Problem"><a href="#Problem">1.3 Problem</a></h3>
-<p>Most free software projects are developed by volunteers on their free time and don&apos;t receive corporate backing. There is neither budget for dedicated usability tests nor particular usability expertise. Developers and designers decide from their point of view (<a href="#Nichols-Twidale-2003">Nichols &amp; Twidale, 2003</a>; <a href="#Thomas-2008">Thomas, 2008</a>).</p>
-<p>Free software development is famously described as a <q><em>bazaar</em></q> by <a href="#Raymond-1997">Raymond (1997)</a>, a hierarchically flat organization. Especially independent projects are a meritocracy or do-ocracy where people are mainly valued according to their contributions to the project.</p>
-	<blockquote><p>Open source development is a meritocracy: those who are judged as doing good (read: high quality) work wield power or influence over the community; the maintainers of the code give permission to check in software.</p>
-	<p><a href="#Frishberg-et-al-2002">Frishberg et al. (2002)</a></p></blockquote>
-<p>A problem with the organic and distributed bazaar workflow are the different communication channels, be it mailing lists, IRC (internet relay chat), bug reports, wiki pages and other platforms.</p>
-	<blockquote><p>Discussion is fragmented between the mailing list and bug reports. These channels need a clearer charter and decision-making system.</p>
-	<p><a href="#Benson-Mueller-Mzourek-2004">Benson, M&uuml;ller-Prove &amp; Mzourek (2004)</a></p></blockquote>
-<p>There are many international contributors working on the software. This is not only code of the application itself but also translation, design, website, outreach and more. Already described by <a href="#Benson-Mueller-Mzourek-2004">Benson, M&uuml;ller-Prove &amp; Mzourek (2004)</a>, we need a <q><em>clearly defined decision-making process</em></q> to coordinate all the different efforts going in to designing and developing the product that is the software.</p>
-	<blockquote><p>The integration of software cannot be achieved by committee, where everyone has to put in their own additions (featuritis again). It must be controlled by dictatorial artists with full say on the final cut.</p>
-	<p><a href="#Nelson-1990">Nelson (1990, p. 243)</a></p></blockquote>
-<p>And additions not only come from developers but also indirectly from users:</p>
-	<blockquote><p>Reading dozens of GNOME and Red Hat bugs per day, I find that users ask for a preference by default.</p>
-	<p><a href="#Pennington-2002">Pennington (2002)</a></p></blockquote>
-<p>At the same time, multiple interface designers need to agree on their designs. Decisions need to be documented and based on founded claims. It needs to be made clear that interface design is more of a science where research is important than an art that is subjective:</p>
-	<blockquote><p>If various people work on the same interface, they will need to justify what they do, convince others why their ideas are so great and so on.</p>
-	<p><a href="#Balasz-2011">Balasz (2011)</a></p></blockquote>
+<p>Most free software projects are developed by volunteers on their free time and don’t receive corporate backing. There is neither budget for dedicated usability tests nor particular usability expertise. Developers and designers decide from their point of view (<a href="#Nichols-Twidale-2003">Nichols & Twidale, 2003</a>; <a href="#Thomas-2008">Thomas, 2008</a>).
+<p>Free software development is famously described as a <q><em>bazaar</em></q> by <a href="#Raymond-1997">Raymond (1997)</a>, a hierarchically flat organization. Especially independent projects are a meritocracy or do-ocracy where people are mainly valued according to their contributions to the project.
+	<blockquote><p>Open source development is a meritocracy: those who are judged as doing good (read: high quality) work wield power or influence over the community; the maintainers of the code give permission to check in software.
+	<p><a href="#Frishberg-et-al-2002">Frishberg et al. (2002)</a></blockquote>
+<p>A problem with the organic and distributed bazaar workflow are the different communication channels, be it mailing lists, IRC (internet relay chat), bug reports, wiki pages and other platforms.
+	<blockquote><p>Discussion is fragmented between the mailing list and bug reports. These channels need a clearer charter and decision-making system.
+	<p><a href="#Benson-Mueller-Mzourek-2004">Benson, Müller-Prove & Mzourek (2004)</a></blockquote>
+<p>There are many international contributors working on the software. This is not only code of the application itself but also translation, design, website, outreach and more. Already described by <a href="#Benson-Mueller-Mzourek-2004">Benson, Müller-Prove & Mzourek (2004)</a>, we need a <q><em>clearly defined decision-making process</em></q> to coordinate all the different efforts going in to designing and developing the product that is the software.
+	<blockquote><p>The integration of software cannot be achieved by committee, where everyone has to put in their own additions (featuritis again). It must be controlled by dictatorial artists with full say on the final cut.
+	<p><a href="#Nelson-1990">Nelson (1990, p. 243)</a></blockquote>
+<p>And additions not only come from developers but also indirectly from users:
+	<blockquote><p>Reading dozens of GNOME and Red Hat bugs per day, I find that users ask for a preference by default.
+	<p><a href="#Pennington-2002">Pennington (2002)</a></blockquote>
+<p>At the same time, multiple interface designers need to agree on their designs. Decisions need to be documented and based on founded claims. It needs to be made clear that interface design is more of a science where research is important than an art that is subjective:
+	<blockquote><p>If various people work on the same interface, they will need to justify what they do, convince others why their ideas are so great and so on.
+	<p><a href="#Balasz-2011">Balasz (2011)</a></blockquote>
 
 <h3 id="Goal"><a href="#Goal">1.4 Goal</a></h3>
-<p>A guide on how to adapt to development structures, do user testing, use available free tools to ease recording and analysis as well as best practices for reporting and fixing usability issues.</p>
-<p><a href="#Nichols-Twidale-2003">Nichols &amp; Twidale (2003)</a> suggest conceptual methods like for example involving usability experts and students, creating a usability discussion infrastructure and evangelism. While I highly support that, I want to offer immediately actionable methods who can be carried out by everyone &ndash; much like a tutorial.</p>
-<p>The focus is on formative and qualitative testing. Small tests with results based on actual behavior fit best with the fast and distributed development of free software projects. This enables to do quick iterations in design and development while receiving direct feedback on changes.</p>
-<p>Classic usability testing, observing a person while they use the software, is of course one of the best ways to do assess usability &ndash; see <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>. But especially in free software environments lots of other methods are more feasible.</p>
-<p>The different methods are intended as patterns: Their usefulness depends on the project structure and the person responsible for the testing. They are guidelines and a collection of tips you can apply.</p>
+<p>A guide on how to adapt to development structures, do user testing, use available free tools to ease recording and analysis as well as best practices for reporting and fixing usability issues.
+<p><a href="#Nichols-Twidale-2003">Nichols & Twidale (2003)</a> suggest conceptual methods like for example involving usability experts and students, creating a usability discussion infrastructure and evangelism. While I highly support that, I want to offer immediately actionable methods who can be carried out by everyone – much like a tutorial.
+<p>The focus is on formative and qualitative testing. Small tests with results based on actual behavior fit best with the fast and distributed development of free software projects. This enables to do quick iterations in design and development while receiving direct feedback on changes.
+<p>Classic usability testing, observing a person while they use the software, is of course one of the best ways to do assess usability – see <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>. But especially in free software environments lots of other methods are more feasible.
+<p>The different methods are intended as patterns: Their usefulness depends on the project structure and the person responsible for the testing. They are guidelines and a collection of tips you can apply.
 
 
 
-<h2 id="The-project-and-you"><a href="#The-project-and-you">2. The project &amp; you</a></h2>
-<p>To work on the usability of a project you don&apos;t need specific usability expertise &ndash; just the passion to learn and apply it. This is well described in the UX Advocate program started by David Siegel of Canonical and promoted by Allan Day of GNOME. Although it unfortunately didn&apos;t gain enough traction, the motivations behind it are very true:</p>
-	<blockquote><p>To be a UX Advocate, you don&apos;t need to be able to create pixel-perfect mockups in Inkscape or have an HCI degree. All you need is love &ndash; you have to love an open source project and the people who use it, and you need to be patient, persistent, and persuasive. Of course, if you have some background in user experience, that would be tremendously helpful, but it&apos;s unnecessary; it&apos;s far better for an open source project to have a novice UX Advocate than none at all.</p>
-	<p><a href="#Siegel-2010">Siegel (2010)</a></p></blockquote>
-	<blockquote><p>A UX Advocate doesn&apos;t need to be a developer. They don&apos;t even need to be a usability expert (though they can be on their way to becoming one). What they do need is the time, energy, and inclination to champion user experience. A UX Advocate can triage and prioritize UX bugs, and they can research design problems. They can even do user testing.</p>
-	<p><a href="#Day-2010">Day (2010)</a></p></blockquote>
-<p>This document is exactly for making that as easy as possible.</p>
+<h2 id="The-project-and-you"><a href="#The-project-and-you">2. The project & you</a></h2>
+<p>To work on the usability of a project you don’t need specific usability expertise – just the passion to learn and apply it. This is well described in the UX Advocate program started by David Siegel of Canonical and promoted by Allan Day of GNOME. Although it unfortunately didn’t gain enough traction, the motivations behind it are very true:
+	<blockquote><p>To be a UX Advocate, you don’t need to be able to create pixel-perfect mockups in Inkscape or have an HCI degree. All you need is love – you have to love an open source project and the people who use it, and you need to be patient, persistent, and persuasive. Of course, if you have some background in user experience, that would be tremendously helpful, but it’s unnecessary; it’s far better for an open source project to have a novice UX Advocate than none at all.
+	<p><a href="#Siegel-2010">Siegel (2010)</a></blockquote>
+	<blockquote><p>A UX Advocate doesn’t need to be a developer. They don’t even need to be a usability expert (though they can be on their way to becoming one). What they do need is the time, energy, and inclination to champion user experience. A UX Advocate can triage and prioritize UX bugs, and they can research design problems. They can even do user testing.
+	<p><a href="#Day-2010">Day (2010)</a></blockquote>
+<p>This document is exactly for making that as easy as possible.
 
 <h3 id="You-are-a-usability-person"><a href="#You-are-a-usability-person">2.1 You are a usability person</a></h3>
-<p>If you&apos;re a usability person looking for a project to improve, don&apos;t pick any project but one useful to you. Independent free &amp; open source software is about scratching one&apos;s own itch (<a href="#Raymond-1997">Raymond, 1997</a>) so you should do it in a similar fashion as a user representative (<a href="#Nichols-Twidale-2003">Nichols &amp; Twidale, 2003</a>). You should be committed to the project and know it inside out.</p>
-<p>The other developers are volunteers as much as you. Just jump in and do your best, your work will be appreciated. In contrast and as an advantage to paid usability work there is no constraint set by clients as to how the test should go. You can freely assess which methods you use and how many (or rather few) participants you interview.</p>
-<p>Many free software developers already know about usability and the importance of it but don&apos;t know how to improve it. A big issue in working with them is a lack of trust (<a href="#Andreasen-et-al-2006">Andreasen et al., 2006, p. 309</a>). That is why you have to openly communicate your findings and methods. Ideally educate the developers about testing methods and common usability problems so they are enthusiastic about it themselves.</p>
-<p>The earlier you do testing, the better. No developer likes throwing away lots of his code, especially those working in their free time. And this shouldn&apos;t be the issue holding the software back from being more usable. Communicate your findings early and often (<a href="#Reitmayr-Balasz-Muehlig-2006">Reitmayr, Balasz &amp; M&uuml;hlig, 2006</a>).</p>
+<p>If you’re a usability person looking for a project to improve, don’t pick any project but one useful to you. Independent free & open source software is about scratching one’s own itch (<a href="#Raymond-1997">Raymond, 1997</a>) so you should do it in a similar fashion as a user representative (<a href="#Nichols-Twidale-2003">Nichols & Twidale, 2003</a>). You should be committed to the project and know it inside out.
+<p>The other developers are volunteers as much as you. Just jump in and do your best, your work will be appreciated. In contrast and as an advantage to paid usability work there is no constraint set by clients as to how the test should go. You can freely assess which methods you use and how many (or rather few) participants you interview.
+<p>Many free software developers already know about usability and the importance of it but don’t know how to improve it. A big issue in working with them is a lack of trust (<a href="#Andreasen-et-al-2006">Andreasen et al., 2006, p. 309</a>). That is why you have to openly communicate your findings and methods. Ideally educate the developers about testing methods and common usability problems so they are enthusiastic about it themselves.
+<p>The earlier you do testing, the better. No developer likes throwing away lots of his code, especially those working in their free time. And this shouldn’t be the issue holding the software back from being more usable. Communicate your findings early and often (<a href="#Reitmayr-Balasz-Muehlig-2006">Reitmayr, Balasz & Mühlig, 2006</a>).
 
 <h3 id="You-are-a-developer"><a href="#You-are-a-developer">2.2 You are a developer</a></h3>
-<p>Awesome that you read this! This document should give you ideas and provide you with methods on how to improve the usability of your software. Even if there is no designer on your project, you can use many of the research methods yourself.</p>
-<p>One of the most important things in usability is that <q><em>[&hellip;] the product should target people whom [you] consider to be clueless newbies</em></q> (<a href="#Trudelle-2002">Trudelle, 2002</a>). Everything should be as clear and self-evident as possible (<a href="#Krug-2008">Krug, 2008</a>). You already know the interface inside out and probably even designed it. Hence you tend to either overlook or simply not notice issues (<a href="#Johansson-2005">Johansson, 2005</a>).</p>
-<p>To learn more about general usability and develop an eye for issues, these blogs should go in your feed reader:</p>
+<p>Awesome that you read this! This document should give you ideas and provide you with methods on how to improve the usability of your software. Even if there is no designer on your project, you can use many of the research methods yourself.
+<p>One of the most important things in usability is that <q><em>[…] the product should target people whom [you] consider to be clueless newbies</em></q> (<a href="#Trudelle-2002">Trudelle, 2002</a>). Everything should be as clear and self-evident as possible (<a href="#Krug-2008">Krug, 2008</a>). You already know the interface inside out and probably even designed it. Hence you tend to either overlook or simply not notice issues (<a href="#Johansson-2005">Johansson, 2005</a>).
+<p>To learn more about general usability and develop an eye for issues, these blogs should go in your feed reader:
 <ul>
-	<li><a href="http://useit.com/alertbox">Jakob Nielsen&apos;s Alertbox</a>: The guru of web usability, usability testing and low-cost usability methods.</li>
-	<li><a href="http://littlebigdetails.com">Little Big Details</a>: The small interface details which are rarely noticed but help so much.</li>
-	<li><a href="http://uxmyths.com">UX Myths</a>: The most common user experience misconceptions and why they are myths.</li>
-	<li><a href="http://ignorethecode.net">Lukas Mathis&apos; ignore the code</a>: He writes at the intersection of software engineering and user interface design.</li>
+	<li><a href="http://useit.com/alertbox">Jakob Nielsen’s Alertbox</a>: The guru of web usability, usability testing and low-cost usability methods.
+	<li><a href="http://littlebigdetails.com">Little Big Details</a>: The small interface details which are rarely noticed but help so much.
+	<li><a href="http://uxmyths.com">UX Myths</a>: The most common user experience misconceptions and why they are myths.
+	<li><a href="http://ignorethecode.net">Lukas Mathis’ ignore the code</a>: He writes at the intersection of software engineering and user interface design.
 </ul>
 
 
 
 <h2 id="Project-aspects"><a href="#Project-aspects">3. Project aspects</a></h2>
-<p>From searching information on the website and downloading the software over installation to actual usage, it is important to test every part.</p>
-<p>Users are not only people directly using the software but also for example interested people browsing the website, contributors willing to help and administrators hosting it.</p>
-<p>Especially in free &amp; open source software, there are specific cases which appear more often than in proprietary software. For example setting it up on one&apos;s own server when it is a web application. Or how to contribute to the project, an essence of free software. Also, support is mostly handled by the developers themselves rather than by a specific support team.</p>
-<p>Translations are managed by volunteers and might be faulty. Use distributed user testing and encourage other people to test your software in other languages as well. See <a href="#Call-for-testing">6.11 Call for testing</a>.</p>
+<p>From searching information on the website and downloading the software over installation to actual usage, it is important to test every part.
+<p>Users are not only people directly using the software but also for example interested people browsing the website, contributors willing to help and administrators hosting it.
+<p>Especially in free & open source software, there are specific cases which appear more often than in proprietary software. For example setting it up on one’s own server when it is a web application. Or how to contribute to the project, an essence of free software. Also, support is mostly handled by the developers themselves rather than by a specific support team.
+<p>Translations are managed by volunteers and might be faulty. Use distributed user testing and encourage other people to test your software in other languages as well. See <a href="#Call-for-testing">6.11 Call for testing</a>.
 
-<h3 id="Website-and-information"><a href="#Website-and-information">3.1 Website &amp; information</a></h3>
-<p>When people first hear about your project, they will check out the website. Many projects make the mistake of designing the website like it is a portal for developers or experienced users. Rather it should have information for people who never heard about the software before. Include short and understandable bits of information about what your project is.</p>
-<p>Free software projects often have a wiki or use the project management system as their website. That is exactly the &raquo;portal for developers&laquo; issue. Even (or rather especially) a very bare page with only some info, screenshots, download and help links is better than a platform where all the information fights for exposure and the really important things are buried.</p>
-<p>When the main website of a web application also acts a provider for the service, it needs to offer the relevant actions like Register and Log in as well. Especially these forms need to be made as easy as possible and tested thoroughly because they need to be &raquo;defeated&laquo; even before using the application itself.</p>
-<p>With a website you ideally do a user test, see <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>. You can let them go through the whole process:</p>
+<h3 id="Website-and-information"><a href="#Website-and-information">3.1 Website & information</a></h3>
+<p>When people first hear about your project, they will check out the website. Many projects make the mistake of designing the website like it is a portal for developers or experienced users. Rather it should have information for people who never heard about the software before. Include short and understandable bits of information about what your project is.
+<p>Free software projects often have a wiki or use the project management system as their website. That is exactly the »portal for developers« issue. Even (or rather especially) a very bare page with only some info, screenshots, download and help links is better than a platform where all the information fights for exposure and the really important things are buried.
+<p>When the main website of a web application also acts a provider for the service, it needs to offer the relevant actions like Register and Log in as well. Especially these forms need to be made as easy as possible and tested thoroughly because they need to be »defeated« even before using the application itself.
+<p>With a website you ideally do a user test, see <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>. You can let them go through the whole process:
 <ol>
-	<li>Finding information about the application on the website</li>
-	<li>Download &amp; Installation (alternatively Registration &amp; Log in for web applications)</li>
-	<li>Using the application</li>
+	<li>Finding information about the application on the website
+	<li>Download & Installation (alternatively Registration & Log in for web applications)
+	<li>Using the application
 </ol>
 
 <h3 id="Application-itself"><a href="#Application-itself">3.2 Application itself</a></h3>
-<p>This is of course the main focus of your work.</p>
-<p>Regardless if your software is a web application or there are desktop applications available for multiple platforms such as free software distributions, Mac OS and Windows &ndash; you should test all of these if possible. With users of that specific operating system as participants you can see how people familiar with different interaction concepts handle your application.</p>
-<p>More and more people today have smartphones and need the software usable on that &ndash; be it for Android, iOS, webOS, MeeGo, Windows Phone 7 or BlackBerry. Adjusting the web interface is the easiest route as there likely are no capacities for development of dedicated applications. If you use open protocols you might be able to recommend 3rd party software (we do that for ownCloud and mobile WebDAV clients at the moment). In that case you need to test how it works and if there are multiple clients only recommend one &ndash; the best one.</p>
-<p>Testing of basic functionality can be done beforehand. For example a web interface can be viewed in different browsers on the cross-browser testing site <a href="http://browserling.com">Browserling</a>.</p>
-<p>As important as the usability of the application itself is, always note that when the website and installation is not easy enough, people will never even come that far.</p>
+<p>This is of course the main focus of your work.
+<p>Regardless if your software is a web application or there are desktop applications available for multiple platforms such as free software distributions, Mac OS and Windows – you should test all of these if possible. With users of that specific operating system as participants you can see how people familiar with different interaction concepts handle your application.
+<p>More and more people today have smartphones and need the software usable on that – be it for Android, iOS, webOS, MeeGo, Windows Phone 7 or BlackBerry. Adjusting the web interface is the easiest route as there likely are no capacities for development of dedicated applications. If you use open protocols you might be able to recommend 3rd party software (we do that for ownCloud and mobile WebDAV clients at the moment). In that case you need to test how it works and if there are multiple clients only recommend one – the best one.
+<p>Testing of basic functionality can be done beforehand. For example a web interface can be viewed in different browsers on the cross-browser testing site <a href="http://browserling.com">Browserling</a>.
+<p>As important as the usability of the application itself is, always note that when the website and installation is not easy enough, people will never even come that far.
 
 <h3 id="Installation"><a href="#Installation">3.3 Installation</a></h3>
-<p>How do advanced users and potential administrators of your software handle setting up your software? How do regular users go through the installation process?</p>
-<p>For web applications, the people setting the software up on their servers are most likely a completely different target group from the users themselves. Nevertheless technical terms should be reduced as well as options which are not immediately useful or can be set by default.</p>
-<p>It is possible in free software operating systems to install a package directly from repositories onto the computer. Many tutorials describe step by step how to add a <cite>personal package archive</cite> to repositories or how to pull applications from a Git version control repository and compile them. Even non-technical people can easily get your software through these guides and you have to cater your installation process to them as well.</p>
+<p>How do advanced users and potential administrators of your software handle setting up your software? How do regular users go through the installation process?
+<p>For web applications, the people setting the software up on their servers are most likely a completely different target group from the users themselves. Nevertheless technical terms should be reduced as well as options which are not immediately useful or can be set by default.
+<p>It is possible in free software operating systems to install a package directly from repositories onto the computer. Many tutorials describe step by step how to add a <cite>personal package archive</cite> to repositories or how to pull applications from a Git version control repository and compile them. Even non-technical people can easily get your software through these guides and you have to cater your installation process to them as well.
 
 <h3 id="Getting-help"><a href="#Getting-help">3.4 Getting help</a></h3>
-<p>No matter how good you do your work, people will have problems, ask questions and report bugs. For them to be able to easily do that and also have the message reach you or the developers, there needs to be an easy platform.</p>
-<p>Many free software projects use Bugzilla for issue tracking &ndash; it has a very difficult interface and a cumbersome registration process for reporting issues (<a href="#Nichols-Twidale-2003">Nichols &amp; Twidale, 2003</a>). A much better free software tool for support is <a href="http://shapado.com">Shapado</a> which enables people to ask questions without registering.</p>
-<p>Ideally, a help platform like that should be directly included in your software.</p>
+<p>No matter how good you do your work, people will have problems, ask questions and report bugs. For them to be able to easily do that and also have the message reach you or the developers, there needs to be an easy platform.
+<p>Many free software projects use Bugzilla for issue tracking – it has a very difficult interface and a cumbersome registration process for reporting issues (<a href="#Nichols-Twidale-2003">Nichols & Twidale, 2003</a>). A much better free software tool for support is <a href="http://shapado.com">Shapado</a> which enables people to ask questions without registering.
+<p>Ideally, a help platform like that should be directly included in your software.
 
 <h3 id="Contributing"><a href="#Contributing">3.5 Contributing</a></h3>
-<p>Helping hands are always important for a free software project. New contributors are needed so it should be easy to jump in. Be it writing code, designing, translating, writing docs, blogging or donations. Lowering the barrier to participation is essential.</p>
-<p>Ideally there should be some &raquo;junior jobs&laquo; or quick opportunities for new people to get started in the code (<a href="#Cetin-et-al-2006">&Ccedil;etin et al., 2006</a>). For that you need to mark bugs or tasks accordingly, see <a href="#Identify-paper-cuts">7.4 Identify paper cuts</a>.</p>
-<p>The different communication and documentation channels need to be apparent and easily available. For programmers, the repository is important, for translators the language files or online translation tool, for others the IRC channel or mailing list.</p>
-<p>The classic mailing list or IRC channel is not very approachable for people not already familiar with it. To still have that communication channel every seasoned developer is used to but also offer newcomers easy interfaces, there are two great free &amp; open source web applications:</p>
-<p><a href="http://onlinegroups.net">OnlineGroups</a> offers mailing lists with a web interface. For people not familiar with mailing lists this is easily usable by the web interface alone.</p>
-<p><a href="http://webchat.freenode.net">freenode web IRC</a> offers a web interface for IRC. People don&apos;t even need a specific client, you can also just embed it on the website.</p>
+<p>Helping hands are always important for a free software project. New contributors are needed so it should be easy to jump in. Be it writing code, designing, translating, writing docs, blogging or donations. Lowering the barrier to participation is essential.
+<p>Ideally there should be some »junior jobs« or quick opportunities for new people to get started in the code (<a href="#Cetin-et-al-2006">Çetin et al., 2006</a>). For that you need to mark bugs or tasks accordingly, see <a href="#Identify-paper-cuts">7.4 Identify paper cuts</a>.
+<p>The different communication and documentation channels need to be apparent and easily available. For programmers, the repository is important, for translators the language files or online translation tool, for others the IRC channel or mailing list.
+<p>The classic mailing list or IRC channel is not very approachable for people not already familiar with it. To still have that communication channel every seasoned developer is used to but also offer newcomers easy interfaces, there are two great free & open source web applications:
+<p><a href="http://onlinegroups.net">OnlineGroups</a> offers mailing lists with a web interface. For people not familiar with mailing lists this is easily usable by the web interface alone.
+<p><a href="http://webchat.freenode.net">freenode web IRC</a> offers a web interface for IRC. People don’t even need a specific client, you can also just embed it on the website.
 
 
 
 <h2 id="Technology"><a href="#Technology">4. Technology</a></h2>
-<p>Always have pen and paper and note down any issues you discover. This can be when you use the software yourself (<a href="#Dogfood">6.1 Dogfood</a>), in user tests (<a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>) or when talking to people (<a href="#Benchmark-opinions">6.5 Benchmark opinions</a>). To be able to assess the severity of issues later you can also note down how frequent and persistent they are (<a href="#Nielsen-2005b">Nielsen, 2005b</a>). See <a href="#Reporting">7. Reporting</a>.</p>
-<p>There isn&apos;t really much to prepare other than:</p>
+<p>Always have pen and paper and note down any issues you discover. This can be when you use the software yourself (<a href="#Dogfood">6.1 Dogfood</a>), in user tests (<a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>) or when talking to people (<a href="#Benchmark-opinions">6.5 Benchmark opinions</a>). To be able to assess the severity of issues later you can also note down how frequent and persistent they are (<a href="#Nielsen-2005b">Nielsen, 2005b</a>). See <a href="#Reporting">7. Reporting</a>.
+<p>There isn’t really much to prepare other than:
 <ol>
-	<li><strong>Test device:</strong> The hardware you test the software on, either your own or that of the participant.</li>
-	<li><strong>Test object:</strong> The software itself: An application for web, desktop or mobile.</li>
-	<li><strong>Recording:</strong> If you want to review the interview later. Because of privacy issues and paperwork it&apos;s best to only do this only when really needed, if ever.</li>
+	<li><strong>Test device:</strong> The hardware you test the software on, either your own or that of the participant.
+	<li><strong>Test object:</strong> The software itself: An application for web, desktop or mobile.
+	<li><strong>Recording:</strong> If you want to review the interview later. Because of privacy issues and paperwork it’s best to only do this only when really needed, if ever.
 </ol>
 
 <h3 id="Test-device"><a href="#Test-device">4.1 Test device</a></h3>
-<p>As mentioned in <a href="#Application-itself">3.2 Application itself</a> already, test on different devices. Especially when the project is a web application, you need to make sure it works fine on big and small screens as well as touchscreens of tablets and smartphones.</p>
-<p>When you don&apos;t have access to a specific device, it&apos;s very easy nowadays to find people who use them regularly.</p>
-<p>Letting people use their own hardware has the upside that they won&apos;t be distracted by any issues with the hardware or the software setup itself. Getting accustomed to your device will waste some time. You always have to consider that when issues come up.</p>
-<p>When you use your own hardware always have clean installations of programs that need to be used, for example deactivate all browser plugins when you test a web application.</p>
+<p>As mentioned in <a href="#Application-itself">3.2 Application itself</a> already, test on different devices. Especially when the project is a web application, you need to make sure it works fine on big and small screens as well as touchscreens of tablets and smartphones.
+<p>When you don’t have access to a specific device, it’s very easy nowadays to find people who use them regularly.
+<p>Letting people use their own hardware has the upside that they won’t be distracted by any issues with the hardware or the software setup itself. Getting accustomed to your device will waste some time. You always have to consider that when issues come up.
+<p>When you use your own hardware always have clean installations of programs that need to be used, for example deactivate all browser plugins when you test a web application.
 
 <h3 id="Test-object"><a href="#Test-object">4.2 Test object</a></h3>
-<p>When you test a specific application make sure you have the latest version or development master. Having some knowledge of the version control system used by the project, for example <a href="http://git-scm.com">Git</a>, is also helpful. You can always pull the latest development version, check out new features and analyze their performance while they are developed.</p>
-<p>In the case of a web application, you should host an instance of the software or organize one to be hosted. Prepare user accounts in case people are not comfortable registering.</p>
-<p>For testing a desktop application on your own hardware, it is best if you set up a fresh installation. Then you can tell the participants that they can&apos;t break anything and they will already be more relaxed even though it is unfamiliar hardware.</p>
-<p>When testing on the participants&apos; hardware, you can go through the whole process of downloading, installation, first impression and identify more issues which naturally occur there.</p>
+<p>When you test a specific application make sure you have the latest version or development master. Having some knowledge of the version control system used by the project, for example <a href="http://git-scm.com">Git</a>, is also helpful. You can always pull the latest development version, check out new features and analyze their performance while they are developed.
+<p>In the case of a web application, you should host an instance of the software or organize one to be hosted. Prepare user accounts in case people are not comfortable registering.
+<p>For testing a desktop application on your own hardware, it is best if you set up a fresh installation. Then you can tell the participants that they can’t break anything and they will already be more relaxed even though it is unfamiliar hardware.
+<p>When testing on the participants’ hardware, you can go through the whole process of downloading, installation, first impression and identify more issues which naturally occur there.
 
 <h3 id="Recording"><a href="#Recording">4.3 Recording</a></h3>
-<p>Recording usability tests or interviews to have user quotes for presentations is standard practice in usability agencies. The participants need to sign release forms to agree to the videos being used.</p>
-<p>In independent free software projects recording participants is rather useless because it creates much work just for presentation. Since we concentrate on small test sets with quick iterations this creates too much overhead. There should be no personal data or images and just recording of issues.</p>
-<p>Also, reviewing the recordings afterwards uses up twice the time. It can be useful for longer tests though so here are some tools:</p>
+<p>Recording usability tests or interviews to have user quotes for presentations is standard practice in usability agencies. The participants need to sign release forms to agree to the videos being used.
+<p>In independent free software projects recording participants is rather useless because it creates much work just for presentation. Since we concentrate on small test sets with quick iterations this creates too much overhead. There should be no personal data or images and just recording of issues.
+<p>Also, reviewing the recordings afterwards uses up twice the time. It can be useful for longer tests though so here are some tools:
 <ul>
-	<li><a href="http://github.com/jancborchardt/pongo">Pongo</a> is a picture-in-picture recording tool for free operating systems. Originally started by Andreas Nilsson, I used and improved upon it during the Shotwell tests. Unfortunately it is only a command-line tool at the moment.</li>
-	<li><a href="http://launchpad.net/deskscribe">DeskScribe</a> is a click-tracking application which creates a click map similar to but not as good as ClickHeat mentioned in 6.13 Monitor users. When you test a desktop application it might still be useful.</li>
+	<li><a href="http://github.com/jancborchardt/pongo">Pongo</a> is a picture-in-picture recording tool for free operating systems. Originally started by Andreas Nilsson, I used and improved upon it during the Shotwell tests. Unfortunately it is only a command-line tool at the moment.
+	<li><a href="http://launchpad.net/deskscribe">DeskScribe</a> is a click-tracking application which creates a click map similar to but not as good as ClickHeat mentioned in 6.13 Monitor users. When you test a desktop application it might still be useful.
 </ul>
 
 
 
 <h2 id="Participants"><a href="#Participants">5. Participants</a></h2>
-<p>Define the target group of your project and get representative users to use the software. We want to test how usable the software is for normal people. As <a href="#Benson-Mueller-Mzourek-2004">Benson, M&uuml;ller-Prove &amp; Mzourek (2004)</a> advise: <q><em>users on mailing lists [and IRC] are not typical users</em></q> but rather experienced ones.</p>
-<p>It is enough to test with 3&ndash;5 users to find out most usability issues (<a href="#Nielsen-2000">Nielsen, 2000</a>):<br />
-Nielsen also notes: <q><em>The most striking truth of the curve is that zero users give zero insights.</em></q> So go get some participants and start testing!</p>
+<p>Define the target group of your project and get representative users to use the software. We want to test how usable the software is for normal people. As <a href="#Benson-Mueller-Mzourek-2004">Benson, Müller-Prove & Mzourek (2004)</a> advise: <q><em>users on mailing lists [and IRC] are not typical users</em></q> but rather experienced ones.
+<p>It is enough to test with 3–5 users to find out most usability issues (<a href="#Nielsen-2000">Nielsen, 2000</a>):<br />
+Nielsen also notes: <q><em>The most striking truth of the curve is that zero users give zero insights.</em></q> So go get some participants and start testing!
 
 <h3 id="Family-friends-coworkers-flatmates"><a href="#Family-friends-coworkers-flatmates">5.1 Family, friends, coworkers, flatmates</a></h3>
-<p>Family members are easily reachable but most often not the best choice for testing. Either they know what you do and are thus technically inclined or they feel obliged to help you, making it a non-ideal situation for testing.</p>
-<p>Friends, coworkers and flatmates are very good test participants as long as they are no designers. Friends and flatmates likely have lots of different professions and backgrounds, giving you various insights.</p>
-<p>The problem with this group of people is that you can not conduct tests with the same people too often. Usually, interview participants are not invited again for the next three months and only three times in total. Otherwise they will become &raquo;<em>professional usability testers</em>&laquo; who just say what you want to hear and don&apos;t act naturally.</p>
+<p>Family members are easily reachable but most often not the best choice for testing. Either they know what you do and are thus technically inclined or they feel obliged to help you, making it a non-ideal situation for testing.
+<p>Friends, coworkers and flatmates are very good test participants as long as they are no designers. Friends and flatmates likely have lots of different professions and backgrounds, giving you various insights.
+<p>The problem with this group of people is that you can not conduct tests with the same people too often. Usually, interview participants are not invited again for the next three months and only three times in total. Otherwise they will become »<em>professional usability testers</em>« who just say what you want to hear and don’t act naturally.
 
 <h3 id="Traveling-rideshare-hostel"><a href="#Traveling-rideshare-hostel">5.2 Traveling, rideshare, hostel</a></h3>
-<p>Testing while traveling is great because you meet lots of different people. There is a vast array of potential test participants readily available. It doesn&apos;t matter if it&apos;s in a car, on a plane, bus or train, in a hostel or anywhere else you are staying or traveling.</p>
-<p>You just have to strike up a conversation with someone. Ask them if they are interested in testing a software. For these unplanned tests you should have your own laptop with you. When they agree, just continue with <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>.</p>
-<p>When you don&apos;t have that much time or the hardware for an interface test, a casual talk already works fine. The best method here is <a href="#Benchmark-opinions">6.5 Benchmark opinions</a> where you just talk to people about the software they currently use and their experience with it.</p>
-<p>The problem of people becoming &raquo;professional testers&laquo; will practically not occur since you mostly see the people you meet while traveling only once. There should be no problem to find 3&ndash;5 people with wildly varying professions and technological backgrounds.</p>
+<p>Testing while traveling is great because you meet lots of different people. There is a vast array of potential test participants readily available. It doesn’t matter if it’s in a car, on a plane, bus or train, in a hostel or anywhere else you are staying or traveling.
+<p>You just have to strike up a conversation with someone. Ask them if they are interested in testing a software. For these unplanned tests you should have your own laptop with you. When they agree, just continue with <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>.
+<p>When you don’t have that much time or the hardware for an interface test, a casual talk already works fine. The best method here is <a href="#Benchmark-opinions">6.5 Benchmark opinions</a> where you just talk to people about the software they currently use and their experience with it.
+<p>The problem of people becoming »professional testers« will practically not occur since you mostly see the people you meet while traveling only once. There should be no problem to find 3–5 people with wildly varying professions and technological backgrounds.
 
 <h3 id="Public-places"><a href="#Public-places">5.3 Public places, at the mall, on the street</a></h3>
-<p>Just chatting up random people at the mall or on the street (while sitting alone on a bench for example) might be off-putting at first but it will most likely be rewarded. Mozilla&apos;s Jennifer Lynn Morrow made a great experience with user testing in the wild:</p>
-	<blockquote><p>The mall is a fantastic place to find user test participants, because the range of technical expertise varies widely. Also, the people I encountered tended to be bored out of their minds, impatiently waiting for their partners to shop or friends to meet them.</p>
-	<p><a href="#Morrow-2011">Morrow (2011)</a></p></blockquote>
-<p>She writes about her encounter and quick user test with a man who never used a computer before:</p>
-		<blockquote><p>One of the hardest things to relate to Joe is the idea that you must first click in a text field in order to type.</p>
-		<p><a href="#Morrow-2011">Morrow (2011)</a></p></blockquote>
-<p>This kind of person would rarely, if ever, come up in a standard usability test where people are recruited based on specific criteria. But they are incredibly insightful because they are not that biased based on previously used interfaces.</p>
+<p>Just chatting up random people at the mall or on the street (while sitting alone on a bench for example) might be off-putting at first but it will most likely be rewarded. Mozilla’s Jennifer Lynn Morrow made a great experience with user testing in the wild:
+	<blockquote><p>The mall is a fantastic place to find user test participants, because the range of technical expertise varies widely. Also, the people I encountered tended to be bored out of their minds, impatiently waiting for their partners to shop or friends to meet them.
+	<p><a href="#Morrow-2011">Morrow (2011)</a></blockquote>
+<p>She writes about her encounter and quick user test with a man who never used a computer before:
+		<blockquote><p>One of the hardest things to relate to Joe is the idea that you must first click in a text field in order to type.
+		<p><a href="#Morrow-2011">Morrow (2011)</a></blockquote>
+<p>This kind of person would rarely, if ever, come up in a standard usability test where people are recruited based on specific criteria. But they are incredibly insightful because they are not that biased based on previously used interfaces.
 
 
 
 <h2 id="Research"><a href="#Research">6. Research</a></h2>
-<p>Research is not only classic usability testing. There are lots of other methods very useful and quick to assess the usability of your application.</p>
-	<blockquote><p>It doesn&apos;t really matter how much you know about usability &ndash; after working on a project for a couple of weeks you&apos;ve become blind to many of the problems. Sure, experience will help you avoid making many design mistakes in the first place, but something will slip through. Every time. That&apos;s why doing even a very basic usability test will improve your site.</p>
-	<p><a href="#Johansson-2005">Johansson (2005)</a></p></blockquote>
-<p>You can not do enough user testing. Even when someone else already tested an aspect of your software, you have access to completely different people who might encounter completely different problems. It is very important to also test the improvements resulting from a previous usability test and iterate this development cycle.</p>
-<p>Be genuinely interested in people, in the end your software is for them to use. Don&apos;t make it feel like a test or an interview, much more a casual talk about their likes and dislikes. At the same time remember that you are looking for issues, not design advice or new features. It&apos;s you who analyzes the problems and designs or gives suggestions to the developers. If people give design advice or feature suggestions, find out the underlying issue.</p>
+<p>Research is not only classic usability testing. There are lots of other methods very useful and quick to assess the usability of your application.
+	<blockquote><p>It doesn’t really matter how much you know about usability – after working on a project for a couple of weeks you’ve become blind to many of the problems. Sure, experience will help you avoid making many design mistakes in the first place, but something will slip through. Every time. That’s why doing even a very basic usability test will improve your site.
+	<p><a href="#Johansson-2005">Johansson (2005)</a></blockquote>
+<p>You can not do enough user testing. Even when someone else already tested an aspect of your software, you have access to completely different people who might encounter completely different problems. It is very important to also test the improvements resulting from a previous usability test and iterate this development cycle.
+<p>Be genuinely interested in people, in the end your software is for them to use. Don’t make it feel like a test or an interview, much more a casual talk about their likes and dislikes. At the same time remember that you are looking for issues, not design advice or new features. It’s you who analyzes the problems and designs or gives suggestions to the developers. If people give design advice or feature suggestions, find out the underlying issue.
 
 <h3 id="Dogfood"><a href="#Dogfood">6.1 Dogfood</a></h3>
-<p>&raquo;<em>Dogfooding</em>&laquo; is a term in software development which refers to using the software you work on. And that is exactly what you should do as one of the easiest methods to find out usability issues: Use the software yourself as much as you can. Rely on it for what it does.</p>
-<p>If you use the software in your daily workflow you will eventually experience more and more usability issues. You need to always cross-test them with actual non-technical users. While you might be a usability expert, the true experts of the interface are still the people using it.</p>
-<p>The other developers should use the software regularly as well. Encourage everyone to use it and pay attention to issues they discover. When the developers themselves see the problems and stumble over them regularly, they are more likely to just fix them.</p>
-<p>Similar to this method is <a href="#Benchmark-other-software">6.4 Benchmark other software</a> which basically is dogfooding the other way around: Using a similar product to find out the advantages and disadvantages.</p>
+<p>»<em>Dogfooding</em>« is a term in software development which refers to using the software you work on. And that is exactly what you should do as one of the easiest methods to find out usability issues: Use the software yourself as much as you can. Rely on it for what it does.
+<p>If you use the software in your daily workflow you will eventually experience more and more usability issues. You need to always cross-test them with actual non-technical users. While you might be a usability expert, the true experts of the interface are still the people using it.
+<p>The other developers should use the software regularly as well. Encourage everyone to use it and pay attention to issues they discover. When the developers themselves see the problems and stumble over them regularly, they are more likely to just fix them.
+<p>Similar to this method is <a href="#Benchmark-other-software">6.4 Benchmark other software</a> which basically is dogfooding the other way around: Using a similar product to find out the advantages and disadvantages.
 
 <h3 id="Be-a-new-user"><a href="#Be-a-new-user">6.2 Be a new user</a></h3>
-<p>When you work on a software long enough, you tend to become blind for its errors and interaction issues (<a href="#Johansson-2005">Johansson, 2005</a>). You need to practice putting yourself in the mindset of an unexperienced user who just discovered your software.</p>
-<p>Repeatedly set up a new installation or register a new account and go through the setup and first steps through the eyes of someone who never used the software before.</p>
-<p>Prepare a scenario: It is useful to have a series of tasks so that the program is used as it normally would. This does not need to be too elaborate, just a few logical steps that cover what you want to test. For the first test of Shotwell, I went with:</p>
+<p>When you work on a software long enough, you tend to become blind for its errors and interaction issues (<a href="#Johansson-2005">Johansson, 2005</a>). You need to practice putting yourself in the mindset of an unexperienced user who just discovered your software.
+<p>Repeatedly set up a new installation or register a new account and go through the setup and first steps through the eyes of someone who never used the software before.
+<p>Prepare a scenario: It is useful to have a series of tasks so that the program is used as it normally would. This does not need to be too elaborate, just a few logical steps that cover what you want to test. For the first test of Shotwell, I went with:
 <ol>
-	<li>Get photos from camera</li>
-	<li>Select the best</li>
-	<li>Edit when needed</li>
-	<li>Categorize</li>
-	<li>Upload to web service</li>
+	<li>Get photos from camera
+	<li>Select the best
+	<li>Edit when needed
+	<li>Categorize
+	<li>Upload to web service
 </ol>
-<p>You can always refine it for the next tests, the important thing is to get started! It is then best to follow up with actual user tests using the refined tasks to see how actual new users handle it. See <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>.</p>
+<p>You can always refine it for the next tests, the important thing is to get started! It is then best to follow up with actual user tests using the refined tasks to see how actual new users handle it. See <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>.
 
 <h3 id="Review"><a href="#Review">6.3 Review</a></h3>
-<p>Identify common interface and interaction mistakes by testing the software against a few simple interface heuristics.</p>
-<p>The following set of 8 heuristics is derived from <a href="#Nielsen-2005a">Nielsen (1994, 2005a)</a> and <a href="#Faaborg-2010a">Faaborg (2010a)</a>:</p>
+<p>Identify common interface and interaction mistakes by testing the software against a few simple interface heuristics.
+<p>The following set of 8 heuristics is derived from <a href="#Nielsen-2005a">Nielsen (1994, 2005a)</a> and <a href="#Faaborg-2010a">Faaborg (2010a)</a>:
 <ul>
-	<li><strong>Organization:</strong> Organize interfaces logically for users and based on the actions they perform. Don&apos;t base it on underlying technical implementations.</li>
-	<li><strong>Consistency:</strong> Software should be consistent in itself and to other software so people get used to it more quickly.</li>
-	<li><strong>Discovery:</strong> Users should be able to discover functionality and information by exploring the interface and not be forced to recall information from memory.</li>
-	<li><strong>Simplicity:</strong> Interfaces should be as simple as possible, both visually and interactively. Interfaces should avoid redundancy.</li>
-	<li><strong>Feedback:</strong> Provide feedback about the current status.</li>
-	<li><strong>Interruption:</strong> Interfaces should not interrupt or ask questions (no pop-ups).</li>
-	<li><strong>Errors:</strong> Interfaces should handle errors gracefully through help and undo.</li>
-	<li><strong>Wording:</strong> Don&apos;t use technical jargon or overly negative or dramatic expressions.</li>
+	<li><strong>Organization:</strong> Organize interfaces logically for users and based on the actions they perform. Don’t base it on underlying technical implementations.
+	<li><strong>Consistency:</strong> Software should be consistent in itself and to other software so people get used to it more quickly.
+	<li><strong>Discovery:</strong> Users should be able to discover functionality and information by exploring the interface and not be forced to recall information from memory.
+	<li><strong>Simplicity:</strong> Interfaces should be as simple as possible, both visually and interactively. Interfaces should avoid redundancy.
+	<li><strong>Feedback:</strong> Provide feedback about the current status.
+	<li><strong>Interruption:</strong> Interfaces should not interrupt or ask questions (no pop-ups).
+	<li><strong>Errors:</strong> Interfaces should handle errors gracefully through help and undo.
+	<li><strong>Wording:</strong> Don’t use technical jargon or overly negative or dramatic expressions.
+<p>The same system can then be used in the project’s bug tracking system to group the errors. See <a href="#Tag-bugs">7.3 Tag bugs</a>.
 </ul>
-<p>The same system can then be used in the project&apos;s bug tracking system to group the errors. See <a href="#Tag-bugs">7.3 Tag bugs</a>.</p>
 
 <h3 id="Benchmark-other-software"><a href="#Benchmark-other-software">6.4 Benchmark other software</a></h3>
-<p>Look at comparable software that is in broad use, for example proprietary alternatives to your project. Use them and find out what they do better than your project. This practice is very similar to <a href="#Dogfood">6.1 Dogfood</a>, where you intensively use your own software &ndash; but the other way around: You need to know why other software is so compelling and easy to use.</p>
-<p>This can also help when you don&apos;t know how to design a specific interaction. A project similar to yours might have already solved it elegantly. At the same time don&apos;t imitate their design and eventually their mistakes (<a href="#Thomas-2008">Thomas, 2008</a>). See <a href="#Make-things-differently">6.8 Make things differently</a>.</p>
-<p>Also get the developers of your project to use the other software so they can experience it themselves. Developers need to know which alternatives there are and what leads people to prefer one over the other. Similar to dogfooding again, when developers see themselves what another software does good, they are more motivated to improve their own.</p>
+<p>Look at comparable software that is in broad use, for example proprietary alternatives to your project. Use them and find out what they do better than your project. This practice is very similar to <a href="#Dogfood">6.1 Dogfood</a>, where you intensively use your own software – but the other way around: You need to know why other software is so compelling and easy to use.
+<p>This can also help when you don’t know how to design a specific interaction. A project similar to yours might have already solved it elegantly. At the same time don’t imitate their design and eventually their mistakes (<a href="#Thomas-2008">Thomas, 2008</a>). See <a href="#Make-things-differently">6.8 Make things differently</a>.
+<p>Also get the developers of your project to use the other software so they can experience it themselves. Developers need to know which alternatives there are and what leads people to prefer one over the other. Similar to dogfooding again, when developers see themselves what another software does good, they are more motivated to improve their own.
 
 <h3 id="Benchmark-opinions"><a href="#Benchmark-opinions">6.5 Benchmark opinions</a></h3>
-<p>Talk to people what they think and especially don&apos;t like about comparable software that is in broad use.</p>
+<p>Talk to people what they think and especially don’t like about comparable software that is in broad use.
 <ul>
-	<li>What do you currently use?</li>
-	<li>What do you do with it, which features do you use (most)?</li>
-	<li>In which situations do you use it?</li>
-	<li>What do you love about it? What do you hate about it?</li>
-	<li>What do you think about the handling?</li>
-	<li>Did you ever recommend it to friends? What did you say?</li>
-	<li>What is your overall impression of it?</li>
-	<li>What more would you like to do with it that you can&apos;t at the moment?</li>
-	<li>What would make you use an alternative?</li>
+	<li>What do you currently use?
+	<li>What do you do with it, which features do you use (most)?
+	<li>In which situations do you use it?
+	<li>What do you love about it? What do you hate about it?
+	<li>What do you think about the handling?
+	<li>Did you ever recommend it to friends? What did you say?
+	<li>What is your overall impression of it?
+	<li>What more would you like to do with it that you can’t at the moment?
+	<li>What would make you use an alternative?
 </ul>
-<p>Most important is what they love and what they hate about their current software. What does in fact annoy them, what is completely awesome? Feature wishes are less interesting because they are future predictions you need to approach with caution (<a href="#Nielsen-2001">Nielsen, 2001</a>).</p>
-<p>This is possible nearly everywhere and with nearly everyone: Chat people up at lunch, riding the train, when using rideshare. Most like to talk about what annoys them if you have a genuine interest.</p>
+<p>Most important is what they love and what they hate about their current software. What does in fact annoy them, what is completely awesome? Feature wishes are less interesting because they are future predictions you need to approach with caution (<a href="#Nielsen-2001">Nielsen, 2001</a>).
+<p>This is possible nearly everywhere and with nearly everyone: Chat people up at lunch, riding the train, when using rideshare. Most like to talk about what annoys them if you have a genuine interest.
 
 <h3 id="Hear-users"><a href="#Hear-users">6.6 Hear users</a></h3>
-<p>Subscribe to all online updates regarding your software. That way you can monitor problems, successes, what people love, what they hate and act upon them. Fixing it directly or helping with their problems is a good user experience by itself. There should be an official account for the software on the relevant platforms like Identi.ca, Diaspora and Twitter to be able to help or ask questions for clarification.</p>
-<p>People will rant, praise, ask questions, post usage instructions for others or write a blog post describing how the software works. This is very insightful as outside perspectives on your project and how others perceive it to be.</p>
-<p>I had the best results with the three searches of Identi.ca, Twitter and Google Blog. While you can view them as pages in the browser or search manually, you should subscribe to them in a news reader. <a href="http://newsblur.com">NewsBlur</a>is a good free software, web-based feed reader I use for tracking ownCloud. These are the addresses for the different search sites where you need to replace &raquo;ownCloud&laquo; with the name of your project:</p>
+<p>Subscribe to all online updates regarding your software. That way you can monitor problems, successes, what people love, what they hate and act upon them. Fixing it directly or helping with their problems is a good user experience by itself. There should be an official account for the software on the relevant platforms like Identi.ca, Diaspora and Twitter to be able to help or ask questions for clarification.
+<p>People will rant, praise, ask questions, post usage instructions for others or write a blog post describing how the software works. This is very insightful as outside perspectives on your project and how others perceive it to be.
+<p>I had the best results with the three searches of Identi.ca, Twitter and Google Blog. While you can view them as pages in the browser or search manually, you should subscribe to them in a news reader. <a href="http://newsblur.com">NewsBlur</a>is a good free software, web-based feed reader I use for tracking ownCloud. These are the addresses for the different search sites where you need to replace »ownCloud« with the name of your project:
 <ul>
-	<li>Identi.ca: <a href="http://identi.ca/search/notice/rss?q=ownCloud">identi.ca/search/notice/rss?q=ownCloud</a></li>
-	<li>Twitter: <a href="http://search.twitter.com/search.atom?q=ownCloud">search.twitter.com/search.atom?q=ownCloud</a></li>
-	<li>Google: <a>google.com/search?q=&#8221;ownCloud&#8221;&amp;tbm=blg&amp;output=atom</a></li>
+	<li><a href="http://search.twitter.com/search.atom?q=ownCloud">Twitter search</a>
+	<li><a href="http://www.google.com/#q=owncloud&amp;tbm=blg">Google blog search</a>
+	<li><a href="http://identi.ca/search/notice/rss?q=ownCloud">identi.ca search</a>
 </ul>
-<p>At first it might seem like there is the problem of advanced users again. Are people who can use Identi.ca, Twitter and blogs really our target audience? Similar to what <a href="#Benson-Mueller-Mzourek-2004">Benson, M&uuml;ller-Prove &amp; Mzourek (2004)</a> say about mailing list participants. This is less of an issue here since the listed tools are much more common and easier to use than mailing lists.</p>
-<p>When a problem or question occurs frequently, it needs to be documented and acted upon because it can be considered a severe usability issue.</p>
+<p>At first it might seem like there is the problem of advanced users again. Are people who can use Identi.ca, Twitter and blogs really our target audience? Similar to what <a href="#Benson-Mueller-Mzourek-2004">Benson, Müller-Prove & Mzourek (2004)</a> say about mailing list participants. This is less of an issue here since the listed tools are much more common and easier to use than mailing lists.
+<p>When a problem or question occurs frequently, it needs to be documented and acted upon because it can be considered a severe usability issue.
 
 <h3 id="Ask-users"><a href="#Ask-users">6.7 Ask users</a></h3>
-<p>Getting feedback can be as simple as that &ndash; just asking people what they love or hate. Really use the terms &raquo;love&laquo; and &raquo;hate&laquo; to get out the most severe things first. But you always have to filter out the actual issues from predictions as <a href="#Nielsen-2001">Nielsen (2001)</a> notes. This is especially important with <q><em>loud users</em></q>:</p>
-	<blockquote><p>User feedback can be great, but some are more loud than representative and paint their needs and assessments as those of a supposed majority.</p>
-	<p><a href="#Wilms-2011">Wilms (2011)</a></p></blockquote>
+<p>Getting feedback can be as simple as that – just asking people what they love or hate. Really use the terms »love« and »hate« to get out the most severe things first. But you always have to filter out the actual issues from predictions as <a href="#Nielsen-2001">Nielsen (2001)</a> notes. This is especially important with <q><em>loud users</em></q>:
+	<blockquote><p>User feedback can be great, but some are more loud than representative and paint their needs and assessments as those of a supposed majority.
+	<p><a href="#Wilms-2011">Wilms (2011)</a></blockquote>
 
 <h3 id="Make-things-differently"><a href="#Make-things-differently">6.8 Make things differently</a></h3>
-<p>When regarding interfaces, always ask yourself: Are these elements important? How is the information used? Can we present it in a more useful way?</p>
-<p>With an independent project, you have the chance to try out different interaction concepts and interface designs than in widespread or proprietary projects. When not many people use the software yet, you can experiment with designs and test if they are more usable than the current standard patterns. The latter might only be considered usable because they are familiar (<a href="#Raskin-1994">Raskin, 1994</a>).</p>
-<p>A good example is the Chromium browser, which innovated against its already very widespread competitor Firefox. The Chromium developers removed the menu bar and replaced it with one wrench icon which reveals the menu. Mozilla&apos;s <a href="#Faaborg-2010b">Faaborg (2010b)</a> then did research on menu item usage, following Firefox having a similarly condensed menu.</p>
-<p>Strive to have a better design than other products, especially proprietary alternatives. Don&apos;t just imitate their designs and replicate their mistakes (<a href="#Nichols-Twidale-2003">Nichols &amp; Twidale, 2003</a>; <a href="#Thomas-2008">Thomas, 2008</a>).</p>
+<p>When regarding interfaces, always ask yourself: Are these elements important? How is the information used? Can we present it in a more useful way?
+<p>With an independent project, you have the chance to try out different interaction concepts and interface designs than in widespread or proprietary projects. When not many people use the software yet, you can experiment with designs and test if they are more usable than the current standard patterns. The latter might only be considered usable because they are familiar (<a href="#Raskin-1994">Raskin, 1994</a>).
+<p>A good example is the Chromium browser, which innovated against its already very widespread competitor Firefox. The Chromium developers removed the menu bar and replaced it with one wrench icon which reveals the menu. Mozilla’s <a href="#Faaborg-2010b">Faaborg (2010b)</a> then did research on menu item usage, following Firefox having a similarly condensed menu.
+<p>Strive to have a better design than other products, especially proprietary alternatives. Don’t just imitate their designs and replicate their mistakes (<a href="#Nichols-Twidale-2003">Nichols & Twidale, 2003</a>; <a href="#Thomas-2008">Thomas, 2008</a>).
 
 <h3 id="Test-mockups"><a href="#Test-mockups">6.9 Test mockups</a></h3>
-	<blockquote><p>The earlier you find issues with your design, the easier it is to fix them. Every problem you fix with a pencil on paper is a problem you don&apos;t have to fix in code.</p>
-	<p><a href="#Mathis-2011">Mathis (2011, p. 110)</a></p></blockquote>
-<p>To test the feasibility of a design in the planning phase, test mockups on people. Give them a realistic task, be general and don&apos;t hint at the functionality of the software.</p>
-<p>It is important to not only show the mockup to people but actually go through a scenario. <a href="#Nielsen-2001">Nielsen (2001)</a> advises: <q><em>If the users have not actually tried to use the designs, they&apos;ll base their comments on surface features. Such input often contrasts strongly with feedback based on real use.</em></q><br />
-During and after the tasks you can ask them follow-up questions for them to clarify their impression of the design.</p>
+	<blockquote><p>The earlier you find issues with your design, the easier it is to fix them. Every problem you fix with a pencil on paper is a problem you don’t have to fix in code.
+	<p><a href="#Mathis-2011">Mathis (2011, p. 110)</a></blockquote>
+<p>To test the feasibility of a design in the planning phase, test mockups on people. Give them a realistic task, be general and don’t hint at the functionality of the software.
+<p>It is important to not only show the mockup to people but actually go through a scenario. <a href="#Nielsen-2001">Nielsen (2001)</a> advises: <q><em>If the users have not actually tried to use the designs, they’ll base their comments on surface features. Such input often contrasts strongly with feedback based on real use.</em></q><br />
+During and after the tasks you can ask them follow-up questions for them to clarify their impression of the design.
 <ul>
-	<li>What is your first impression? What do you like? What do you dislike?</li>
-	<li>What is this about?</li>
-	<li>What would you do first?</li>
-	<li>What do you expect behind [links]?</li>
-	<li>Do you miss information?</li>
-	<li>If you described this to a friend, what would you say?</li>
+	<li>What is your first impression? What do you like? What do you dislike?
+	<li>What is this about?
+	<li>What would you do first?
+	<li>What do you expect behind [links]?
+	<li>Do you miss information?
+	<li>If you described this to a friend, what would you say?
 </ul>
 
 <h3 id="Watch-people-use-the-software"><a href="#Watch-people-use-the-software">6.10 Watch people use the software</a></h3>
-<p>This is the classic usability testing method:</p>
-	<blockquote><p>To discover which designs work best, watch users as they attempt to perform tasks with the user interface. This method is so simple that many people overlook it, assuming that there must be something more to usability testing. [&hellip;] [U]ltimately, the way to get user data boils down to the basic rules of usability:</p>
+<p>This is the classic usability testing method:
+	<blockquote><p>To discover which designs work best, watch users as they attempt to perform tasks with the user interface. This method is so simple that many people overlook it, assuming that there must be something more to usability testing. […] [U]ltimately, the way to get user data boils down to the basic rules of usability:
 	<ul>
-		<li>Watch what people actually do.</li>
-		<li>Do not believe what people say they do.</li>
-		<li>Definitely don&apos;t believe what people predict they may do in the future.</li>
+		<li>Watch what people actually do.
+		<li>Do not believe what people say they do.
+		<li>Definitely don’t believe what people predict they may do in the future.
 	</ul>
-	<p><a href="#Nielsen-2001">Nielsen (2001)</a></p></blockquote>
-<p>As Nielsen already describes, this is actually a very simple method &ndash; provided you follow some basic guidelines:</p>
+	<p><a href="#Nielsen-2001">Nielsen (2001)</a></blockquote>
+<p>As Nielsen already describes, this is actually a very simple method – provided you follow some basic guidelines:
 <ul>
-	<li>Introduce them to what the test is about, that you will test a software.</li>
-	<li>Make them feel at ease: It is about the software and not them who are tested.</li>
-	<li>Ask them about their previous experience. Also see 6.5 Benchmark opinions.</li>
-	<li>Record issues: Note down any problems they have while interacting with the site.</li>
-	<li>It is fine when they think aloud but you have to discern actual issues from opinions.</li>
+	<li>Introduce them to what the test is about, that you will test a software.
+	<li>Make them feel at ease: It is about the software and not them who are tested.
+	<li>Ask them about their previous experience. Also see 6.5 Benchmark opinions.
+	<li>Record issues: Note down any problems they have while interacting with the site.
+	<li>It is fine when they think aloud but you have to discern actual issues from opinions.
 </ul>
-<p>They can stop the test any time they want and you should stop it when you feel there are no more useful results. Time can vary between 10 and 90 minutes.</p>
-<p>For each test you should use the same set of defined tasks to ensure that tests with multiple people are comparable. If you did 6.2 Be a new user before you can use the same tasks to also test against your personal perception of issues. This will at the same time help you to think more like a new user.</p>
-<p>It&apos;s best to start with a simple task to make participants feel at ease and act naturally. Make sure that the tasks are logical and follow a natural order.</p>
-<p>When most of the participants run into a problem it can be considered major and needs to be fixed. For clarification of issues you should also ask the participants some questions after finishing the tasks:</p>
+<p>They can stop the test any time they want and you should stop it when you feel there are no more useful results. Time can vary between 10 and 90 minutes.
+<p>For each test you should use the same set of defined tasks to ensure that tests with multiple people are comparable. If you did 6.2 Be a new user before you can use the same tasks to also test against your personal perception of issues. This will at the same time help you to think more like a new user.
+<p>It’s best to start with a simple task to make participants feel at ease and act naturally. Make sure that the tasks are logical and follow a natural order.
+<p>When most of the participants run into a problem it can be considered major and needs to be fixed. For clarification of issues you should also ask the participants some questions after finishing the tasks:
 <ul>
-	<li>What did you like most?</li>
-	<li>What didn&apos;t you like at all?</li>
-	<li>Did you have fun using it?</li>
-	<li>How is it different from [comparable software they use]?</li>
-	<li>Would you recommend it to friends? Why? Why not?</li>
-	<li>At the end of the interview, thank them for their time.</li>
+	<li>What did you like most?
+	<li>What didn’t you like at all?
+	<li>Did you have fun using it?
+	<li>How is it different from [comparable software they use]?
+	<li>Would you recommend it to friends? Why? Why not?
+	<li>At the end of the interview, thank them for their time.
 </ul>
-<p>For a demonstration of a quick usability test, see <a href="#Krug-2008">Steve Krug&apos;s (2008)</a> presentation on <a href="http://blip.tv/business-of-software/steve-krug-on-the-least-you-can-do-about-usability-1566021"><cite>the least you can do about usability</cite></a> from 43:30 on.</p>
+<p>For a demonstration of a quick usability test, see <a href="#Krug-2008">Steve Krug’s (2008)</a> presentation on <a href="http://blip.tv/business-of-software/steve-krug-on-the-least-you-can-do-about-usability-1566021"><cite>the least you can do about usability</cite></a> from 43:30 on.
 
 <h3 id="Call-for-testing"><a href="#Call-for-testing">6.11 Call for testing</a></h3>
-<p>Involving other people in testing helps in getting a wider array of user insights but at the same time needs to be coordinated correctly. Set up a page describing what you want to test, how to set everything up and introduce people to <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>.</p>
-<p>Ideally you should form a user experience team comprised of people interested in research and design. There you can have the same tasks for all interviews and compile the issues easier.</p>
-	<blockquote><p>I urge you all to show Diaspora to friends and family without explaining any functions and watch them while they use it. Make note of any problems they have while interacting with the site. Watch what they do, disregard what they say (no design advice). You just did an usability test.</p>
-	<p><a href="http://joindiaspora.com/p/316860">Me in a thread on Diaspora. 1 July 2011</a></p></blockquote>
-<p>Canonical also did some distributed user testing for Ubuntu. A central person or team responsible for analyzing the results is needed to compile recommendations based on severity. They provide instructions on how to set up the test, how to conduct it and how to report the results. More information <a href="http://wiki.ubuntu.com/Design/ArchiveTest2009">on their wiki</a>.</p>
+<p>Involving other people in testing helps in getting a wider array of user insights but at the same time needs to be coordinated correctly. Set up a page describing what you want to test, how to set everything up and introduce people to <a href="#Watch-people-use-the-software">6.10 Watch people use the software</a>.
+<p>Ideally you should form a user experience team comprised of people interested in research and design. There you can have the same tasks for all interviews and compile the issues easier.
+	<blockquote><p>I urge you all to show Diaspora to friends and family without explaining any functions and watch them while they use it. Make note of any problems they have while interacting with the site. Watch what they do, disregard what they say (no design advice). You just did an usability test.
+	<p><a href="http://joindiaspora.com/p/316860">Me in a thread on Diaspora. 1 July 2011</a></blockquote>
+<p>Canonical also did some distributed user testing for Ubuntu. A central person or team responsible for analyzing the results is needed to compile recommendations based on severity. They provide instructions on how to set up the test, how to conduct it and how to report the results. More information <a href="http://wiki.ubuntu.com/Design/ArchiveTest2009">on their wiki</a>.
 
 <h3 id="Get-longtime-users"><a href="#Get-longtime-users">6.12 Get longtime users</a></h3>
-<p>For general feedback and to uncover more issues with new designs on the fly, there need to be people using the software regularly. Give the software to interested people, friends and family and encourage them to complain when there&apos;s something annoying.</p>
-<p>If the project is a web application, be sure to set up a server to be able to give out accounts. There you can always update with the latest versions and interface changes. In giving out the account, mention that it&apos;s only a personal installation which you run for yourself and a few other people. As much as you take care, you can not guarantee against data loss so they should also store it elsewhere. Also say they should let you know when there are any problems.</p>
-<p>Feedback might be hard to get, even when encouraging people to contact you about problems. Thus, when meeting someone who has been using the software, you should ask them about it or do a quick usability test and check how the current state of functionality and interface fares.</p>
-<p>Longtime users uncover problems which are not immediately obvious in a usability test where the person uses the software for the first time only. Also, application developers dogfooding are so used to the basic functionality they might not even think about it anymore (<a href="#Johansson-2005">Johansson, 2005</a>).</p>
+<p>For general feedback and to uncover more issues with new designs on the fly, there need to be people using the software regularly. Give the software to interested people, friends and family and encourage them to complain when there’s something annoying.
+<p>If the project is a web application, be sure to set up a server to be able to give out accounts. There you can always update with the latest versions and interface changes. In giving out the account, mention that it’s only a personal installation which you run for yourself and a few other people. As much as you take care, you can not guarantee against data loss so they should also store it elsewhere. Also say they should let you know when there are any problems.
+<p>Feedback might be hard to get, even when encouraging people to contact you about problems. Thus, when meeting someone who has been using the software, you should ask them about it or do a quick usability test and check how the current state of functionality and interface fares.
+<p>Longtime users uncover problems which are not immediately obvious in a usability test where the person uses the software for the first time only. Also, application developers dogfooding are so used to the basic functionality they might not even think about it anymore (<a href="#Johansson-2005">Johansson, 2005</a>).
 
 <h3 id="Monitor-users"><a href="#Monitor-users">6.13 Monitor users</a></h3>
-<p>I was actually very hesitant to include this since I highly value privacy. I kept it since results are anonymized and aggregated.</p>
-<p>For the web application and web site of the project you can use the free &amp; open source <a href="http://labsmedia.com/clickheat">ClickHeat</a> suite. It can be hosted on the same server and included in the site you want to monitor via JavaScript snippet.</p>
-<p>This can help prioritize feature development and fixes. In a heatmap test with the public ownCloud demo it was apparent that the search box was not used even a single time and is thus lower in priority.</p>
+<p>I was actually very hesitant to include this since I highly value privacy. I kept it since results are anonymized and aggregated.
+<p>For the web application and web site of the project you can use the free & open source <a href="http://labsmedia.com/clickheat">ClickHeat</a> suite. It can be hosted on the same server and included in the site you want to monitor via JavaScript snippet.
+<p>This can help prioritize feature development and fixes. In a heatmap test with the public ownCloud demo it was apparent that the search box was not used even a single time and is thus lower in priority.
 
 
 
 <h2 id="Reporting"><a href="#Reporting">7. Reporting</a></h2>
-<p>An advantage of free software development is the agile communication. You are able to report your results fast, without needing to compile a report or presentation. You can directly speak to the developers about it and make fast iterations based on suggestions. This allows for lots of small tests helping to gradually improve the interface.</p>
-<p>Ideally, you should directly give suggestions on how to improve the interface. As <a href="#Lewis-2006">Lewis (2006)</a> mentions, usability issues need to be interpreted with caution. There should always be follow-up tests to check if the changes had a good effect on usability.</p>
-	<blockquote><p>[&hellip;] usability practitioners must conduct their usability tests as carefully as possible, document their methods completely, and show proper caution when interpreting their results.</p>
-	<p><a href="#Lewis-2006">Lewis (2006, p. 6)</a></p></blockquote>
-<p>To prioritize issues, <a href="#Nielsen-2005b">Nielsen (2005b</a>) suggests rating their severity, judging from:</p>
+<p>An advantage of free software development is the agile communication. You are able to report your results fast, without needing to compile a report or presentation. You can directly speak to the developers about it and make fast iterations based on suggestions. This allows for lots of small tests helping to gradually improve the interface.
+<p>Ideally, you should directly give suggestions on how to improve the interface. As <a href="#Lewis-2006">Lewis (2006)</a> mentions, usability issues need to be interpreted with caution. There should always be follow-up tests to check if the changes had a good effect on usability.
+	<blockquote><p>[…] usability practitioners must conduct their usability tests as carefully as possible, document their methods completely, and show proper caution when interpreting their results.
+	<p><a href="#Lewis-2006">Lewis (2006, p. 6)</a></blockquote>
+<p>To prioritize issues, <a href="#Nielsen-2005b">Nielsen (2005b</a>) suggests rating their severity, judging from:
 <ul>
-	<li>How <strong>frequent</strong> the issue occurs. Would it happen to everyone?</li>
-	<li>How it <strong>impacts</strong> the user. Is it easy to circumvent or difficult?</li>
-	<li>How <strong>persistent</strong> an issue is. Will users have that issue repeatedly?</li>
+	<li>How <strong>frequent</strong> the issue occurs. Would it happen to everyone?
+	<li>How it <strong>impacts</strong> the user. Is it easy to circumvent or difficult?
+	<li>How <strong>persistent</strong> an issue is. Will users have that issue repeatedly?
 </ul>
 
 <h3 id="List-issues"><a href="#List-issues">7.1 List issues</a></h3>
-<p>Openly communicate your findings with a list of usability issues.</p>
-<p>Sort any issues according to the part of the application they occur in. This is important to find out which issues are present for multiple participants and should thus be considered major.</p>
-<p>Categories could be:</p>
+<p>Openly communicate your findings with a list of usability issues.
+<p>Sort any issues according to the part of the application they occur in. This is important to find out which issues are present for multiple participants and should thus be considered major.
+<p>Categories could be:
 <ul>
-	<li>Download &amp; Installation</li>
-	<li>Registration &amp; Log in</li>
-	<li>Upload</li>
-	<li>Sharing</li>
-	<li>Search</li>
-	<li>&hellip;</li>
+	<li>Download & Installation
+	<li>Registration & Log in
+	<li>Upload
+	<li>Sharing
+	<li>Search
+	<li>…
 </ul>
-<p>It is not important who had a specific issue but much more how many people ran into it. If there is issue overlap, it is directly visible and can be marked as affecting more people.</p>
-<p>When collaborating with more testers or in a user experience team, it is useful to use a collaborative editor like the free software web application <a href="http://etherpad.org">EtherPad</a> to collect results. You can get free team spaces and pads at the community-maintained <a href="http://titanpad.com">TitanPad</a>.</p>
+<p>It is not important who had a specific issue but much more how many people ran into it. If there is issue overlap, it is directly visible and can be marked as affecting more people.
+<p>When collaborating with more testers or in a user experience team, it is useful to use a collaborative editor like the free software web application <a href="http://etherpad.org">EtherPad</a> to collect results. You can get free team spaces and pads at the community-maintained <a href="http://titanpad.com">TitanPad</a>.
 
 <h3 id="List-tasks"><a href="#List-tasks">7.2 List tasks</a></h3>
-<p>The next step from listing issues is analyzing the problems, derive suggestions from them and have actionable tasks to fix the issues.</p>
-<p>The tasks should also be sorted by the section of the application they refer to. If the project has an issue tracking system where feature requests are tracked as well, use that for listing and prioritizing the tasks. If there are easy tasks, tag them accordingly. This will also attract potential contributors (<a href="#Cetin-et-al-2006">&Ccedil;etin et al., 2006</a>).</p>
+<p>The next step from listing issues is analyzing the problems, derive suggestions from them and have actionable tasks to fix the issues.
+<p>The tasks should also be sorted by the section of the application they refer to. If the project has an issue tracking system where feature requests are tracked as well, use that for listing and prioritizing the tasks. If there are easy tasks, tag them accordingly. This will also attract potential contributors (<a href="#Cetin-et-al-2006">Çetin et al., 2006</a>).
 
 <h3 id="Tag-bugs"><a href="#Tag-bugs">7.3 Tag bugs</a></h3>
-<p>Use tags in the project&apos;s bug tracking system to identify and group issues according to common interface problems. This is similar to applying heuristics in review and you can use the same terminology for that. See <a href="#Review">6.3 Review</a>.</p>
-<p>For this to work correctly not everyone should be able to set general &raquo;usability&laquo; tags but there needs to be a person or team coordinating the review and tagging of those bugs or supposed usability issues will clutter the tracker (<a href="#Trudelle-2002">Trudelle, 2002</a>).</p>
-<p>Existing bugs should be reviewed and identified according to their specific usability problem. If it is apparent that the fix for a problem is very trivial, additionally use the paper cut tag. See 7.4 Identify paper cuts.</p>
-<p>Tagging bugs helps quantify usability issues and make them apparent to developers in an objective way:</p>
-	<blockquote><p>Just as developers currently have a shared vocabulary to describe good and bad with concepts such as performance, data loss, and crashing, usability heuristics can introduce additional concepts, like consistency, jargon, and feedback.</p>
-	<p><a href="#Faaborg-2010a">Faaborg (2010a)</a></p></blockquote>
-<p>Publicly dealing with usability in a way that is highly visible to developers contributes to the project being perceived as caring for user experience and can attract new developers interested in that.</p>
+<p>Use tags in the project’s bug tracking system to identify and group issues according to common interface problems. This is similar to applying heuristics in review and you can use the same terminology for that. See <a href="#Review">6.3 Review</a>.
+<p>For this to work correctly not everyone should be able to set general »usability« tags but there needs to be a person or team coordinating the review and tagging of those bugs or supposed usability issues will clutter the tracker (<a href="#Trudelle-2002">Trudelle, 2002</a>).
+<p>Existing bugs should be reviewed and identified according to their specific usability problem. If it is apparent that the fix for a problem is very trivial, additionally use the paper cut tag. See 7.4 Identify paper cuts.
+<p>Tagging bugs helps quantify usability issues and make them apparent to developers in an objective way:
+	<blockquote><p>Just as developers currently have a shared vocabulary to describe good and bad with concepts such as performance, data loss, and crashing, usability heuristics can introduce additional concepts, like consistency, jargon, and feedback.
+	<p><a href="#Faaborg-2010a">Faaborg (2010a)</a></blockquote>
+<p>Publicly dealing with usability in a way that is highly visible to developers contributes to the project being perceived as caring for user experience and can attract new developers interested in that.
 
 <h3 id="Identify-paper-cuts"><a href="#Identify-paper-cuts">7.4 Identify paper cuts</a></h3>
-<p>The concept of <cite>paper cut</cite> usability bugs was developed by David Siegel, then on the user experience team at Canonical:</p>
-	<blockquote><p>[&hellip;] a paper cut is a bug that will improve user experience if fixed, is small enough for users to become habituated to it, and is trivial to fix.</p>
-	<p><a href="#Siegel-2009">Siegel (2009)</a></p></blockquote>
-<p>In accordance to what <a href="#Johansson-2005">Johansson (2005)</a> notes, it is mostly these small issues which are ignored by developers and experienced users but a pain for people who never used the software before.</p>
-<p>To make it directly visible to contributors which issues are easily fixable, denote paper cuts when listing tasks or tagging in the bug tracker. While seasoned developers might care more about developing new things this is a good help for new contributors.</p>
+<p>The concept of <cite>paper cut</cite> usability bugs was developed by David Siegel, then on the user experience team at Canonical:
+	<blockquote><p>[…] a paper cut is a bug that will improve user experience if fixed, is small enough for users to become habituated to it, and is trivial to fix.
+	<p><a href="#Siegel-2009">Siegel (2009)</a></blockquote>
+<p>In accordance to what <a href="#Johansson-2005">Johansson (2005)</a> notes, it is mostly these small issues which are ignored by developers and experienced users but a pain for people who never used the software before.
+<p>To make it directly visible to contributors which issues are easily fixable, denote paper cuts when listing tasks or tagging in the bug tracker. While seasoned developers might care more about developing new things this is a good help for new contributors.
 <p>This initiative works very well for Ubuntu, they iterated it for every release as well as specific ones for important software packages. There is a dedicated <cite>Papercuts Ninja</cite> team for people interested in fixing paper cuts which acts as a starting point for new developers. See also the <a href="http://wiki.ubuntu.com/PaperCut">wiki page</a>.<br />
-Similar to <a href="#Tag-bugs">7.3 Tag bugs</a>, this outspoken focus on small usability bugs also helps to create general consideration for these issues.</p>
+Similar to <a href="#Tag-bugs">7.3 Tag bugs</a>, this outspoken focus on small usability bugs also helps to create general consideration for these issues.
 
 <h3 id="Provide-guidelines"><a href="#Provide-guidelines">7.5 Provide guidelines</a></h3>
-<p>Generalize the look and elements used in the application. It should be easy for existing developers and new contributors to make the interface consistent just by following some basic style guide.</p>
-<p>You can find more sophisticated human interface guidelines for some projects available online:</p>
+<p>Generalize the look and elements used in the application. It should be easy for existing developers and new contributors to make the interface consistent just by following some basic style guide.
+<p>You can find more sophisticated human interface guidelines for some projects available online:
 <ul>
-	<li><a href="http://developer.gnome.org/hig-book/3.0">GNOME</a>, <a href="http://techbase.kde.org/Projects/Usability/HIG">KDE</a>, <a href="http://developer.android.com/guide/practices/ui_guidelines">Android</a> &amp; <a href="http://wiki.laptop.org/go/OLPC_Human_Interface_Guidelines">OLPC</a></li>
-	<li><a href="http://developer.apple.com/library/mac/#documentation/UserExperience/Conceptual/AppleHIGuidelines">Mac OS X</a> &amp; <a href="http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG">iOS</a></li>
-	<li><a href="http://msdn.microsoft.com/en-us/library/aa511258.aspx">Windows 7</a> &amp; <a href="http://msdn.microsoft.com/en-us/library/hh202915(v=vs.92).aspx">Windows Phone</a></li>
+	<li><a href="http://developer.gnome.org/hig-book/3.0">GNOME</a>, <a href="http://techbase.kde.org/Projects/Usability/HIG">KDE</a>, <a href="http://developer.android.com/guide/practices/ui_guidelines">Android</a> & <a href="http://wiki.laptop.org/go/OLPC_Human_Interface_Guidelines">OLPC</a>
+	<li><a href="http://developer.apple.com/library/mac/#documentation/UserExperience/Conceptual/AppleHIGuidelines">Mac OS X</a> & <a href="http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG">iOS</a>
+	<li><a href="http://msdn.microsoft.com/en-us/library/aa511258.aspx">Windows 7</a> & <a href="http://msdn.microsoft.com/en-us/library/hh202915(v=vs.92).aspx">Windows Phone</a>
 </ul>
-<p>While these are very extensive, in the beginning it is enough to document design decisions and their reasons to compile a quick design introduction.</p>
+<p>While these are very extensive, in the beginning it is enough to document design decisions and their reasons to compile a quick design introduction.
 
 <h3 id="Sketch-ideas"><a href="#Sketch-ideas">7.6 Sketch ideas</a></h3>
-<p>When the user tests or personal experience reveal deeper problems with the design, sketching the suggestions is best to visualize them to other people on the projects. Even very quick and dirty mockups can help a lot.</p>
-<p>This sketch started off the ownCloud file manager redesign. I openly communicated it to the mailing list together with a writeup of changes and reasons.</p>
-<p>While your design is not yet tested in implementation, be wary of people evaluating it from the mockup. With a fundamental design change many people will criticize it for being different than the current state (<a href="#Nichols-Twidale-2003">Nichols &amp; Twidale, 2003</a>). At the same time, consider that you didn&apos;t see your designs in production yet either. You can only provide the reasoning which lead you to make the decisions and changing the design as you did. Also see <a href="#Test-mockups">6.9 Test mockups</a>.</p>
+<p>When the user tests or personal experience reveal deeper problems with the design, sketching the suggestions is best to visualize them to other people on the projects. Even very quick and dirty mockups can help a lot.
+<p>This sketch started off the ownCloud file manager redesign. I openly communicated it to the mailing list together with a writeup of changes and reasons.
+<p>While your design is not yet tested in implementation, be wary of people evaluating it from the mockup. With a fundamental design change many people will criticize it for being different than the current state (<a href="#Nichols-Twidale-2003">Nichols & Twidale, 2003</a>). At the same time, consider that you didn’t see your designs in production yet either. You can only provide the reasoning which lead you to make the decisions and changing the design as you did. Also see <a href="#Test-mockups">6.9 Test mockups</a>.
 
 <h3 id="Fix-small-problems-yourself"><a href="#Fix-small-problems-yourself">7.7 Fix small problems yourself</a></h3>
-<p>This is important to be respected by the developers and be in accordance with the meritocracy. If you can fix issues yourself you are also not reliant on the developers doing it for you and can iterate even quicker when there is a small show-stopper.</p>
-<p>Some technical knowledge of the project can also help in understanding underlying technical issues which may come up in usability testing. Then you can easily judge if it is a problem with the interaction concept of the application or a bug.</p>
-	<blockquote><p>I want to make clear that design and software development belong together. That one flows into the other. That no good designer in this realm can stay entirely ignorant of implementation issues, and that no competent programmer can stay out of design.</p>
-	<p><a href="#Wilms-2011">Wilms (2011)</a></p></blockquote>
-<p>While <a href="#Nelson-1990">Nelson&apos;s (1990)</a> <q><em>dictatorial artists with full say on the final cut</em></q> are needed to coordinate the design decisions, in an independent free software project everyone is a volunteer and does not want to be bossed around. If you engage in fixing issues yourself and not only report the problems, developers are more likely to acknowledge what you do.</p>
+<p>This is important to be respected by the developers and be in accordance with the meritocracy. If you can fix issues yourself you are also not reliant on the developers doing it for you and can iterate even quicker when there is a small show-stopper.
+<p>Some technical knowledge of the project can also help in understanding underlying technical issues which may come up in usability testing. Then you can easily judge if it is a problem with the interaction concept of the application or a bug.
+	<blockquote><p>I want to make clear that design and software development belong together. That one flows into the other. That no good designer in this realm can stay entirely ignorant of implementation issues, and that no competent programmer can stay out of design.
+	<p><a href="#Wilms-2011">Wilms (2011)</a></blockquote>
+<p>While <a href="#Nelson-1990">Nelson’s (1990)</a> <q><em>dictatorial artists with full say on the final cut</em></q> are needed to coordinate the design decisions, in an independent free software project everyone is a volunteer and does not want to be bossed around. If you engage in fixing issues yourself and not only report the problems, developers are more likely to acknowledge what you do.
 
 <h3 id="Work-with-one-developer"><a href="#Work-with-one-developer">7.8 Work with one developer</a></h3>
-<p>Find a developer willing to partner with you on a combined usability session and coding sprint. You can have quick iterations to implement interface ideas, fix problems or evaluate the results of the usability testing session.</p>
-<p>In the process, you can learn about development and the developer will learn about your work. In making your work directly visible to other developers you build trust and make it more likely for them to respect your suggestions and eventually implement them (<a href="#Andreasen-et-al-2006">Andreasen et al., 2006</a>).</p>
-<p>Do this one-on-one working with every main developer at least once to get them accustomed to user-centered design. That way you also learn how each developer thinks about the methodology and how you can help them make interfaces easier to use from the outset.</p>
+<p>Find a developer willing to partner with you on a combined usability session and coding sprint. You can have quick iterations to implement interface ideas, fix problems or evaluate the results of the usability testing session.
+<p>In the process, you can learn about development and the developer will learn about your work. In making your work directly visible to other developers you build trust and make it more likely for them to respect your suggestions and eventually implement them (<a href="#Andreasen-et-al-2006">Andreasen et al., 2006</a>).
+<p>Do this one-on-one working with every main developer at least once to get them accustomed to user-centered design. That way you also learn how each developer thinks about the methodology and how you can help them make interfaces easier to use from the outset.
 
 <h3 id="Evaluate-new-features"><a href="#Evaluate-new-features">7.9 Evaluate new features</a></h3>
-<p>Establish a workflow for going from a planned or suggested feature over implementation to user research and improvements.</p>
+<p>Establish a workflow for going from a planned or suggested feature over implementation to user research and improvements.
 <ol>
-	<li>Feature is suggested by developer or user, gets evaluated in review.</li>
-	<li>Feature is implemented by developers.</li>
-	<li>Call for user testing on new feature. Results are gathered by UX team.</li>
-	<li>Improvements are implemented and tested again.</li>
+	<li>Feature is suggested by developer or user, gets evaluated in review.
+	<li>Feature is implemented by developers.
+	<li>Call for user testing on new feature. Results are gathered by UX team.
+	<li>Improvements are implemented and tested again.
 </ol>
-<p>New functionality needs to be tested thoroughly, especially if it addresses a previously found usability issue. This is best done in cooperation with the developers to already evaluate the features before implementation and prioritize the results of research.</p>
-<p>With new features it is important to discern actual usability issues from problems people have (or think they have) just because the interface is different than it was before. For that, you should ideally test with people who never used the old interface and thus don&apos;t compare the differences.</p>
-<p>This pattern was developed in collaboration with Ilya Zhitomirskiy of Diaspora. Also see <a href="#Thomas-2008">Thomas (2008)</a>: <q><em>Establish a process for usability specialists to contribute to a project.</em></q></p>
+<p>New functionality needs to be tested thoroughly, especially if it addresses a previously found usability issue. This is best done in cooperation with the developers to already evaluate the features before implementation and prioritize the results of research.
+<p>With new features it is important to discern actual usability issues from problems people have (or think they have) just because the interface is different than it was before. For that, you should ideally test with people who never used the old interface and thus don’t compare the differences.
+<p>This pattern was developed in collaboration with Ilya Zhitomirskiy of Diaspora. Also see <a href="#Thomas-2008">Thomas (2008)</a>: <q><em>Establish a process for usability specialists to contribute to a project.</em></q>
 
 <h3 id="Have-a-hackfest"><a href="#Have-a-hackfest">7.10 Have a hackfest</a></h3>
-<p>A hackfest or sprint is a get-together of project contributors which can be a few hours or a few days, ideally on a weekend. There, everyone can talk directly to each other, proposals and problems can be discussed in the group. Developers can ask interface and usability people directly how to ideally implement something in the frontend.</p>
-	<blockquote><p>When developers are in the same room, they can discuss interaction design using whiteboards, paper prototypes, spoken words, and gestures. But on the Internet, these often aren&apos;t available, making discussions much slower and prone to misunderstandings.</p>
-	<p><a href="#Thomas-2008">Thomas (2008)</a></p></blockquote>
-<p>Hackfests are ideal to present results of usability testing or reviews you did. You can display your work which is not necessarily measurable in lines of code. This helps to build the trust which is most important in cooperating with free software developers:</p>
-	<blockquote><p>Relevantive stated that when there was no face-to-face contact with the other person, building trust could be the most strenuous task of co-operating with OSS developers.</p>
-	<p><a href="#Andreasen-et-al-2006">Andreasen et al. (2006, p. 309)</a></p></blockquote>
+<p>A hackfest or sprint is a get-together of project contributors which can be a few hours or a few days, ideally on a weekend. There, everyone can talk directly to each other, proposals and problems can be discussed in the group. Developers can ask interface and usability people directly how to ideally implement something in the frontend.
+	<blockquote><p>When developers are in the same room, they can discuss interaction design using whiteboards, paper prototypes, spoken words, and gestures. But on the Internet, these often aren’t available, making discussions much slower and prone to misunderstandings.
+	<p><a href="#Thomas-2008">Thomas (2008)</a></blockquote>
+<p>Hackfests are ideal to present results of usability testing or reviews you did. You can display your work which is not necessarily measurable in lines of code. This helps to build the trust which is most important in cooperating with free software developers:
+	<blockquote><p>Relevantive stated that when there was no face-to-face contact with the other person, building trust could be the most strenuous task of co-operating with OSS developers.
+	<p><a href="#Andreasen-et-al-2006">Andreasen et al. (2006, p. 309)</a></blockquote>
 
 
 
 <h2 id="Conclusion"><a href="#Conclusion">8. Conclusion</a></h2>
-<p>There is a wide array of low-cost usability methods available which also very much fits in the free software development environment. It does not necessarily need usability experts to carry these methods out, just solid determination to make the software better.</p>
-<p>I hope this document helps to increase awareness about the importance of user research in the free &amp; open source software community and at the same time offer the tools to put it into practice. I encourage everyone to use the methods and give feedback on them. As said in the introduction, this document will be released publicly on my website at jancborchardt.wordpress.com and then constantly evolve with things I and other usability practitioners learn.</p>
-<p>We in the free &amp; open source software community should always keep in mind that we have one common goal: Freedom for people. And that freedom offered by the software is only available to users if the software is properly usable.</p>
+<p>There is a wide array of low-cost usability methods available which also very much fits in the free software development environment. It does not necessarily need usability experts to carry these methods out, just solid determination to make the software better.
+<p>I hope this document helps to increase awareness about the importance of user research in the free & open source software community and at the same time offer the tools to put it into practice. I encourage everyone to use the methods and give feedback on them. As said in the introduction, this document will be released publicly on my website at jancborchardt.wordpress.com and then constantly evolve with things I and other usability practitioners learn.
+<p>We in the free & open source software community should always keep in mind that we have one common goal: Freedom for people. And that freedom offered by the software is only available to users if the software is properly usable.
 
 
 
 <h2 id="References"><a href="#References">9. References</a></h2>
-<p id="Andreasen-et-al-2006"><strong>Andreasen, M. S., Nielsen, H. V., Schrøder, S. O., Stage, J. (2006).</strong> <a href="http://itc.ktu.lt/itc353/Stage353.pdf">Usability in Open Source Software Development: Opinions and Practice.</a> Retrieved 30 June 2011.</p>
-<p id="Balasz-2011"><strong>Balasz, B. (2011).</strong> <a href="http://opensource-usability-labs.com/tine20/2011/03/18/designer-vs-developer">Designer vs. Developer?</a> Retrieved on 30 June 2011.</p>
-<p id="Benson-Mueller-Mzourek-2004"><strong>Benson, C., M&uuml;ller-Prove, M., Mzourek, J. (2004).</strong> <a href="http://mprove.de/script/04/chi">Professional Usability in Open Source Projects: GNOME, OpenOffice.org, NetBeans.</a> Retrieved 30 June 2011.</p>
-<p id="Cetin-et-al-2006"><strong>&Ccedil;etin, G., Erkan, K., Verzulli, D., Ozirkovskyy, L. (2006).</strong> <a href="http://tossad.org/content/download/1381/6882/file/tOssad_D19_V1.pdf">Usability Involvement in F/Oss Projects.</a> Retrieved 30 June 2011.</p>
-<p id="Day-2010"><strong>Day, A. (2010).</strong> <a href="http://afaikblog.wordpress.com/user-experience-advocates">User Experience Advocates.</a> Retrieved 30 June 2011.</p>
-<p id="Faaborg-2010a"><strong>Faaborg, A. (2010a).</strong> <a href="http://uxmag.com/strategy/quantifying-usability">Quantifying Usability: How injecting usability principles into standard bug tracking software can reshape how your organization approaches UX design.</a> Retrieved 30 June 2011.</p>
-<p id="Faaborg-2010b"><strong>Faaborg, A. (2010b).</strong> <a href="http://testpilot.mozillalabs.com/testcases/menuitemusage">Firefox 3.5 &amp; 3.6 Menu Item Usage Study.</a> Retrieved 30 June 2011.</p>
-<p id="Frishberg-et-al-2002"><strong>Frishberg, N., Dirks, A. M., Benson, C., Nickell, S., Smith, S. (2002).</strong> <a href="http://pascal.case.unibz.it/retrieve/3786/p932-frishberg.pdf">Getting to Know You: Open Source Development Meets Usability.</a> Retrieved 30 June 2011.</p>
-<p id="Johansson-2005"><strong>Johansson, R. (2005).</strong> <a href="http://456bereastreet.com/archive/200505/usability_testing_without_a_budget">Usability testing without a budget.</a> Retrieved 30 June 2011.</p>
-<p id="Krug-2008"><strong>Krug, S. (2008).</strong> <a href="http://blip.tv/business-of-software/steve-krug-on-the-least-you-can-do-about-usability-1566021">The least you can do about usability.</a> Retrieved 30 June 2011.</p>
-<p id="Lewis-2006"><strong>Lewis, J. R. (2006).</strong> <a href="http://drjim.0catch.com/usabilitytesting-ral.pdf">Usability Testing.</a> Retrieved on 30 June 2011.</p>
-<p id="Mathis-2011"><strong>Mathis, L. (2011).</strong> <a href="http://media.pragprog.com/titles/lmuse/prototype.pdf">Designed for Use.</a> Retrieved on 24 August 2011.</p>
-<p id="Morrow-2011"><strong>Morrow, J. L. (2011).</strong> <a href="http://jboriss.wordpress.com/user-testing-in-the-wild">User Testing in the Wild: Joe&apos;s First Computer Encounter.</a> Retrieved 7 July 2011.</p>
-<p id="Nelson-1990"><strong>Nelson, T. (1990).</strong> <a href="http://ui.korea.ac.kr/Board/Upload/theorder_n2.pdf">The Right Way to Think About Software Design. In Laurel, B. (Ed.), The Art of Human-Computer Interface Design (p. 235-243). Reading: Addison-Wesley.</a> Retrieved 30 June 2011.</p>
-<p id="Nichols-Twidale-2003"><strong>Nichols, D. M., Twidale, M. B. (2003).</strong> <a href="http://firstmonday.org/article/view/1018/939">The Usability of Open Source Software.</a> Retrieved 30 June 2011.</p>
-<p id="Nielsen-2005a"><strong>Nielsen, J. (2005a).</strong> <a href="http://useit.com/papers/heuristic/heuristic_list.html">Ten Usability Heuristics.</a> Retrieved on 30 June 2011.</p>
-<p id="Nielsen-2005b"><strong>Nielsen, J. (2005b).</strong> <a href="http://useit.com/papers/heuristic/severityrating.html">Severity Ratings for Usability Problems.</a> Retrieved 30 June 2011.</p>
-<p id="Nielsen-2001"><strong>Nielsen, J. (2001).</strong> <a href="http://useit.com/alertbox/20010805.html">First Rule of Usability? Don&apos;t Listen to Users.</a> Retrieved on 30 June 2011.</p>
-<p id="Nielsen-2000"><strong>Nielsen, J. (2000).</strong> <a href="http://useit.com/alertbox/20000319.html">Why You Only Need to Test with 5 Users.</a> Retrieved 30 June 2011.</p>
-<p id="Nielsen-1994"><strong>Nielsen, J. (1994).</strong> Heuristic evaluation. In Nielsen, J., and Mack, R.L. (Eds.), Usability Inspection Methods. New York: John Wiley &amp; Sons.</p>
-<p id="Pennington-2002"><strong>Pennington, H. (2002).</strong> <a href="http://pair.com/rhp/free-software-ui.html">Free software UI.</a> Retrieved 30 June 2011.</p>
-<p id="Raskin-1994"><strong>Raskin, J. (1994).</strong> <a href="http://asktog.com/papers/raskinintuit.html">Intuitive Equals Familiar.</a> Retrieved 30 June 2011.</p>
-<p id="Raymond-1997"><strong>Raymond, E. S. (1997).</strong> <a href="http://catb.org/~esr/writings/homesteading/cathedral-bazaar">The Cathedral and the Bazaar.</a> Retrieved on 30 June 2011.</p>
-<p id="Reitmayr-Balasz-Muehlig-2006"><strong>Reitmayr, E., Balasz, B., M&uuml;hlig, J. (2006).</strong> <a href="http://tossad.org/tossad/events/tossad_2006/proceedings">Integrating Usability with Open Source Software Development: Case Studies from the Initiative OpenUsability.</a> In &ouml;zel, B., &Ccedil;ilingir, C. B., Erkan, K. (Eds.), Oss 2006 tOssad workshop proceedings (p. 65&ndash;72). Retrieved 30 June 2011.</p>
-<p id="Siegel-2010"><strong>Siegel, D. (2010).</strong> <a href="http://davidsiegel.org/announcing-ux-advocates">Announcing the User Experience Advocates Project.</a> Retrieved 30 June.</p>
-<p id="Siegel-2009"><strong>Siegel, D. (2009).</strong> <a href="http://davidsiegel.org/papercut">Paper Cut.</a> Retrieved 30 June 2011.</p>
-<p id="Stallman-1986"><strong>Stallman, R. (1986).</strong> <a href="http://gnu.org/philosophy/free-sw.html">The Free Software Definition.</a> Retrieved 30 June 2011.</p>
-<p id="Thomas-2008"><strong>Thomas, M. P. (2008).</strong> <a href="http://web.archive.org/web/20090625141639/http://mpt.net.nz/archive/2008/08/01/free-software-usability">Why Free Software has poor usability, and how to improve it.</a> Retrieved on 30 June 2011.</p>
-<p id="Trudelle-2002"><strong>Trudelle, P. (2002).</strong> <a href="http://iol.ie/~calum/chi2002/peter_trudelle.txt">Shall We Dance? Ten Lessons Learned from Netscape&apos;s Flirtation with Open Source UI Development.</a> Retrieved 30 June 2011.</p>
-<p id="Wilms-2011"><strong>Wilms, T. (2011).</strong> <a href="http://thorwil.wordpress.com/design-boost">Design-Boost.</a> Retrieved on 30 June 2011.</p>
+<p id="Andreasen-et-al-2006"><strong>Andreasen, M. S., Nielsen, H. V., Schrøder, S. O., Stage, J. (2006).</strong> <a href="http://itc.ktu.lt/itc353/Stage353.pdf">Usability in Open Source Software Development: Opinions and Practice.</a> Retrieved 30 June 2011.
+<p id="Balasz-2011"><strong>Balasz, B. (2011).</strong> <a href="http://opensource-usability-labs.com/tine20/2011/03/18/designer-vs-developer">Designer vs. Developer?</a> Retrieved on 30 June 2011.
+<p id="Benson-Mueller-Mzourek-2004"><strong>Benson, C., Müller-Prove, M., Mzourek, J. (2004).</strong> <a href="http://mprove.de/script/04/chi">Professional Usability in Open Source Projects: GNOME, OpenOffice.org, NetBeans.</a> Retrieved 30 June 2011.
+<p id="Cetin-et-al-2006"><strong>Çetin, G., Erkan, K., Verzulli, D., Ozirkovskyy, L. (2006).</strong> <a href="http://tossad.org/content/download/1381/6882/file/tOssad_D19_V1.pdf">Usability Involvement in F/Oss Projects.</a> Retrieved 30 June 2011.
+<p id="Day-2010"><strong>Day, A. (2010).</strong> <a href="http://afaikblog.wordpress.com/user-experience-advocates">User Experience Advocates.</a> Retrieved 30 June 2011.
+<p id="Faaborg-2010a"><strong>Faaborg, A. (2010a).</strong> <a href="http://uxmag.com/strategy/quantifying-usability">Quantifying Usability: How injecting usability principles into standard bug tracking software can reshape how your organization approaches UX design.</a> Retrieved 30 June 2011.
+<p id="Faaborg-2010b"><strong>Faaborg, A. (2010b).</strong> <a href="http://testpilot.mozillalabs.com/testcases/menuitemusage">Firefox 3.5 & 3.6 Menu Item Usage Study.</a> Retrieved 30 June 2011.
+<p id="Frishberg-et-al-2002"><strong>Frishberg, N., Dirks, A. M., Benson, C., Nickell, S., Smith, S. (2002).</strong> <a href="http://pascal.case.unibz.it/retrieve/3786/p932-frishberg.pdf">Getting to Know You: Open Source Development Meets Usability.</a> Retrieved 30 June 2011.
+<p id="Johansson-2005"><strong>Johansson, R. (2005).</strong> <a href="http://456bereastreet.com/archive/200505/usability_testing_without_a_budget">Usability testing without a budget.</a> Retrieved 30 June 2011.
+<p id="Krug-2008"><strong>Krug, S. (2008).</strong> <a href="http://blip.tv/business-of-software/steve-krug-on-the-least-you-can-do-about-usability-1566021">The least you can do about usability.</a> Retrieved 30 June 2011.
+<p id="Lewis-2006"><strong>Lewis, J. R. (2006).</strong> <a href="http://drjim.0catch.com/usabilitytesting-ral.pdf">Usability Testing.</a> Retrieved on 30 June 2011.
+<p id="Mathis-2011"><strong>Mathis, L. (2011).</strong> <a href="http://media.pragprog.com/titles/lmuse/prototype.pdf">Designed for Use.</a> Retrieved on 24 August 2011.
+<p id="Morrow-2011"><strong>Morrow, J. L. (2011).</strong> <a href="http://jboriss.wordpress.com/user-testing-in-the-wild">User Testing in the Wild: Joe’s First Computer Encounter.</a> Retrieved 7 July 2011.
+<p id="Nelson-1990"><strong>Nelson, T. (1990).</strong> <a href="http://ui.korea.ac.kr/Board/Upload/theorder_n2.pdf">The Right Way to Think About Software Design. In Laurel, B. (Ed.), The Art of Human-Computer Interface Design (p. 235-243). Reading: Addison-Wesley.</a> Retrieved 30 June 2011.
+<p id="Nichols-Twidale-2003"><strong>Nichols, D. M., Twidale, M. B. (2003).</strong> <a href="http://firstmonday.org/article/view/1018/939">The Usability of Open Source Software.</a> Retrieved 30 June 2011.
+<p id="Nielsen-2005a"><strong>Nielsen, J. (2005a).</strong> <a href="http://useit.com/papers/heuristic/heuristic_list.html">Ten Usability Heuristics.</a> Retrieved on 30 June 2011.
+<p id="Nielsen-2005b"><strong>Nielsen, J. (2005b).</strong> <a href="http://useit.com/papers/heuristic/severityrating.html">Severity Ratings for Usability Problems.</a> Retrieved 30 June 2011.
+<p id="Nielsen-2001"><strong>Nielsen, J. (2001).</strong> <a href="http://useit.com/alertbox/20010805.html">First Rule of Usability? Don’t Listen to Users.</a> Retrieved on 30 June 2011.
+<p id="Nielsen-2000"><strong>Nielsen, J. (2000).</strong> <a href="http://useit.com/alertbox/20000319.html">Why You Only Need to Test with 5 Users.</a> Retrieved 30 June 2011.
+<p id="Nielsen-1994"><strong>Nielsen, J. (1994).</strong> Heuristic evaluation. In Nielsen, J., and Mack, R.L. (Eds.), Usability Inspection Methods. New York: John Wiley & Sons.
+<p id="Pennington-2002"><strong>Pennington, H. (2002).</strong> <a href="http://pair.com/rhp/free-software-ui.html">Free software UI.</a> Retrieved 30 June 2011.
+<p id="Raskin-1994"><strong>Raskin, J. (1994).</strong> <a href="http://asktog.com/papers/raskinintuit.html">Intuitive Equals Familiar.</a> Retrieved 30 June 2011.
+<p id="Raymond-1997"><strong>Raymond, E. S. (1997).</strong> <a href="http://catb.org/~esr/writings/homesteading/cathedral-bazaar">The Cathedral and the Bazaar.</a> Retrieved on 30 June 2011.
+<p id="Reitmayr-Balasz-Muehlig-2006"><strong>Reitmayr, E., Balasz, B., Mühlig, J. (2006).</strong> <a href="http://tossad.org/tossad/events/tossad_2006/proceedings">Integrating Usability with Open Source Software Development: Case Studies from the Initiative OpenUsability.</a> In özel, B., Çilingir, C. B., Erkan, K. (Eds.), Oss 2006 tOssad workshop proceedings (p. 65–72). Retrieved 30 June 2011.
+<p id="Siegel-2010"><strong>Siegel, D. (2010).</strong> <a href="http://davidsiegel.org/announcing-ux-advocates">Announcing the User Experience Advocates Project.</a> Retrieved 30 June.
+<p id="Siegel-2009"><strong>Siegel, D. (2009).</strong> <a href="http://davidsiegel.org/papercut">Paper Cut.</a> Retrieved 30 June 2011.
+<p id="Stallman-1986"><strong>Stallman, R. (1986).</strong> <a href="http://gnu.org/philosophy/free-sw.html">The Free Software Definition.</a> Retrieved 30 June 2011.
+<p id="Thomas-2008"><strong>Thomas, M. P. (2008).</strong> <a href="http://web.archive.org/web/20090625141639/http://mpt.net.nz/archive/2008/08/01/free-software-usability">Why Free Software has poor usability, and how to improve it.</a> Retrieved on 30 June 2011.
+<p id="Trudelle-2002"><strong>Trudelle, P. (2002).</strong> <a href="http://iol.ie/~calum/chi2002/peter_trudelle.txt">Shall We Dance? Ten Lessons Learned from Netscape’s Flirtation with Open Source UI Development.</a> Retrieved 30 June 2011.
+<p id="Wilms-2011"><strong>Wilms, T. (2011).</strong> <a href="http://thorwil.wordpress.com/design-boost">Design-Boost.</a> Retrieved on 30 June 2011.
 
 
 
 <h2 id="Thanks"><a href="#Thanks">10. Thanks</a></h2>
-<p>To all the amazing people who helped me (even unknowingly) in writing this:</p>
-<p><a href="http://owncloud.org"><strong>ownCloud</strong></a>: Frank Karlitschek, Robin Appelman, Jakob Sack, Michael Gapczynski, Arthur Schiwon, all other contributors &hellip;</p>
-<p><a href="http://joindiaspora.com"><strong>Diaspora</strong></a>: Ilya Zhitomirskiy, Kevin Kleinman, &hellip;</p>
-<p><a href="http://mediagoblin.org"><strong>MediaGoblin</strong></a>: Chris Webber, Joar Wandborg, Deborah Nicholson, Jef van Schendel, &hellip;</p>
-<p><a href="http://live.gnome.org/Design"><strong>Gnome designers</strong></a>: Allan Day, William Jon McCann, Hylke Bons, Jakub Steiner, Calum Benson, Andreas Nilsson, Máirín Duffy, &hellip;</p>
-<p><a href="http://design.canonical.com"><strong>Ubuntu designers</strong></a>: Charline Poirier, Matthew Paul Thomas, David Siegel, &hellip;</p>
-<p><a href="http://relevantive.de"><strong>relevantive</strong></a>: Fabian Klenk, Dominik Sibum, Jan M&uuml;hlig, &hellip;</p>
-<p><a href="http://www.hdm-stuttgart.de"><strong>Media University Stuttgart</strong></a>: Michael Burmester, Ralph Tille, David Pr&uuml;m, &hellip;</p>
-<p>Michiel de Jong of <a href="http://unhosted.org">Unhosted</a>, Bjarni Rúnar Einarsson of <a href="http://pagekite.net">PageKite</a>, Thiago Teixeira of <a href="http://launchpad.net/cardapio">Cardapio</a>, Samuel Clay of <a href="http://newsblur.com">NewsBlur</a>, the <a href="http://yorba.org/shotwell">Shotwell</a> team, Peter Sikking of <a href="http://gimp.org">GIMP</a>, Ellen Reitmayr, <a href="http://parkerhiggins.net">Parker Higgins</a>, Max Heinemeyer, &hellip;</p>
-<p>Everyone who participates in a usability test and provides valuable feedback.</p>
-<p>&hellip;</p>
+<p>To all the amazing people who helped me (even unknowingly) in writing this:
+<p><a href="http://owncloud.org"><strong>ownCloud</strong></a>: Frank Karlitschek, Robin Appelman, Jakob Sack, Michael Gapczynski, Arthur Schiwon, all other contributors …
+<p><a href="http://joindiaspora.com"><strong>Diaspora</strong></a>: Ilya Zhitomirskiy, Kevin Kleinman, …
+<p><a href="http://mediagoblin.org"><strong>MediaGoblin</strong></a>: Chris Webber, Joar Wandborg, Deborah Nicholson, Jef van Schendel, …
+<p><a href="http://live.gnome.org/Design"><strong>Gnome designers</strong></a>: Allan Day, William Jon McCann, Hylke Bons, Jakub Steiner, Calum Benson, Andreas Nilsson, Máirín Duffy, …
+<p><a href="http://design.canonical.com"><strong>Ubuntu designers</strong></a>: Charline Poirier, Matthew Paul Thomas, David Siegel, …
+<p><a href="http://relevantive.de"><strong>relevantive</strong></a>: Fabian Klenk, Dominik Sibum, Jan Mühlig, …
+<p><a href="http://www.hdm-stuttgart.de"><strong>Media University Stuttgart</strong></a>: Michael Burmester, Ralph Tille, David Prüm, …
+<p>Michiel de Jong of <a href="http://unhosted.org">Unhosted</a>, Bjarni Rúnar Einarsson of <a href="http://pagekite.net">PageKite</a>, Thiago Teixeira of <a href="http://launchpad.net/cardapio">Cardapio</a>, Samuel Clay of <a href="http://newsblur.com">NewsBlur</a>, the <a href="http://yorba.org/shotwell">Shotwell</a> team, Peter Sikking of <a href="http://gimp.org">GIMP</a>, Ellen Reitmayr, <a href="http://parkerhiggins.net">Parker Higgins</a>, Max Heinemeyer, …
+<p>Everyone who participates in a usability test and provides valuable feedback.
+<p>…
 
 
 <script src="js/jquery-1.7.2.min.js"></script>
@@ -563,4 +562,3 @@ Similar to <a href="#Tag-bugs">7.3 Tag bugs</a>, this outspoken focus on small u
 <script src="js/jquery.scrollto.min.js"></script>
 <script src="js/jquery.nav.min.js"></script>
 <script src="js/custom.js"></script>
-</body></html>

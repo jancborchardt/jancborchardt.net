@@ -4,9 +4,9 @@ a:hover, a:focus { color:#111; }
 em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
 #background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
 ul, ol { padding-left:0; }
-blockquote, q { color:#222; quotes:"\00BB""\00AB""\203A""\2039"; -webkit-margin-start:0; }
+blockquote, q { color:#222; quotes:"»""«""›""‹"; -webkit-margin-start:0; }
 blockquote { padding-left:0; clear:both; margin:0 0 3em 0; }
-blockquote:before { content:"\00BB"; position:absolute; margin:-.53em 0 0 -.6em; font-size:3em; }
+blockquote:before { content:"»"; position:absolute; margin:-.53em 0 0 -.6em; font-size:3em; }
 blockquote>p { margin-bottom:0; }
 blockquote>p+p { margin-top:0; }
 blockquote a, blockquote span { font-style:normal; position:relative; float:right; clear:left; }
@@ -35,13 +35,13 @@ h3 { margin-top:2em; }
 #jan h1+em { margin-top:0; }
 #jan ul { font-size:.7em; }
 #jan li { height:1.5em; }
-#jan #unhosted { list-style-image:url('../img/unhosted.png'); }
-#jan #owncloud { list-style-image:url('../img/owncloud.png'); }
-#jan #libreprojects { list-style-image:url('../img/libreprojects.png'); }
+#jan #unhosted { list-style-image:url(../img/unhosted.png); }
+#jan #owncloud { list-style-image:url(../img/owncloud.png); }
+#jan #libreprojects { list-style-image:url(../img/libreprojects.png); }
 #jan p { margin-top:2em; font-size:.5em; line-height:2em; }
 
 #stuff .taken { list-style:none; color:#d33; margin-left:-1.2em; }
-#stuff .taken:before { content:"\2718\0020"; }
+#stuff .taken:before { content:"✘ "; }
 #stuff .taken a { color:#933; }
 #stuff .taken a:hover { color:#a00; }
 
