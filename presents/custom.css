@@ -1,0 +1,43 @@
+html { background:black; }
+body { background:#181818 url(broken_noise.png) repeat; color:rgba(255,255,255,.8); text-shadow:0 0 3em rgba(50,50,50,.3); }
+section { font:normal 3em/150% FreeSans,Helvetica,sans-serif; }
+section.light { background:#eee url(lightpaperfibers.png) repeat; color:#000; text-shadow:0 0 3em rgba(200,200,200,.3); }
+
+section { z-index:10; }
+figure img { }
+
+figcaption { width:100%; top:1.6em; margin:0; text-align:center; font-weight:bold; font-size:3em; line-height:110%; }
+.captiontop figcaption { top:.6em; }
+.solid { color:rgba(255,255,255,.9); }
+.solidshadow { text-shadow:0 0 .5em rgba(50, 50, 50, 1); }
+.transparent { color:rgba(255,255,255,.5); }
+
+.smaller { font-size:1.4em; margin-top:2.5em; }
+.regular  { font-weight:normal; }
+
+
+h1, h2, h3 { text-align:center; margin-top:200px; font-size:80px; }
+h2 { margin-top:.5em; color:#B9E768; font-size:1.5em; text-shadow:0px 2px 1px #09151E; background:url('img/helpruler.png') bottom repeat-x; padding-bottom:10px; }
+h3, p { margin:50px; font-size:1em; }
+ul, ol { margin:50px 100px; }
+li { margin:.5em 0; }
+q { display:inline-block; width:700px; height:600px; color:white; font-size:60px; padding:50px; }
+footer { position:absolute; bottom:10px; right:20px; font-size:16px; }
+a { color:#a1aab0; text-decoration:none; }
+h2 a { color:#B9E768; }
+.speakernotes { position:absolute; margin:1em; left:0; bottom:0; width:29em; align:center; text-align:center; font-size:.5em; background:rgba(0,0,0,.5); padding:1em; border-radius:1em; }
+
+/* Transition effect, see http://developer.mozilla.org/en/CSS/CSS_transitions */
+section { -moz-transition:left 400ms linear 0s; -webkit-transition:left 400ms linear 0s; -ms-transition:left 400ms linear 0s; transition:left 400ms linear 0s; }
+section { left: -150%; } /* Before */
+section[aria-selected] { left: 0; } /* Now */
+section[aria-selected] ~ section { left: +150%; } /* After */
+
+/* Incremental elements */
+.incremental > * { opacity:1; color:#a1aab0; } /* By default, visible */
+.incremental > *[aria-selected] { color:#fff; opacity:1; } /* The current item */
+.incremental > *[aria-selected] ~ * { opacity:0.2; } /* The items to-be-selected */
+
+.incremental.morph > * { list-style:none; opacity:0; -moz-transition:opacity 500ms; -webkit-transition:opacity 500ms; transition:opacity 500ms; } /* By default, visible */
+.incremental.morph > *[aria-selected] { color:#fff; opacity:1; -moz-transition:opacity 500ms; -webkit-transition:opacity 500ms; transition:opacity 500ms; } /* The current item */
+.incremental.morph > *[aria-selected] ~ * { opacity:0; -moz-transition:opacity 500ms; -webkit-transition:opacity 500ms; transition:opacity 500ms; } /* The items to-be-selected */

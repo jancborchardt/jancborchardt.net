@@ -1,0 +1,98 @@
+
+
+USABILITY IN FREE SOFTWARE
+
+JANCBORCHARDT designer, love to share insights
+
+PROJECTS all free software web apps
+
+
+
+FREEDOM collaboration, advantage of open platforms
+
+INNOVATION not just a »free version of X«, be-goal vs do-goal, what do people really need?
+
+HUMANS all for them, even geeks like it simple
+
+
+
+DESIGN DICTATOR true, but I believe in education
+
+DESIGNERS DON'T MULTIPLY so share, educate
+
+LOVE you just need love for a project, to improve
+
+
+DESIGN ↻ TEST most important, both forgotten
+
+
+DESIGN
+Screenshots: ownCloud, Litewrite
+
+SIMPLE (automatic, contextual, less features)
+
+FOCUS (only most important stuff, quality over quantity) focus camera image
+
+REMOVE
+
+SCIENCE
+
+CONTROL (feedback, undo, no modal)
+
+
+
+SKETCH!
+these all came out of quick mockups
+makrio screenshot
+
+Less features, only implement if it hurts
+
+get inspired, but filter!
+your project might have specific target groups
+
+
+
+TEST
+
+INSIGHT
+
+EVERYONE CAN DO IT
+BUT IT’S HARD (analysis, results)
+
+
+
+do not listen to users (Nielsen’s first rule)
+
+Students usability
+50c usability testing
+Mall testing
+
+report!
+Issues (strut screenshot)
+mozilla bug tags
+mailing list
+
+
+ITERATE
+
+
+
+LEARN
+
+Rework
+Don't make me think
+
+http://littlebigdetails.com/
+http://www.useit.com/
+http://uxmyths.com/
+http://ignorethecode.net/blog/
+
+USE APPS & UNDERSTAND
+
+
+
+https://secure.flickr.com/photos/occbio
+https://secure.flickr.com/photos/hey__paul/sets/72157625618509092/?page=3
+https://secure.flickr.com/photos/25648105@N03/4664966937/sizes/l/in/photostream/
+https://secure.flickr.com/photos/designmark/5370971133/sizes/l/in/photostream/
+https://secure.flickr.com/photos/dirkdallas/5079744873/sizes/o/in/photostream/
