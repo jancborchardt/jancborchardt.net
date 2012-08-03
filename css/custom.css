@@ -33,6 +33,7 @@ h3 { margin-top:2em; }
 #jan h1+em { margin-top:0; }
 #jan ul { font-size:.7em; }
 #jan li { height:1.5em; }
+#jan #usability { list-style:none; }
 #jan #unhosted { list-style-image:url(../img/unhosted.png); }
 #jan #owncloud { list-style-image:url(../img/owncloud.png); }
 #jan #libreprojects { list-style-image:url(../img/libreprojects.png); }
