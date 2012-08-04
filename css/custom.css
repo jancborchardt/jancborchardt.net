@@ -14,9 +14,9 @@ blockquote a, blockquote span { font:bold .8em/150% FreeSans,Helvetica,sans-seri
 #index, #indextitle { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:bold; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
 #index { top:5em; }
 #index:hover, #index:focus { opacity:1; }
-#index a { display:block; }
-#index ol { list-style:none; font-weight:normal; }
-#index li a:hover, #index li a:focus, #index li a:active, #index li.current>a { background:#eee; color:#000; }
+#index a { display:block; font-weight:normal; }
+#index ol { list-style:none; }
+#index li a:hover, #index li a:focus, #index li a:active, #index li.current>a { font-weight:bold; opacity:1; color:#000; }
 #index ol li:hover, #index ol li:focus, #index ol li:active, #index li.current { list-style:decimal; }
 #indextitle strong a { font-size:1.4em; color:#000; margin-bottom:.2em; }
 #indextitle em a { font-size:1.2em; color:#000; margin-bottom:.5em; }
