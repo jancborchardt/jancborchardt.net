@@ -1,6 +1,6 @@
 body { width:30em; margin:4em auto; padding:0; background:#fff; color:#000; font:normal 1.5em/150% FreeSans,Helvetica,sans-serif; }
-a { white-space:nowrap; text-decoration:none; color:#000; opacity:.6; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
-a:hover, a:focus { opacity:.9; outline:0; }
+a { font-weight:bold; white-space:nowrap; text-decoration:none; color:#000; opacity:.9; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+a:hover, a:focus { opacity:.6; outline:0; }
 em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
 #background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
 ul, ol { padding-left:0; }
@@ -9,7 +9,7 @@ blockquote { padding-left:0; clear:both; margin:0 0 3em 0; }
 blockquote:before { content:"»"; position:absolute; margin:-.53em 0 0 -.6em; font-size:3em; }
 blockquote>p { margin-bottom:0; }
 blockquote>p+p { margin-top:0; }
-blockquote a, blockquote span { font-style:normal; position:relative; float:right; clear:left; }
+blockquote a, blockquote span { font:bold .8em/150% FreeSans,Helvetica,sans-serif; position:relative; float:right; clear:left; }
 
 #index, #indextitle { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:bold; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
 #index { top:5em; }
@@ -27,7 +27,6 @@ h2 { margin-top:3em; }
 h3 { margin-top:2em; }
 
 #jan { background:#ff8d2d; margin:3em; width:27em; }
-#jan a { font-weight:bold; }
 #jan img { opacity:.5; }
 #jan h1 { margin-bottom:.2em; }
 #jan h1+em { margin-top:0; }
