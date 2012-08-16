@@ -38,6 +38,10 @@ h3 { margin-top:2em; }
 #jan #libreprojects { list-style-image:url(../img/libreprojects.png); }
 #jan #javascript { list-style-image:url(../img/js.png); }
 #jan p { margin-top:2em; font-size:.5em; line-height:2em; }
+#jan #donate { position:absolute; bottom:1em; }
+#jan #donate a, #jan #donate img { opacity:1; }
+#jan #donate form { display:inline; }
+#jan #donate p { margin-bottom:0; }
 
 #stuff .taken { list-style:none; color:#d33; margin-left:-1.2em; }
 #stuff .taken:before { content:"✘ "; }
