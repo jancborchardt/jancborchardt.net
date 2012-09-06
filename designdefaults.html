@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+	<meta charset="utf-8">
+	<title>Design Defaults</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/custom.css">
+
+<body id="usability-in-free-software" data-spy="scroll" data-target="#index">
+<h1>Design Defaults</h1>
+<p><em><a href="http://twitter.github.com/bootstrap">Bootstrap</a> gave you the interface, here’s the interaction.</em> Recommendations by <a href="http://jancborchardt.net">Jan-Christoph Borchardt</a>.
+
+<h3 id="Abstract"><a href="#Abstract">Abstract</a></h3>
+<p>Like my thesis <a href="http://jancborchardt.net/usability-in-free-software">Usability in Free Software</a>, it’s an <a href="http://creativecommons.org/licenses/by-sa/3.0/">open</a> document, everyone can use it & contribute.
+
+<p id="indextitle"><strong><a href="#">Design Defaults</a></strong><br />
+<em><a href="http://jancborchardt.net">by Jan-Christoph Borchardt</a></em>
+<ol id="index">
+	<li><a href="#Introduction">Introduction</a><ol>
+		<li><a href="#Input-fields">Input fields</a>
+		<li><a href="#Lightbox">Lightbox</a>
+	</ol>
+</ol>
+
+
+
+<h2 id="Introduction"><a href="#Introduction">1. Introduction</a></h2>
+
+
+<h3 id="Input-fields"><a href="#Input-fields">Input fields</a></h3>
+
+<div style="display:inline-block; vertical-align:top; width:40%; padding:15px 0;">
+	<input type="text" placeholder="Your name" style="width:80%"/><br>
+	<textarea placeholder="Let me know what you think!" rows="4" style="width:80%"></textarea>
+</div>
+<div style="display:inline-block; vertical-align:top; width:40%; background:#222; border-radius:5px; padding:15px 20px 10px;">
+	<input type="text" class="dark" placeholder="Your name" style="width:90%"/><br>
+	<textarea class="dark" placeholder="Let me know what you think!" rows="4" style="width:90%"></textarea>
+</div>
+
+<ul>
+	<li><strong>Clear label-to-field relations and as little noise as possible.</strong> Instead of having the labels above or next to the input field, the label should be inside the field whenever possible. This can be done with the placeholder attribute or using the <a href="http://fuelyourcoding.com/scripts/infield/">InField Labels jQuery plugin</a>. (check for browser compatibility, settle on either placeholder or infield labels)
+	<li><strong>Only one main scrollbar on the page.</strong> Textareas should have no scrollbars, but instead automatically resize vertically to fit the text content. Use the <a href="http://github.com/jackmoore/autosize">Autosize jQuery plugin</a>.
+	<li><strong>Resize handle is obsolete.</strong> Remove them with CSS: <code>textarea { resize:none; }</code> (pull request to autosize)
+	
+</ul>
+
+
+<h3 id="Lightbox"><a href="#Lightbox">Lightbox</a></h3>
+Have a bunch of images display here for lightbox demo yea.
+Preface about how »Lightbox« is a shitty name.
+<ul>
+	<li><strong>Always display the whole image, as good as possible.</strong> The image should be displayed centered, either in original size or if bigger than the screen size, down-scaled to fit height or width, whatever touches edges first. Additionally it should have some margin for the image to not touch the edges.
+	<li><strong>Focus on the image, with the background subdued.</strong> The page should be overlayed with a grey half-transparent background with slight noise. The image should have a slight box-shadow and no border.
+	<li><strong>Make the relation to the photos on the page more obvious.</strong> Use an elastic effect like <a href="http://fancybox.net">Fancybox</a>.
+	<li><strong>Controls should always be in the same place.</strong> Placing the controls at the image or even on it causes them to move around as images and sizes change and make skipping images a pain. Instead, they should be absolutely positioned on the edges.
+	<li><strong>Make it easy to close the view.</strong> Getting out of the lightbox should be as easy as clicking anywhere outside the image, or specifically on the big × which should always be on the absolute top right.
+	<li><strong></strong> dvance by clicking image, next/previous arrows on absolute left and right – relative controls change positions
+* advance effect: move images to left and right – make position more obvious
+
+* multiple images: show other images as thumbnails on bottom – easy location through visual cues
+* prevent scroll in image view – accidental scroll
+* preload the big images and/or preload next images when in view – no extra wait, intention to view photos is clear
+http://www.jacklmoore.com/colorbox (most watched)
+http://lokeshdhakar.com/projects/lightbox2/ (classic?)
+http://gettopup.com/ (elastic effect)
+http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/ (thumbnails for other images)
+
+
+
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollto.min.js"></script>
+<script src="js/jquery.nav.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+<!-- inline demos -->
+<script src="js/jquery.autosize.js"></script>
+<script>
+$(function(){
+	$('textarea').autosize();
+});
+</script>
+<style>
+input,textarea {
+	background-color:rgba(255,255,255,.6); padding:5px;
+	border:1px solid #ccc; border-bottom-color:#fff; border-radius:3px;
+	box-shadow:0 0 3px #aaa, inset 0 1px 2px #bbb;
+	resize:none;
+}
+	input.dark,textarea.dark {
+		background-color:rgba(255,255,255,.1); color:#fff;
+		border:1px solid #111;
+		box-shadow:0 1px 0 #333, inset 0 1px 2px #000;
+	}
+input:hover,textarea:hover { background-color:rgba(255,255,255,.8); }
+input:focus,textarea:focus {
+	background-color:rgba(255,255,255,1);
+	border-color:#999; border-bottom-color:1px solid #fff; outline:0;
+	box-shadow:0 0 3px #aaa, inset 0 1px 2px #999;
+}
+	input.dark:hover,textarea.dark:hover {
+		background-color:rgba(255,255,255,.15);
+		box-shadow:0 1px 0 #444, inset 0 1px 2px #111;
+	}
+	input.dark:focus,textarea.dark:focus {
+		background-color:rgba(255,255,255,.2); border-color:#000; outline:0; outline:thin dotted 9;
+		box-shadow:0 1px 0 #555, inset 0 1px 2px #222;
+	}
+</style>
