@@ -18,7 +18,7 @@
 	<li id="javascript"><a href="http://www.meetup.com/telavivjs/">Tel Aviv JS</a> & <a href="http://www.meetup.com/stuttgartjs/">StuttgartJS</a> founder
 </ul>
 
-<p>find me on <a href="http://twitter.com/jancborchardt" rel="me">Twitter</a> & <a href="http://github.com/jancborchardt" rel="me">Github</a><br />
+<p id="contact">find me on <a href="http://twitter.com/jancborchardt" rel="me">Twitter</a> & <a href="http://github.com/jancborchardt" rel="me">Github</a><br />
 email me <strong>hey@ this domain</strong><br />
 take <a href="stuff">my stuff</a>
 
@@ -38,7 +38,7 @@ If you like what I do and want to support me to work on it more without needing 
 
 </div>
 
-<img id="background" src="img/share-mono.jpg" alt="" />
+<img id="background" src="img/2010-06-14 web.jpg" alt="" />
 
 
 <script src="js/jquery-1.7.2.min.js"></script>
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	spectrum();
 
 	function spectrum(){
-		var rainbow = 'rgb('+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*100))+','+(Math.floor(Math.random()*100))+')';
+		var rainbow = 'rgba('+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*100))+','+(Math.floor(Math.random()*100))+',1)';
 		$('#jan').animate( { backgroundColor: rainbow }, 50000);
 		setTimeout(spectrum, 0);
 	}

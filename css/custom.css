@@ -1,8 +1,16 @@
+/*@font-face { font-family:'Alegreya'; font-weight:normal; src:url(Alegreya-Regular.ttf); }
+@font-face { font-family:'Alegreya'; font-weight:bold; src:url(Alegreya-Bold.ttf); }*/
+@font-face { font-family:'Miso'; font-weight:normal; src:url(Miso.ttf); }
+@font-face { font-family:'Miso'; font-weight:light; src:url(Miso-Light.ttf); }
+@font-face { font-family:'Miso'; font-weight:bold; src:url(Miso-Bold.ttf); }
+
+
+
 body { width:30em; margin:4em auto; padding:0; background:#fff; color:#000; font:normal 1.5em/150% FreeSans,Helvetica,sans-serif; }
 a { font-weight:bold; white-space:nowrap; text-decoration:none; color:#000; opacity:.9; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
 a:hover, a:focus { opacity:.6; outline:0; }
 em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
-#background { width:100%; position:fixed; top:-100px; left:0; z-index:-1; }
+#background { width:100%; position:absolute; top:0; left:0; z-index:-1; }
 ul, ol { padding-left:0; }
 blockquote, q { color:#222; quotes:"»""«""›""‹"; -webkit-margin-start:0; }
 blockquote { padding-left:0; clear:both; margin:0 0 3em 0; }
@@ -26,11 +34,12 @@ h2 a, h3 a { color:#000; }
 h2 { margin-top:3em; }
 h3 { margin-top:2em; }
 
-#jan { background:#ff8d2d; margin:3em; width:27em; }
+#jan { background:rgba(100,41,5,1); margin:7em 3em; width:27em; color:#fff; }
+#jan a { color:#fff; }
 #jan img { opacity:.5; }
-#jan h1 { margin-bottom:.2em; }
-#jan h1+em { margin-top:0; }
-#jan ul { font-size:.7em; }
+#jan h1 { position:fixed; font-family:'Miso'; font-weight:lighter; font-size:100px; line-height:100%; margin:0; }
+#jan h1+em { position:fixed; margin-top:89px; }
+#jan ul { font-size:.7em; position:fixed; margin-top:150px; }
 #jan li { height:1.5em; }
 #jan #usability { list-style:none; }
 #jan #unhosted { list-style-image:url(../img/unhosted.png); }
@@ -38,8 +47,9 @@ h3 { margin-top:2em; }
 #jan #libreprojects { list-style-image:url(../img/libreprojects.png); }
 #jan #tosdr { list-style-image:url(../img/tosdr.png); }
 #jan #javascript { list-style-image:url(../img/js.png); }
-#jan p { margin-top:2em; font-size:.5em; line-height:2em; }
-#jan #donate { position:absolute; bottom:1em; }
+#jan p { font-size:.5em; line-height:2em; }
+#jan #contact { position:fixed; margin-top:320px; }
+#jan #donate { position:fixed; bottom:1em; }
 #jan #donate a, #jan #donate img { opacity:1; }
 #jan #donate form { display:inline; }
 #jan #donate p { margin-bottom:0; }
