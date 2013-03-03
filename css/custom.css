@@ -31,8 +31,9 @@ blockquote a, blockquote span { font:bold .8em/150% FreeSans,Helvetica,sans-seri
 
 p strong+a { white-space:normal; }
 h2 a, h3 a { color:#000; }
-h2 { margin-top:3em; }
-h3 { margin-top:2em; }
+h1 { margin-top:3em; padding-top:1em; }
+h2 { margin-top:1em; padding-top:1em; }
+h3 { margin-top:0; padding-top:1em; }
 
 #jan { background:rgb(100,41,5); margin:7em 3em; width:27em; color:#fff; }
 #jan a { color:#fff; }
@@ -54,9 +55,10 @@ h3 { margin-top:2em; }
 #jan #donate form { display:inline; }
 #jan #donate p { margin-bottom:0; }
 
+#stuff blockquote:first-child { font-size:40px; margin:4em 0; }
 #stuff .taken { list-style:none; color:#d33; margin-left:-1.2em; }
 #stuff .taken:before { content:"✘ "; }
-#stuff .taken a { color:#933; }
-#stuff .taken a:hover { color:#a00; }
+#stuff .taken a { color:#d33; }
+#stuff .taken a:hover { color:#c22; }
 
 .external { color:#999; }
