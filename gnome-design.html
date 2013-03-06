@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+	<meta charset="utf-8">
+	<title>GNOME Design</title>
+	<meta name="description" content="This is stuff I have, stuff I don’t have and stuff I give away.">
+	<link rel="stylesheet" href="css/custom.css">
+
+<body id="gnome-design">
+
+<h1>GNOME design improvements</h1>
+
+<p><em>I love GNOME, especially the simplicity of GNOME Shell, and the folks on the design team are great people furthering an open design process. There are a few things which can be improved though. Some of these points are already possible to modify and test through installing extensions, others are ideas.</em>
+
+
+
+
+
+<h2>Overview</h2>
+
+
+Open windows can’t be searched
+include open windows in search results maybe
+
+when there are no windows open in Shell, it still by default shows the »Windows« view. Instead, it should show the Applications view.
+
+the dash should be mainly opt-out, not mainly opt-in. Frequently used apps should automatically be put in it, and then autosorted by frequency+recency of use.
+
+
+
+<h2>Top Panel</h2>
+
+<h3>Hot Corner</h3>
+<P>The hot corner is a major problem because the top left corner is an easy location to accidentally move with your mouse. Important elements from an app are usually in the top left: First tab in a browser, mail app inbox, first file, …
+<p>I caught myself making an all-or-nothing design suggestion of removing the hot corner functionality altogether. When I talked to <a href="http://afaikblog.wordpress.com">Allan</a>, he mentioned they are working on a more intelligent hot corner which is activated depending on the force the cursor.
+<p>If you still want to disable it for now, you can use the extension <a href="https://extensions.gnome.org/extension/118/no-topleft-hot-corner/">No Topleft Hot Corner</a>. The overview can still be reached by clicking the Activities button.
+
+<h3>Activities</h3>
+»Activities« is a long obtrusive string, instead it should be an icon 
+
+<h3>Clock</h3>
+<a href="https://extensions.gnome.org/extension/153/nothingtodo/">Nothing To Do</a>
+If I don't use the calendar agenda, just don't show it.
+
+<h3>Accessibility</h3>
+<a href="https://extensions.gnome.org/extension/112/remove-accesibility/">Remove Accessibility</a>
+Don’t need the functions in it and it’s one indicator less. There should at least be a switch in »Accessibility Settings« to switch that off.
+
+
+<h2>User Menu</h2>
+shut down vs suspend, learn from peoples behavior and switch it around, or just show it next to one another
+or show suspend in the shut down menu
+
+dont show doviders in log out menu when only 4 entries
+
+replace unavailable satus menu with option to add messenger account
+
+
+
+<h2>Dialogs</h2>
+cancel buttons on modals should be replaced by x close icons in the top right corner
+(Password, Power Off, …)
+
+
+
+
+Wireless not possible to cancel connection process or shut off wifi while connecting (because label replaces the on/off switch). You have to open the network settings to do that.
+Rather than replacing the on/off switch, the »connecting« should be displayed where the list of wifis is, or inherent in the display of a wifi signal and the icon pulsing.
+
+onscreen keyboard lowercase letters
+
+
+
+
+
+
+
+<a href="https://extensions.gnome.org/extension/354/maximus/">Maximus</a>
+Remove the title bar on maximized windows. Because it's just too much space for a close button and duplicating the app name. Rather, the close button should be better integrated into the app like in Chrome, or just be the Quit function in the title menu.
+
+
+
+
+<a href="https://extensions.gnome.org/extension/156/quit-button/">Quit Button</a>
+If I am the only user on the operating system, I don’t need to see my name all the time.
+
+
+
+<a href="https://extensions.gnome.org/extension/302/windowoverlay-icons/">WindowOverlay Icons</a>
+Makes it easier to distinguish windows in the overview by adding an app icon.
+
+<a href="https://extensions.gnome.org/extension/15/alternatetab/">AlternateTab</a>
+Because grouping windows by app makes 0 sense.
+
+<a href="https://extensions.gnome.org/extension/111/calculator/">Calculator</a>
+<a href="https://extensions.gnome.org/extension/122/unit-converter/">Unit Converter</a>
+Needs polishing, but this kind of integrated functionality a la Google search box is really useful.
+
+Bookmark search for browsers
+
+
+
+* **[Distraction-Free](http://extensions.gnome.org/extension/393/distraction-free/)**: Show Panel and Message Tray only in the Activities overview. Also removes the hot corner so it's not triggered by accident. Switch to Activities with the Super key or cycle apps with Alt+Tab.
+* **[Remove Workspaces Sidebar]()**: Remove the right-side workspace thumbnails sidebar from the Activities overview. Perfect if you don't use workspaces.
+
+
+<h2>Workspaces</h2>
+I programmed the extension <a href="http://extensions.gnome.org/extension/387/remove-workspaces-sidebar/">Remove Workspaces Sidebar</a> because I don’t use workspaces at all. Previously and on other systems, I needed to always remove the workspace indicator, or reduce the number of workspaces to 0.
+
+In GNOME Shell the design is so unobtrusive if you don’t use workspaces that you don’t even have to care. There’s always an empty workspace, no need to manually add or remove any, and the whole area just peeks out a slight bit on the right edge of the overview. That’s why I just discontinued the extension.
+
+
+
+
+
