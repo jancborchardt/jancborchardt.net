@@ -31,14 +31,14 @@ blockquote a, blockquote span { font:bold .8em/150% FreeSans,Helvetica,sans-seri
 
 p strong+a { white-space:normal; }
 h2 a, h3 a { color:#000; }
-h1 { margin-top:3em; padding-top:1em; }
+#stuff h1 { margin-top:3em; padding-top:1em; }
 h2 { margin-top:1em; padding-top:1em; }
 h3 { margin-top:0; padding-top:1em; }
 
 #jan { background:rgb(100,41,5); margin:7em 3em; width:27em; color:#fff; }
 #jan a { color:#fff; }
 #jan img { opacity:.5; }
-#jan h1 { position:fixed; font-family:'Miso'; font-weight:normal; font-size:100px; line-height:100%; margin:0; }
+#jan h1 { position:fixed; font-family:'Miso'; font-weight:normal; font-size:100px; line-height:100%; margin:0; padding:0; }
 #jan h1+em { position:fixed; margin-top:89px; }
 #jan ul { font-size:.7em; position:fixed; margin-top:150px; }
 #jan li { height:1.5em; }
