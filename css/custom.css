@@ -43,13 +43,15 @@ h3 { margin-top:0; padding-top:1em; }
 #jan ul { font-size:.7em; position:fixed; margin-top:150px; }
 #jan li { height:1.5em; }
 #jan #usability { list-style:none; }
+#jan #opensourcedesign { list-style-image:url(../img/opensourcedesign.png); }
 #jan #unhosted { list-style-image:url(../img/unhosted.png); }
 #jan #owncloud { list-style-image:url(../img/owncloud.png); }
 #jan #libreprojects { list-style-image:url(../img/libreprojects.png); }
 #jan #tosdr { list-style-image:url(../img/tosdr.png); }
+#jan #africahacktrip { list-style-image:url(../img/africahacktrip.png); }
 #jan #javascript { list-style-image:url(../img/js.png); }
 #jan p { font-size:.5em; line-height:2em; }
-#jan #contact { position:fixed; margin-top:320px; }
+#jan #contact { position:fixed; margin-top:365px; }
 #jan #donate { position:fixed; bottom:1em; }
 #jan #donate a, #jan #donate img { opacity:1; }
 #jan #donate form { display:inline; }
