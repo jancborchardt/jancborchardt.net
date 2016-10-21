@@ -11,13 +11,14 @@ Designers are not allergic to open source – it often is just quite difficult a
 
 Some of these methods include:
 - Describe clearly what your project does
+- Being welcoming to designers
 - Involving design from the start
 - Using design tags in the issue tracker
 - Have an easy landing page to get involved
 - Cultivating a culture of design-driven decisions
-– and more! :)
+- and more! :)
 
-We have a loose collective called Open Source Design which aims to bring together designers and open source projects. Some examples are the job board we have where projects can post their design jobs, and the Open Source Design tracks we established at well-known conferences like FOSDEM and FOSSASIA.
+We have a loose collective called Open Source Design which aims to bring together designers and open source projects. Some examples are the job board we have where projects can post their design jobs, and the Open Source Design tracks we established at well-known conferences like FOSDEM and FOSSASIA. Members of our collective include people who work on projects like Mozilla, Gnome, Nextcloud, LibreOffice, Drupal, Tor, Fedora, FSFE and more.
 
 
 ## Submission note
