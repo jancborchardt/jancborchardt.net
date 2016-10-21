@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<meta charset="utf-8">
+	<title>Jan-Christoph Borchardt</title>
+	<meta name="description" content="free culture interaction designer, advisor & educator">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="shortcut icon" href="img/circle.png"><link rel="apple-touch-icon-precomposed" href="img/circle-touch.png">
+
+<body id="jan">
+<h1>Jan C. Borchardt</h1>
+<em>open source designer, advisor & educator</em>
+
+<ul>
+	<li id="usability"><a href="usability-in-free-software" target="_blank">Usability in Free Software</a> author
+	<li id="opensourcedesign"><a href="http://opensourcedesign.net" target="_blank">Open Source Design</a> pusher
+	<li id="nextcloud"><a href="https://nextcloud.com" target="_blank">Nextcloud</a> design lead
+	<li id="unhosted"><a href="https://unhosted.org" target="_blank">Unhosted movement</a> Design Dictator
+	<li id="libreprojects"><a href="http://libreprojects.net" target="_blank">Libre Projects</a> founder & curator
+	<li id="tosdr"><a href="https://tosdr.org" target="_blank">Terms of Service; Didn’t Read</a> co-founder & designer
+	<li id="africahacktrip"><a href="http://africahacktrip.org" target="_blank">AfricaHackTrip</a> event organizer & co-designer
+	<li id="javascript"><a href="http://www.meetup.com/telavivjs/" target="_blank">Tel Aviv JS</a> & <a href="http://www.meetup.com/stuttgartjs/" target="_blank">StuttgartJS</a> founder
+</ul>
+
+<p id="contact">
+	find me on <a href="https://twitter.com/jancborchardt" rel="me" target="_blank">Twitter</a> & <a href="https://github.com/jancborchardt" rel="me" target="_blank">Github</a><br />
+	email me <strong>hey@ this domain</strong><br />
+	take <a href="stuff">my stuff</a>
+</p>
+
+<!--<div id="donate">
+<p><strong>I believe in human-centered design, not in profit-driven decisions.</strong><br/>
+That’s why I mostly work on open source web projects, voluntarily and without payment.<br/>
+If you like what I do and want to support me to work on it more without needing to take on freelance jobs, consider donating!
+</p>
+<a href="http://flattr.com/thing/845055/Jan-Christoph-Borchardt" target="_blank">
+<img src="img/flattr.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="KJEJ62D4S66KG">
+<input type="image" src="img/paypal.gif" border="0" name="submit" alt="Donate with PayPal">
+</form>
+</div>-->
+
+<img id="background" src="img/2010-06-14-web.jpg" alt="" />
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.color.js"></script>
+<script>
+//thanks to Niraj http://webstutorial.com/jquery-color-changing-background-jquery-continous-color-change-jquery-rainbow/jquery
+$(document).ready(function() {
+	spectrum();
+
+	function spectrum(){
+		var rainbow = 'rgb('+(Math.floor(Math.random()*256))+','+(Math.floor(Math.random()*100))+','+(Math.floor(Math.random()*100))+')';
+		$('#jan').animate( { backgroundColor: rainbow }, 50000);
+		setTimeout(spectrum, 0);
+	}
+});
+</script>
+<!-- »There’s something deeper than making money off stuff. Being a part of creating stuff for the universe is awesome.« – Ilya Zhitomirskiy, 1989–2011 -->
