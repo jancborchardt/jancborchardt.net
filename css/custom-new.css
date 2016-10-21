@@ -175,6 +175,7 @@ article .screenshot {
     bottom: 0;
     top: initial;
     left: initial;
+    margin-bottom: 0;
 }
 #speaking .icon,
 #speaking .content {
@@ -195,7 +196,7 @@ article .screenshot {
 #minimalism .button-primary,
 #wikipedia .button-primary { background-color: #000; border-color: #000; color: #fff; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     header {
         padding-bottom: 200px;
     }
