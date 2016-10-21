@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="16"
+   width="16"
+   version="1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="music.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="40.1875"
+     inkscape:cx="-5.0637636"
+     inkscape:cy="8"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M12.805 1c-2.2.356-5.144.72-7.338 1.095-.58.283-.45 1.013-.476 1.543v7.09c-1.224-.23-2.717.78-2.78 2.382-.107.998.777 1.866 1.74 1.89 1.72.04 2.898-1.102 2.917-2.546-.02-2.426.005-4.853 0-7.28.266-.02 4.303-.79 4.666-.84v5.45c-1.07-.255-2.437.448-2.776 1.884-.143.805.127 1.815.944 2.156 1.595.733 3.784-.75 3.695-2.493-.025-3.234.02-6.47 0-9.706-.042-.304-.248-.645-.59-.623z"
+     fill="#969696"
+     id="path4"
+     style="fill:#ffffff;fill-opacity:1" />
+</svg>
