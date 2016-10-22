@@ -22,7 +22,9 @@ body {
 }
 
 p {
+    font-size: 21px !important;
     margin-bottom: 1.7em;
+    opacity: .6;
 }
 
 h1,
@@ -46,11 +48,6 @@ h2 {
 h3 {
     margin-top: 0;
     padding-top: 1em;
-}
-
-p {
-    font-size: 21px !important;
-    opacity: .6;
 }
 
 a {
@@ -97,7 +94,7 @@ article {
     padding: 10%;
 }
 header {
-    background: url('../img/jan-portrait.jpg') no-repeat;
+    background: url('../img/Jan-Christoph Borchardt.jpg') no-repeat;
     background-position: bottom right;
     background-size: contain;
     background-color: #000 !important;
@@ -212,4 +209,18 @@ article .screenshot {
         margin-bottom: -5em;
         max-width: initial;
     }
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/OpenSans-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/OpenSans-Semibold.woff') format('woff');
 }
