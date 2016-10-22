@@ -26,6 +26,9 @@ p {
     margin-bottom: 1.7em;
     opacity: .6;
 }
+.nowrap {
+    white-space: nowrap;
+}
 
 h1,
 h2,
