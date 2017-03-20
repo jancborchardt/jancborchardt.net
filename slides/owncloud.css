@@ -1,0 +1,217 @@
+/**
+ * ownCloud theme for reveal.js.
+ *
+ * Copyright (C) 2013 Jan-Christoph Borchardt, http://jancborchardt.net
+ */
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Open Sans'), local('OpenSans'), url(OpenSans-Regular.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(OpenSans-Bold.woff) format('woff');
+}
+
+
+body {
+	background: #1d2d44; /* Old browsers */
+	background: -moz-linear-gradient(top, #35537a 0%, #1d2d44 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35537a), color-stop(100%,#1d2d44)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #35537a 0%,#1d2d44 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #35537a 0%,#1d2d44 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #35537a 0%,#1d2d44 100%); /* IE10+ */
+	background: linear-gradient(top, #35537a 0%,#1d2d44 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35537a', endColorstr='#1d2d44',GradientType=0 ); /* IE6-9 */
+}
+
+.reveal {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: -.02em;
+	color: #fff;
+}
+
+::selection {
+	color: white;
+	background: #1d2d44;
+	text-shadow: none;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	margin: 0 0 20px 0;
+	color: #fff;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: normal;
+	text-shadow: 0 0 6px rgba(0, 0, 0, .2);
+	line-height: 120%;
+}
+
+.reveal .dark {
+	color: #000;
+}
+
+.reveal h5 {
+	font-size: 30px;
+}
+.reveal h6 {
+	font-size: 24px;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+.reveal .dark a:not(.image) {
+	color: #000;
+}
+
+.reveal a:not(.image):hover {
+	opacity: .7;
+	text-shadow: none;
+	border: none;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+	margin: 15px 0px;
+	background: transparent;
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.reveal section img.noborder {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.reveal a:hover img {
+	background: rgba(255, 255, 255, .2);
+	border-color: #13daec;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+	border-right-color: #13daec; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+	border-left-color: #13daec; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+	border-bottom-color: #13daec; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+	border-top-color: #13daec; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+	border-right-color: #71e9f4; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+	border-left-color: #71e9f4; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+	border-bottom-color: #71e9f4; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+	border-top-color: #71e9f4; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+	background: rgba(0, 0, 0, .2); }
+
+.reveal .progress span {
+	background: rgba(0, 0, 0, .7);
+	-webkit-transition: width 800ms cubic-bezier(.26, .86, .44, .985);
+	-moz-transition: width 800ms cubic-bezier(.26, .86, .44, .985);
+	-ms-transition: width 800ms cubic-bezier(.26, .86, .44, .985);
+	-o-transition: width 800ms cubic-bezier(.26, .86, .44, .985);
+	transition: width 800ms cubic-bezier(.26, .86, .44, .985); }
+
+
+
+.reveal p {
+	line-height: 140%;
+}
+
+.reveal small,
+.reveal small a {
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, .1);
+	opacity: .8;
+}
+
+
+.background-old {	
+	background: #1d2d3d; /* Old browsers */
+	background: url('owncloud-gnome/noise.png'), -moz-linear-gradient(top, #35333a 0%, #1d2d3d 100%); /* FF3.6+ */
+	background: url('owncloud-gnome/noise.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35333a), color-stop(100%,#1d2d3d)); /* Chrome,Safari4+ */
+	background: url('owncloud-gnome/noise.png'), -webkit-linear-gradient(top, #35333a 0%,#1d2d3d 100%); /* Chrome10+,Safari5.1+ */
+	background: url('owncloud-gnome/noise.png'), -o-linear-gradient(top, #35333a 0%,#1d2d3d 100%); /* Opera11.10+ */
+	background: url('owncloud-gnome/noise.png'), -ms-linear-gradient(top, #35333a 0%,#1d2d3d 100%); /* IE10+ */
+	background: url('owncloud-gnome/noise.png'), linear-gradient(top, #35333a 0%,#1d2d3d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35333a', endColorstr='#1d2d3d',GradientType=0 ); /* IE6-9 */
+}
+
+
+.pulsate {
+    -webkit-animation:pulsate .5s ease-in-out infinite alternate;
+    -moz-animation:pulsate .5s ease-out infinite alternate;
+    -o-animation:pulsate .5s ease-in-out infinite alternate;
+    -ms-animation:pulsate .5s ease-in-out infinite alternate;
+    animation:pulsate .5s ease-out infinite alternate;
+}
+@-webkit-keyframes pulsate {
+	0%   { opacity: .5; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes pulsate {
+	0%   { opacity: .5; }
+	100% { opacity: 1; }
+}
+@-ms-keyframes pulsate {
+	0%   { opacity: .5; }
+	100% { opacity: 1; }
+}
+@-o-keyframes pulsate {
+	0%   { opacity: .5; }
+	100% { opacity: 1; }
+}
+@keyframes pulsate {
+	0%   { opacity: .5; }
+	100% { opacity: 1; }
+}
