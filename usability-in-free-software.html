@@ -81,8 +81,8 @@
 <h3 id="About-the-author"><a href="#About-the-author">1.1 About the author</a></h3>
 <p>This guidebook is a result of being heavily involved with both free software and usability. Most of the learnings come from working on two free & open source software projects.
 <ol>
-	<li><a href="http://owncloud.org">ownCloud</a>, a personal web platform for data and applications, roughly similar to Dropbox, Google Apps and MobileMe. I work on user experience in its many facets: interface design, frontend coding, user research, community, support and also do some backend programming.
-	<li><a href="http://joindiaspora.com">Diaspora</a>, a decentralized social network roughly similar to Facebook and Twitter. It is a bigger project already, there I build a workflow for user experience design & testing and establish a user experience team.
+	<li><a href="https://nextcloud.com">Nextcloud</a> (formerly ownCloud), a personal web platform for data and applications, roughly similar to Dropbox, Google Apps and iCloud. I work on user experience in its many facets: interface design, frontend coding, user research and community.
+	<li><a href="https://joindiaspora.com">Diaspora</a>, a decentralized social network roughly similar to Facebook and Twitter. It is a bigger project already, there I build a workflow for user experience design & testing and establish a user experience team.
 </ol>
 <p>In Fall–Winter 2010 I interned at relevantive in Berlin and did user tests in the lab, in the car and by foot. I also got involved with <a href="http://openusability.org">OpenUsability</a>.
 <p>I did interaction design for <a href="http://launchpad.net/cardapio">Cardapio</a>, a menu and launcher similar to the Windows start menu and Mac OS Spotlight.
@@ -170,7 +170,7 @@ You are free to share and remix the work as long as you attribute Jan-Christoph 
 <h3 id="Application-itself"><a href="#Application-itself">3.2 Application itself</a></h3>
 <p>This is of course the main focus of your work.
 <p>Regardless if your software is a web application or there are desktop applications available for multiple platforms such as free software distributions, Mac OS and Windows – you should test all of these if possible. With users of that specific operating system as participants you can see how people familiar with different interaction concepts handle your application.
-<p>More and more people today have smartphones and need the software usable on that – be it for Android, iOS, webOS, MeeGo, Windows Phone 7 or BlackBerry. Adjusting the web interface is the easiest route as there likely are no capacities for development of dedicated applications. If you use open protocols you might be able to recommend 3rd party software (we do that for ownCloud and mobile WebDAV clients at the moment). In that case you need to test how it works and if there are multiple clients only recommend one – the best one.
+<p>More and more people today have smartphones and need the software usable on that – be it for Android, iOS, webOS, MeeGo, Windows Phone 7 or BlackBerry. Adjusting the web interface is the easiest route as there likely are no capacities for development of dedicated applications. If you use open protocols you might be able to recommend 3rd party software (we do that for Nextcloud and mobile WebDAV clients). In that case you need to test how it works and if there are multiple clients only recommend one – the best one.
 <p>Testing of basic functionality can be done beforehand. For example a web interface can be viewed in different browsers on the cross-browser testing site <a href="http://browserling.com">Browserling</a>.
 <p>As important as the usability of the application itself is, always note that when the website and installation is not easy enough, people will never even come that far.
 
@@ -318,11 +318,11 @@ Nielsen also notes: <q><em>The most striking truth of the curve is that zero use
 <h3 id="Hear-users"><a href="#Hear-users">6.6 Hear users</a></h3>
 <p>Subscribe to all online updates regarding your software. That way you can monitor problems, successes, what people love, what they hate and act upon them. Fixing it directly or helping with their problems is a good user experience by itself. There should be an official account for the software on the relevant platforms like Identi.ca, Diaspora and Twitter to be able to help or ask questions for clarification.
 <p>People will rant, praise, ask questions, post usage instructions for others or write a blog post describing how the software works. This is very insightful as outside perspectives on your project and how others perceive it to be.
-<p>I had the best results with the three searches of Identi.ca, Twitter and Google Blog. While you can view them as pages in the browser or search manually, you should subscribe to them in a news reader. <a href="http://newsblur.com">NewsBlur</a>is a good free software, web-based feed reader I use for tracking ownCloud. These are the addresses for the different search sites where you need to replace »ownCloud« with the name of your project:
+<p>I had the best results with the three searches of Identi.ca, Twitter and Google Blog. While you can view them as pages in the browser or search manually, you should subscribe to them in a news reader. <a href="https://apps.nextcloud.com/apps/news">Nextcloud News</a> is a good free software, web-based feed reader I use for tracking Nextcloud news. These are the addresses for the different search sites where you need to replace »Nextcloud« with the name of your project:
 <ul>
-	<li><a href="http://search.twitter.com/search.atom?q=ownCloud">Twitter search</a>
-	<li><a href="http://www.google.com/#q=owncloud&amp;tbm=blg">Google blog search</a>
-	<li><a href="http://identi.ca/search/notice/rss?q=ownCloud">identi.ca search</a>
+	<li><a href="http://search.twitter.com/search.atom?q=Nextcloud">Twitter search</a>
+	<li><a href="http://www.google.com/#q=nextcloud&amp;tbm=blg">Google blog search</a>
+	<li><a href="http://identi.ca/search/notice/rss?q=Nextcloud">identi.ca search</a>
 </ul>
 <p>At first it might seem like there is the problem of advanced users again. Are people who can use Identi.ca, Twitter and blogs really our target audience? Similar to what <a href="#Benson-Mueller-Mzourek-2004">Benson, Müller-Prove & Mzourek (2004)</a> say about mailing list participants. This is less of an issue here since the listed tools are much more common and easier to use than mailing lists.
 <p>When a problem or question occurs frequently, it needs to be documented and acted upon because it can be considered a severe usability issue.
@@ -400,7 +400,7 @@ During and after the tasks you can ask them follow-up questions for them to clar
 <h3 id="Monitor-users"><a href="#Monitor-users">6.13 Monitor users</a></h3>
 <p>I was actually very hesitant to include this since I highly value privacy. I kept it since results are anonymized and aggregated.
 <p>For the web application and web site of the project you can use the free & open source <a href="http://labsmedia.com/clickheat">ClickHeat</a> suite. It can be hosted on the same server and included in the site you want to monitor via JavaScript snippet.
-<p>This can help prioritize feature development and fixes. In a heatmap test with the public ownCloud demo it was apparent that the search box was not used even a single time and is thus lower in priority.
+<p>This can help prioritize feature development and fixes. In a heatmap test with the public Nextcloud demo it was apparent that the search box was not used even a single time and is thus lower in priority – or not properly findable.
 
 
 
@@ -465,7 +465,7 @@ Similar to <a href="#Tag-bugs">7.3 Tag bugs</a>, this outspoken focus on small u
 
 <h3 id="Sketch-ideas"><a href="#Sketch-ideas">7.6 Sketch ideas</a></h3>
 <p>When the user tests or personal experience reveal deeper problems with the design, sketching the suggestions is best to visualize them to other people on the projects. Even very quick and dirty mockups can help a lot.
-<p>This sketch started off the ownCloud file manager redesign. I openly communicated it to the mailing list together with a writeup of changes and reasons.
+<p>This sketch started off the Nextcloud file manager redesign. I openly communicated it to the mailing list together with a writeup of changes and reasons.
 <p>While your design is not yet tested in implementation, be wary of people evaluating it from the mockup. With a fundamental design change many people will criticize it for being different than the current state (<a href="#Nichols-Twidale-2003">Nichols & Twidale, 2003</a>). At the same time, consider that you didn’t see your designs in production yet either. You can only provide the reasoning which lead you to make the decisions and changing the design as you did. Also see <a href="#Test-mockups">6.9 Test mockups</a>.
 
 <h3 id="Fix-small-problems-yourself"><a href="#Fix-small-problems-yourself">7.7 Fix small problems yourself</a></h3>
@@ -545,14 +545,14 @@ Similar to <a href="#Tag-bugs">7.3 Tag bugs</a>, this outspoken focus on small u
 
 <h2 id="Thanks"><a href="#Thanks">10. Thanks</a></h2>
 <p>To all the amazing people who helped me (even unknowingly) in writing this:
-<p><a href="http://owncloud.org"><strong>ownCloud</strong></a>: Frank Karlitschek, Robin Appelman, Jakob Sack, Michael Gapczynski, Arthur Schiwon, all other contributors …
-<p><a href="http://joindiaspora.com"><strong>Diaspora</strong></a>: Ilya Zhitomirskiy, Kevin Kleinman, …
+<p><a href="https://nextcloud.com"><strong>Nextcloud</strong></a>: Frank Karlitschek, Robin Appelman, Jakob Sack, Michael Gapczynski, Arthur Schiwon, all other contributors …
+<p><a href="https://joindiaspora.com"><strong>Diaspora</strong></a>: Ilya Zhitomirskiy, Kevin Kleinman, …
 <p><a href="http://mediagoblin.org"><strong>MediaGoblin</strong></a>: Chris Webber, Joar Wandborg, Deborah Nicholson, Jef van Schendel, …
-<p><a href="http://live.gnome.org/Design"><strong>Gnome designers</strong></a>: Allan Day, William Jon McCann, Hylke Bons, Jakub Steiner, Calum Benson, Andreas Nilsson, Máirín Duffy, …
-<p><a href="http://design.canonical.com"><strong>Ubuntu designers</strong></a>: Charline Poirier, Matthew Paul Thomas, David Siegel, …
-<p><a href="http://relevantive.de"><strong>relevantive</strong></a>: Fabian Klenk, Dominik Sibum, Jan Mühlig, …
-<p><a href="http://www.hdm-stuttgart.de"><strong>Media University Stuttgart</strong></a>: Michael Burmester, Ralph Tille, David Prüm, …
-<p>Michiel de Jong of <a href="http://unhosted.org">Unhosted</a>, Bjarni Rúnar Einarsson of <a href="http://pagekite.net">PageKite</a>, Thiago Teixeira of <a href="http://launchpad.net/cardapio">Cardapio</a>, Samuel Clay of <a href="http://newsblur.com">NewsBlur</a>, the <a href="http://yorba.org/shotwell">Shotwell</a> team, Peter Sikking of <a href="http://gimp.org">GIMP</a>, Ellen Reitmayr, <a href="http://parkerhiggins.net">Parker Higgins</a>, Max Heinemeyer, …
+<p><a href="https://live.gnome.org/Design"><strong>Gnome designers</strong></a>: Allan Day, William Jon McCann, Hylke Bons, Jakub Steiner, Calum Benson, Andreas Nilsson, Máirín Duffy, …
+<p><a href="https://design.canonical.com"><strong>Ubuntu designers</strong></a>: Charline Poirier, Matthew Paul Thomas, David Siegel, …
+<p><a href="https://relevantive.de"><strong>relevantive</strong></a>: Fabian Klenk, Dominik Sibum, Jan Mühlig, …
+<p><a href="https://www.hdm-stuttgart.de"><strong>Media University Stuttgart</strong></a>: Michael Burmester, Ralph Tille, David Prüm, …
+<p>Michiel de Jong of <a href="https://unhosted.org">Unhosted</a>, Bjarni Rúnar Einarsson of <a href="https://pagekite.net">PageKite</a>, Thiago Teixeira of <a href="https://launchpad.net/cardapio">Cardapio</a>, Samuel Clay of <a href="https://newsblur.com">NewsBlur</a>, the <a href="http://yorba.org/shotwell">Shotwell</a> team, Peter Sikking of <a href="https://gimp.org">GIMP</a>, Ellen Reitmayr, <a href="https://parkerhiggins.net">Parker Higgins</a>, Max Heinemeyer, …
 <p>Everyone who participates in a usability test and provides valuable feedback.
 <p>…
 
