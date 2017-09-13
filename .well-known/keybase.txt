@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/jancborchardt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jancborchardt.net
+  * I am jancborchardt (https://keybase.io/jancborchardt) on keybase.
+  * I have a public key with fingerprint ECD0 C4A3 A2FC 72B3 54E4  FC78 CBD8 46FC 845C BE17
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014c4ef89265862f794b5dcd64b55caf5037c59d3bf5646523be14e8f80aa139a70a",
+      "fingerprint": "ecd0c4a3a2fc72b354e4fc78cbd846fc845cbe17",
+      "host": "keybase.io",
+      "key_id": "cbd846fc845cbe17",
+      "kid": "01014c4ef89265862f794b5dcd64b55caf5037c59d3bf5646523be14e8f80aa139a70a",
+      "uid": "895027f0b89f0aed3e11145895777419",
+      "username": "jancborchardt"
+    },
+    "service": {
+      "hostname": "jancborchardt.net",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1505306745,
+  "expire_in": 157680000,
+  "prev": "15c0f30606dee3fa84b788b3fa503fa58a56043520a94f4517255c679495a932",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUmtQVVUUvqg8YgYzLcikwgM1TiCec8/Z53EltHgUjDdEUwEv3DmPfeDwOOdy
+74Fg8CIRiU4zZIH0MAm1whBoxqYHj4GoUBkeOZiCMVeZJIJKAhUIpKF9mfrnz/aP
+vfZe61vf/tY3+6jfSoOPR89Q7GKZpT3Ao2dCMCQ3bzpQhAmaVIiZirAsuBxgtgQd
+ujVLkTAThhM4QYkUlFnOSAOWNsoMRwlAEiUaBSDyMsBJRgScRAoyoCkaGEkBEhRk
+ZRbneYLkeAbnsTBMVtR0aLfZFVVHtFCUcJHiSd4oi4xRIAEFKXRiRUFiKVoWWQqI
+iIZBjRmaw92BxAm8A4YrGsqhi3VZ3n3w/7PuvGU6lgO4kZFxgeVknIcSCQmCoABK
+MwxDEZwb6IB2lc+BCJ3Jq6Kg2cUM3i7pmDMMQ6V8RYRud93j3A8WrkIdsdjsmq6J
+WjYqZ+i6zeTu1gttbvgrULD+S2QVFFVChqKGfGh3KJqKmQiEFHXFzUwAHJA4zVAg
+DIMFNsUOrYobARiaxdFyPwPzMd6EEUDEZQTFaQlCUuZZSmBYVkAnZA/aWB7QOEUC
+I85zlEwBgjEi82jkJQd4jjRi7tlyVQ0z0Ugnn45kOpR0ldfz7BBz+h5ZEbjK4OFj
+8PJc4f5qBt8H1vz3/3LIB5cydx9rahqOSMVPpv1wsbxpq/WR+o7a69nd9U/WFlwO
+y8xIkWq3x0gvVfW6tq+bybK8+6pjlAlW++qn8Z8nWifNpWXerydeP/dLVkjF25m+
+4XGfg92VHdGLd3+fXvj1Cb/QbWtuFH+Q9Fh7+anA+IsnF3gv8Ztoc25sTcdbTow0
+0Tf/rnbWWca/3VBX3DYwMB0lg6VPs+/2z7N1ha17Es5HlfHPWip+nL03UHm41TL4
+QldbffmHf57Y6+qcTai5+Vtwu7p26encloDO7vUjTR3jUxXfrU/tPzdU2myMy7Mc
+6q4OunRjcPPQ2JWldN/m21Vnzs6W4VUf7Xv/oRnSUrK6ZW3pkXsu39jQx/G+rI+v
+bfHUvzi2qfDR16I3d6f4e433nvnsYODlSMeQq23X2Ub26ntRac9saSlq7nGO+Dfu
+yza7BufMzlTvmsbRBs674dJ+Jmbj1fnUA/1vfpJwep3fnplV5tVvDEcuXulmutSv
+RosHTldj1P7G5NrElLmcDf7Xcg6OjEJzZ8Rs0exC8ETK17e6KgfO5z9c3rwzsi+O
+1Y7H+MyFJNXvLXp+8ku65Sc42ffXlD2wZGjHczsNpgsR8cTGP27lTd1O7N31VKiW
++86dO7atad8HnBgZazmU/HJfXWXQtgZXfAjx4uSoR8fKpB2LXqc8L0hlUU0FR50F
+DUEhbWnDxyvH5jfb4kv+AQ==
+=G66z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jancborchardt
+
+==================================================================
