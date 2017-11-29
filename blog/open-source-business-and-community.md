@@ -1,17 +1,23 @@
-# Open Source business
+# Open Source business and community
 
 Open Source: licenses, resources, business models and building community.
 
 This is the writeup and links of my workshop :) Hope it helps you, and please let me know if there are any questions! Or contact me via http://jancborchardt.net
 
+A great quick guide on how to get started open sourcing your project: [Open Source Guide](https://opensource.guide/).
+
+Also posted to the [Social-Digital Innovation forum](http://discourse.sdinnovation.org/t/open-source-licenses-resources-business-models-and-building-community/95/2).
+
+
 ## Why is it important?
 - Working for social good
+- People trust open projects more
 - Existing even when the company gets acquired or bankrupt
 - Impact beyond the confines of company resources
 	- [Wikipedia](https://www.wikipedia.org/) runs on only 3m$/year through donations, majority of content is contributed by volunteers
 	- [Wordpress](https://wordpress.com/): there’s lots of agencies & freelancers who offer hosting and services
 	- [Maps.me](https://maps.me/) gets data from [OpenStreetMap](https://www.openstreetmap.org/)
-	- [Nextcloud](https://nextcloud.com/) has around 25 full-timers but hundreds of volunteers, and there’s a lot of other service providers
+	- [Nextcloud](https://nextcloud.com/) has around 25 full-timers but hundreds of volunteers, and there’s a lot of other service providers. Everything we do is open source [on Github](https://github.com/nextcloud/)
 	- [Open Source Design](http://opensourcedesign.net/) is a distributed community with everyone working in their free time, in the process communicating and collaborating a lot
 - Better security through ability to review everything. (See also latest macOS vulnerability.) There’s also communities where projects can work with security researchers like [Hacker One](https://www.hackerone.com)
 
@@ -23,7 +29,7 @@ This is the writeup and links of my workshop :) Hope it helps you, and please le
 
 ## Licenses
 - **[Creative Commons](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/) for text & media:** Recommended are Attribution or Attribution-ShareAlike
-- **[AGPL](https://en.wikipedia.org/wiki/Affero_General_Public_License) for code:** Comparable to Creative Commons Attribution-ShareAlike, so other people need to also publish their changes under the same license. Easily explained at [tldrlegal.com](https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0))
+- **[AGPL](https://en.wikipedia.org/wiki/Affero_General_Public_License) for code:** Comparable to Creative Commons Attribution-ShareAlike, so other people need to also publish their changes under the same license. Easily explained at [tldrlegal.com](https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)) – this makes sure that a potential »competitor« needs to open source all their modifications.
 
 ## Working in the open
 - Code and issues in the open, transparent process
@@ -60,3 +66,44 @@ This is the writeup and links of my workshop :) Hope it helps you, and please le
 - **Partners / affiliates:** [Firefox/Mozilla](https://www.mozilla.org) (works with search engine deals, as in Yahoo and Google pay them to be included, or the frontpage), [Maps.me](https://maps.me) (integrate hotel and taxi services, are also part of Mail.ru)
 - **Selling hardware:** [Fairphone](https://www.fairphone.com/), [Purism laptop](https://puri.sm/), [Nager-IT fair mouse](https://www.nager-it.de/), [Cyborg Unplug](https://plugunplug.net/)
 - [Public Library of Science](https://www.plos.org/) charges authors
+
+
+
+---------------------------------
+
+
+## Specific project advice and links
+
+Also posted to the [Social-Digital Innovation forum](http://discourse.sdinnovation.org/t/open-source-licenses-resources-business-models-and-building-community/95/3).
+
+### [Envienta](http://envienta.co/)
+- **Open source hardware development, investment & ecosystem for living**
+- Open Source Hardware Association https://www.oshwa.org/
+- Thingiverse https://www.thingiverse.com/
+- Open Source Ecology http://opensourceecology.org/ global village construction kit
+- OpenFarm https://openfarm.cc/
+- Open Source Circular Economy days https://oscedays.org/
+- Open Hardware Repository https://www.ohwr.org/
+
+### [Met3r](http://met3r.com/)
+- **home smart meter, save electricity, identify usage patterns**
+- Open Energy Monitor https://openenergymonitor.org/
+- Link up with eco movement and green power providers
+- Selling point: only user has their private data
+- Strong terms of service are needed https://tosdr.org/
+- For hardware part also see hardware links for Envienta
+
+### [Cloudess](https://www.meetup.com/cloudess/)
+- **Women in tech initiative, partnered with Microsoft**
+- Project Include http://projectinclude.org
+- Open Source Diversity http://opensourcediversity.org
+- RailsGirls http://railsgirls.com/
+- Women TechMakers (Google) https://www.womentechmakers.com/
+- Fund Club as participating project to get funded http://joinfundclub.com/
+
+### LifeBot
+- (Wasn’t in the call unfortunately)
+- Open source license means that yes, unfortunately also companies deemed »evil« can use the project. However that is very difficult to judge (Airbus, NASA, advertising, car companies etc.) and the benefits to humanity if open sourced and remixable are much bigger.
+- If you use a copyleft license like the AGPL mentioned above, any other company using and  modifying your project has to also publish these modifications, effectively giving you a collaborator.
+- Also, if you choose companies to work with or take as a customer, that’s where you can make these kinds of decisions and define where you stand (we do that at Nextcloud for example).
+- (Also see hardware links for Envienta)
