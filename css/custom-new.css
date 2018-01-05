@@ -97,9 +97,12 @@ article {
     padding: 10%;
 }
 header {
-    background: url('../img/Jan-Christoph Borchardt.jpg') no-repeat;
+    background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
+}
+#jan header {
+    background-image: url('../img/Jan-Christoph Borchardt.jpg');
     background-color: #000 !important;
     color: #fff;
 }
@@ -109,7 +112,13 @@ header h1 {
 header h1 {
     max-width: 80%;
 }
-header p {
+#stuff header h1,
+#stuff header p,
+#stuff h2 {
+    max-width: initial;
+    text-align: center;
+}
+#jan header p {
     max-width: 60%;
 }
 header .contact a {
@@ -120,6 +129,9 @@ header .contact a {
 article {
     position: relative;
     overflow: hidden;
+    color: #fff;
+}
+article a {
     color: #fff;
 }
 article .icon {
@@ -157,6 +169,9 @@ article .screenshot {
 
 #acting { background-color: #6b4fbb; }
 #africahacktrip { background-color: #ea623b; }
+#clothes { background-color: lightcoral; }
+#cycling { background-color: #62c47f; }
+#hygiene { background-color: cornflowerblue; }
 #music {
     background: -moz-linear-gradient(top, #f0a808 0%, #f0228f 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0a808), color-stop(100%,#f0228f)); /* Chrome,Safari4+ */
@@ -166,7 +181,6 @@ article .screenshot {
 	background: linear-gradient(top, #f0a808 0%,#f0228f 100%); /* W3C */
 }
 #nextcloud { background-color: #0082c9; }
-#cycling { background-color: #62c47f; }
 #photography { background-color: #000; }
 #speaking { background-color: #a1bcff; }
 #speaking .screenshot {
@@ -182,7 +196,9 @@ article .screenshot {
     position: relative;
     z-index: 10;
 }
+#tech { background-color: lightslategrey; }
 #thenounproject { background-color: #231f20; }
+#tools { background-color: seagreen; }
 #opensourcedesign,
 #tosdr,
 #minimalism,
@@ -196,9 +212,44 @@ article .screenshot {
 #minimalism .button-primary,
 #wikipedia .button-primary { background-color: #000; border-color: #000; color: #fff; }
 
+#stuff article li {
+    list-style-type: none;
+}
+
+#stuff article li::before {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -25px;
+}
+
+#stuff article li#laptop::before { content: '💻'; }
+#stuff article li#phone::before { content: '📱'; }
+#stuff article li#earphones::before { content: '🎧'; }
+#stuff article li#screen::before { content: '📺'; }
+#stuff article li#shirts::before { content: '👕'; }
+#stuff article li#pants::before { content: '👖'; }
+#stuff article li#jacket::before { content: '☃️'; }
+#stuff article li#shoes::before { content: '👟'; }
+#stuff article li#toothbrush::before { content: '🤓'; }
+#stuff article li#soap::before { content: '🛁'; }
+#stuff article li#deodorant::before { content: '👃'; }
+#stuff article li#shave::before { content: '✂️'; }
+#stuff article li#backpack::before { content: '🎒'; }
+#stuff article li#money::before { content: '💳'; }
+#stuff article li#id::before { content: '🛂'; }
+#stuff article li#health::before { content: '⚕️'; }
+#stuff article li#bed::before { content: '🛏️'; }
+#stuff article li#bicycle::before { content: '🚲'; }
+
+
+
 @media only screen and (max-width: 1000px) {
-    header {
+    #jan header {
         padding-bottom: 200px;
+    }
+
+    #stuff header p {
+        text-align: left;
     }
 
     article .content {
