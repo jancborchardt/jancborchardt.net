@@ -167,6 +167,19 @@ article .screenshot {
     max-width: 80%;
 }
 
+.back {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    padding: 12px 22px;
+    opacity: .5;
+}
+.back:hover,
+.back:focus {
+    opacity: 1;
+}
+
 #acting { background-color: #6b4fbb; }
 #africahacktrip { background-color: #ea623b; }
 #clothes { background-color: lightcoral; }
