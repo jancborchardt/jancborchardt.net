@@ -24,7 +24,7 @@ body {
 p {
     font-size: 21px !important;
     margin-bottom: 1.7em;
-    opacity: .6;
+    opacity: .8;
 }
 .nowrap {
     white-space: nowrap;
@@ -194,6 +194,7 @@ article .screenshot {
 	background: linear-gradient(top, #f0a808 0%,#f0228f 100%); /* W3C */
 }
 #nextcloud { background-color: #0082c9; }
+#opensourcediversity { background-color: #45b086; }
 #photography { background-color: #000; }
 #speaking { background-color: #a1bcff; }
 #speaking .screenshot {
@@ -212,14 +213,17 @@ article .screenshot {
 #tech { background-color: lightslategrey; }
 #thenounproject { background-color: #231f20; }
 #tools { background-color: seagreen; }
+#keeporsweep,
 #opensourcedesign,
 #tosdr,
 #minimalism,
 #wikipedia { background-color: #fff; color: #000; }
+#keeporsweep .button,
 #opensourcedesign .button,
 #tosdr .button,
 #minimalism .button,
 #wikipedia .button { color: #000; border-color: #000; }
+#keeporsweep .button-primary,
 #opensourcedesign .button-primary,
 #tosdr .button-primary,
 #minimalism .button-primary,
