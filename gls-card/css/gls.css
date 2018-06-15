@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('SourceSansPro-Bold.ttf');
+}
+
+/*
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url('Source Code Pro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url('SourceCodePro-Bold.ttf');
+}
+*/
+
+body {
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+	line-height: 170%;
+}
+
+header,
+header a {
+	background-color: #01569a;
+	color: #fff;
+}
+header img {
+	width: 200px;
+}
+
+#design {
+	background-color: #01569a;
+	padding: 0;
+}
+#design img {
+	width: 100%;
+}
+@media only screen and (min-width: 768px) {
+	#design img {
+		margin-top: -10%;
+	}
+}
+@media only screen and (min-width: 1080px) {
+	#design img {
+		margin-top: -20%;
+	}
+}
+#design .design-text {
+	position: absolute;
+	top: 0;
+	padding: 10%;
+}
+
+#material {
+	background-color: #01569a;
+}
+
+#comparison,
+#comparison a {
+	background-color: #fff;
+	color: #01569a;
+}
+#comparison img {
+	width: 300px;
+	margin: 1rem 1rem 1rem 0;
+}
+#comparison img.card {
+	border-radius: 10px;
+	filter: drop-shadow(0 2px 10px rgba(50,50,50,.5));
+}
+#comparison p {
+	opacity: 1;
+}
+
+#resources {
+	background-color: #01569a;
+}
