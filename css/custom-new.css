@@ -15,7 +15,7 @@ body {
     padding: 0;
     background: #fff;
     color: #000;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
     font-size: 21px;
     line-height: 1.7em;
@@ -33,7 +33,7 @@ p {
 h1,
 h2,
 h3 {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2em;
 }
 h1 {
@@ -54,7 +54,7 @@ h3 {
 }
 
 a {
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     text-decoration: none;
     color: #000;
@@ -78,12 +78,12 @@ ul, ol {
     z-index: -1;
 }
 
-#index, #indextitle { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:600; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+#index, #indextitle { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:700; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
 #index { top:5em; }
 #index:hover, #index:focus { opacity:1; }
 #index a { display:block; font-weight:normal; }
 #index ol { list-style:none; }
-#index li a:hover, #index li a:focus, #index li a:active, #index li.current>a { font-weight:600; opacity:1; color:#000; }
+#index li a:hover, #index li a:focus, #index li a:active, #index li.current>a { font-weight:700; opacity:1; color:#000; }
 #index ol li:hover, #index ol li:focus, #index ol li:active, #index li.current { list-style:decimal; }
 #indextitle strong a { font-size:1.4em; color:#000; margin-bottom:.2em; }
 #indextitle em a { font-size:1.2em; color:#000; margin-bottom:.5em; }
@@ -153,7 +153,7 @@ article .button {
     border: 2px solid #fff;
     color: #fff;
     border-radius: 3px;
-    font-weight: 300;
+    font-weight: 400;
 }
 article .button-primary {
     background-color: #fff;
@@ -182,9 +182,7 @@ article .screenshot {
 
 #acting { background-color: #6b4fbb; }
 #africahacktrip { background-color: #ea623b; }
-#clothes { background-color: lightcoral; }
 #cycling { background-color: #62c47f; }
-#hygiene { background-color: cornflowerblue; }
 #music {
     background: -moz-linear-gradient(top, #f0a808 0%, #f0228f 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0a808), color-stop(100%,#f0228f)); /* Chrome,Safari4+ */
@@ -210,9 +208,7 @@ article .screenshot {
     position: relative;
     z-index: 10;
 }
-#tech { background-color: lightslategrey; }
 #thenounproject { background-color: #231f20; }
-#tools { background-color: seagreen; }
 #keeporsweep,
 #opensourcedesign,
 #tosdr,
@@ -228,6 +224,15 @@ article .screenshot {
 #tosdr .button-primary,
 #minimalism .button-primary,
 #wikipedia .button-primary { background-color: #000; border-color: #000; color: #fff; }
+
+
+
+/* Stuff page --------------------------------------------------------------- */
+
+#clothes { background-color: lightcoral; }
+#hygiene { background-color: cornflowerblue; }
+#tech { background-color: lightslategrey; }
+#tools { background-color: seagreen; }
 
 #stuff article li {
     list-style-type: none;
@@ -260,6 +265,17 @@ article .screenshot {
 
 
 
+/* Shorts page -------------------------------------------------------------- */
+
+#sustainability { background-color: lightcoral; }
+#browsertabs { background-color: cornflowerblue; }
+#tech { background-color: lightslategrey; }
+#tools { background-color: seagreen; }
+
+
+
+
+
 @media only screen and (max-width: 1000px) {
     #jan header {
         padding-bottom: 200px;
@@ -285,13 +301,13 @@ article .screenshot {
 @font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
-	font-weight: 300;
-	src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/OpenSans-Light.woff') format('woff');
+	font-weight: 400;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/OpenSans-Regular.ttf') format('ttf');
 }
 
 @font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
-	font-weight: 600;
-	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/OpenSans-Semibold.woff') format('woff');
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/OpenSans-Bold.ttf') format('ttf');
 }
