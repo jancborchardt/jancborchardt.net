@@ -47,10 +47,22 @@ header img {
 	background-color: #01569a;
 	padding: 0;
 }
+#design .design-text {
+	position: relative;
+	background-color: #01569a;
+	padding: 10%;
+	z-index: 2;
+}
 #design img {
 	width: 100%;
+	margin-top: -40%;
 }
 @media only screen and (min-width: 768px) {
+	#design .design-text {
+		position: absolute;
+		top: 0;
+		background-color: transparent;
+	}
 	#design img {
 		margin-top: -10%;
 	}
@@ -59,11 +71,6 @@ header img {
 	#design img {
 		margin-top: -20%;
 	}
-}
-#design .design-text {
-	position: absolute;
-	top: 0;
-	padding: 10%;
 }
 
 #material {
