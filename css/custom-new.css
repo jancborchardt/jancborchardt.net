@@ -233,6 +233,7 @@ article .screenshot {
 #hygiene { background-color: cornflowerblue; }
 #tech { background-color: lightslategrey; }
 #tools { background-color: seagreen; }
+#gifting, #gifting a { color: #000; }
 
 #stuff article li {
     list-style-type: none;
@@ -263,6 +264,17 @@ article .screenshot {
 #stuff article li#bed::before { content: '🛏️'; }
 #stuff article li#bicycle::before { content: '🚲'; }
 
+#stuff article li#zepto::before { content: '💻'; }
+#stuff article li#fairphonecamera::before { content: '📷'; }
+#stuff article li#mouse::before { content: '🖱'; }
+#stuff article li#bicyclejerseys::before { content: '🎽'; }
+#stuff article li#bicyclestraps::before { content: '🚲'; }
+#stuff article li#bicyclepump::before { content: '🐡'; }
+#stuff article li#bicycleshoes::before { content: '👟'; }
+#stuff article li#gilchrist::before { content: '🚑'; }
+#stuff article li#case::before { content: '💼'; }
+#stuff article li#pedal::before { content: '🎹'; }
+#stuff article li#fivefingers::before { content: '🐾'; }
 
 
 /* Shorts page -------------------------------------------------------------- */
