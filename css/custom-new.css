@@ -276,7 +276,7 @@ article .screenshot {
 #stuff article li#pedal::before { content: '🎹'; }
 #stuff article li#fivefingers::before { content: '🐾'; }
 #stuff article li#invite::before { content: '🎫'; }
-
+#stuff article li.stuff-taken { opacity: .5; }
 
 /* Shorts page -------------------------------------------------------------- */
 
