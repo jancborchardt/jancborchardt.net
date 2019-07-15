@@ -229,11 +229,10 @@ article .screenshot {
 
 /* Stuff page --------------------------------------------------------------- */
 
-#clothes { background-color: lightcoral; }
-#hygiene { background-color: cornflowerblue; }
-#tech { background-color: lightslategrey; }
-#tools { background-color: seagreen; }
-#gifting, #gifting a { color: #000; }
+#stuff article,
+#stuff a {
+    color: #000;
+}
 
 #stuff article li {
     list-style-type: none;
@@ -282,8 +281,8 @@ article .screenshot {
 
 #sustainability { background-color: lightcoral; }
 #browsertabs { background-color: cornflowerblue; }
-#tech { background-color: lightslategrey; }
-#tools { background-color: seagreen; }
+#shorts1 { background-color: lightslategrey; }
+#shorts2 { background-color: seagreen; }
 
 
 
