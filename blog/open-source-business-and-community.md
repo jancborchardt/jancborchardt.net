@@ -6,8 +6,6 @@ This is the writeup and links of my workshop :) Hope it helps you, and please le
 
 A great quick guide on how to get started open sourcing your project: [Open Source Guide](https://opensource.guide/).
 
-Also posted to the [Social-Digital Innovation forum](http://discourse.sdinnovation.org/t/open-source-licenses-resources-business-models-and-building-community/95/2).
-
 
 ## Why is it important?
 - Working for social good
@@ -66,15 +64,13 @@ Also posted to the [Social-Digital Innovation forum](http://discourse.sdinnovati
 - **Partners / affiliates:** [Firefox/Mozilla](https://www.mozilla.org) (works with search engine deals, as in Yahoo and Google pay them to be included, or the frontpage), [Maps.me](https://maps.me) (integrate hotel and taxi services, are also part of Mail.ru)
 - **Selling hardware:** [Fairphone](https://www.fairphone.com/), [Purism laptop](https://puri.sm/), [Nager-IT fair mouse](https://www.nager-it.de/), [Cyborg Unplug](https://plugunplug.net/)
 - [Public Library of Science](https://www.plos.org/) charges authors
-
+- [LEGO Ideas / Cuusoo](https://en.wikipedia.org/wiki/Lego_Ideas) as example of proprietary company working with user generated or open source design process, innovation, rescued LEGO from bankruptcy
 
 
 ---------------------------------
 
 
 ## Specific project advice and links
-
-Also posted to the [Social-Digital Innovation forum](http://discourse.sdinnovation.org/t/open-source-licenses-resources-business-models-and-building-community/95/3).
 
 ### [Envienta](http://envienta.co/)
 - **Open source hardware development, investment & ecosystem for living**
