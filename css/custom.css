@@ -1,14 +1,19 @@
-/*@font-face { font-family:'Alegreya'; font-weight:normal; src:url(Alegreya-Regular.ttf); }
-@font-face { font-family:'Alegreya'; font-weight:bold; src:url(Alegreya-Bold.ttf); }*/
-@font-face { font-family:'Miso'; font-weight:normal; src:url(Miso.otf); }
-/*@font-face { font-family:'Miso'; font-weight:lighter; src:url(Miso-Light.otf); }
-@font-face { font-family:'Miso'; font-weight:bold; src:url(Miso-Bold.otf); }*/
-
-
-
-body { width:30em; margin:4em auto; padding:0; background:#fff; color:#000; font:normal 1.5em/150% FreeSans,Helvetica,sans-serif; }
-a { font-weight:bold; white-space:nowrap; text-decoration:none; color:#000; opacity:.9; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
-a:hover, a:focus { opacity:.6; outline:0; }
+body {
+    width: 30em;
+    max-width: calc(100% - 3em);
+    margin: 4em auto;
+    padding: 1em;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Cantarell, Ubuntu, "Helvetica Neue", Arial, sans-serif, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+h1 {
+    line-height: 130%;
+}
+a { font-weight:bold; text-decoration:none; color:#000; opacity:.9; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+a:hover, a:focus { opacity:.7; }
 em, blockquote, q, cite { font:italic 1.08em FreeSerif,Georgia,serif; }
 #background { width:100%; position:absolute; top:0; left:0; z-index:-1; }
 ul, ol { padding-left:0; }
@@ -19,7 +24,32 @@ blockquote>p { margin-bottom:0; }
 blockquote>p+p { margin-top:0; }
 blockquote a, blockquote span { font:bold .8em/150% FreeSans,Helvetica,sans-serif; position:relative; float:right; clear:left; }
 
-#index, #indextitle { position:fixed; top:1em; left:3em; font-size:.45em; line-height:120%; font-weight:bold; color:#000; opacity:.3; -webkit-transition:opacity 300ms; -moz-transition:opacity 300ms; -o-transition:opacity 300ms; transition:opacity 300ms; }
+nav details {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    margin-left: 1em;
+    padding: .5em 1em;
+    border-radius: 1.5em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-height: calc(100% - 3em);
+    max-width: 250px;
+    overflow-y: scroll;
+}
+
+nav details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav details ul,
+nav details ol {
+    padding-left: 1em;
+}
+
+#index, #indextitle { font-weight:bold; color:#000; }
 #index { top:5em; }
 #index:hover, #index:focus { opacity:1; }
 #index a { display:block; font-weight:normal; }

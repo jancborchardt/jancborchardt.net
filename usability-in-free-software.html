@@ -18,67 +18,70 @@
 <p>For a software to truly be free, people need to be able to easily use it without help. This is a quick start to usability testing in a distributed and independent development environment: A collection of usability methods applicable especially in free & open source software projects. No matter if you are a developer, usability person or just enthusiastic about making software easier to use, this document should help you get going.
 <p>This started out in Summer 2011 as a bachelor’s thesis concluding my studies of information design at <a href="http://www.hdm-stuttgart.de">Stuttgart Media University</a>. The original title was <cite>Coordinating low-cost usability testing in independent free & open source software projects</cite>. Now it’s an <a href="http://creativecommons.org/licenses/by-sa/3.0/">open</a> document, everyone can use it & contribute.
 
-<p id="indextitle"><strong><a href="#">Usability in Free Software</a></strong><br />
-<em><a href="http://jancborchardt.net">by Jan-Christoph Borchardt</a></em>
-<ol id="index">
-	<li><a href="#Introduction">Introduction</a><ol>
-		<li><a href="#About-the-author">About the author</a>
-		<li><a href="#About-this-document">About this document</a>
-		<li><a href="#Problem">Problem</a>
-		<li><a href="#Goal">Goal</a>
-	</ol>
-	<li><a href="#The-project-and-you">The project & you</a><ol>
-		<li><a href="#You-are-a-usability-person">You are a usability person</a>
-		<li><a href="#You-are-a-developer">You are a developer</a>
-	</ol>
-	<li><a href="#Project-aspects">Project aspects</a><ol>
-		<li><a href="#Website-and-information">Website & information</a>
-		<li><a href="#Application-itself">Application itself</a>
-		<li><a href="#Installation">Installation</a>
-		<li><a href="#Getting-help">Getting help</a>
-		<li><a href="#Contributing">Contributing</a>
-	</ol>
-	<li><a href="#Technology">Technology</a><ol>
-		<li><a href="#Test-device">Test device</a>
-		<li><a href="#Test-object">Test object</a>
-		<li><a href="#Recording">Recording</a>
-	</ol>
-	<li><a href="#Participants">Participants</a><ol>
-		<li><a href="#Family-friends-coworkers-flatmates">Family, friends, coworkers, flatmates</a>
-		<li><a href="#Traveling-rideshare-hostel">Traveling, rideshare, hostel</a>
-		<li><a href="#Public-places">Public places, at the mall, on the street</a>
-	</ol>
-	<li><a href="#Research">Research</a><ol>
-		<li><a href="#Dogfood">Dogfood</a>
-		<li><a href="#Be-a-new-user">Be a new user</a>
-		<li><a href="#Review">Review</a>
-		<li><a href="#Benchmark-other-software">Benchmark other software</a>
-		<li><a href="#Benchmark-opinions">Benchmark opinions</a>
-		<li><a href="#Hear-users">Hear users</a>
-		<li><a href="#Ask-users">Ask users</a>
-		<li><a href="#Make-things-differently">Make things differently</a>
-		<li><a href="#Test-mockups">Test mockups</a>
-		<li><a href="#Watch-people-use-the-software">Watch people use the software</a>
-		<li><a href="#Call-for-testing">Call for testing</a>
-		<li><a href="#Get-longtime-users">Get longtime users</a>
-		<li><a href="#Monitor-users">Monitor users</a>
-	</ol>
-	<li><a href="#Reporting">Reporting</a><ol>
-		<li><a href="#List-issues">List issues</a>
-		<li><a href="#List-tasks">List tasks</a>
-		<li><a href="#Tag-bugs">Tag bugs</a>
-		<li><a href="#Identify-paper-cuts">Identify paper cuts</a>
-		<li><a href="#Provide-guidelines">Provide guidelines</a>
-		<li><a href="#Sketch-ideas">Sketch ideas</a>
-		<li><a href="#Fix-small-problems-yourself">Fix small problems yourself</a>
-		<li><a href="#Work-with-one-developer">Work with one developer</a>
-		<li><a href="#Evaluate-new-features">Evaluate new features</a>
-		<li><a href="#Have-a-hackfest">Have a hackfest</a>
-	</ol>
-	<li><a href="#Conclusion">Conclusion</a>
-	<li><a href="#References">References</a>
-	<li><a href="#Thanks">Thanks</a>
-</ol>
+<nav>
+	<details id="contents-details">
+		<summary>Contents</summary>
+		<ol id="index">
+			<li><a href="#Introduction">Introduction</a><ol>
+				<li><a href="#About-the-author">About the author</a>
+				<li><a href="#About-this-document">About this document</a>
+				<li><a href="#Problem">Problem</a>
+				<li><a href="#Goal">Goal</a>
+			</ol>
+			<li><a href="#The-project-and-you">The project & you</a><ol>
+				<li><a href="#You-are-a-usability-person">You are a usability person</a>
+				<li><a href="#You-are-a-developer">You are a developer</a>
+			</ol>
+			<li><a href="#Project-aspects">Project aspects</a><ol>
+				<li><a href="#Website-and-information">Website & information</a>
+				<li><a href="#Application-itself">Application itself</a>
+				<li><a href="#Installation">Installation</a>
+				<li><a href="#Getting-help">Getting help</a>
+				<li><a href="#Contributing">Contributing</a>
+			</ol>
+			<li><a href="#Technology">Technology</a><ol>
+				<li><a href="#Test-device">Test device</a>
+				<li><a href="#Test-object">Test object</a>
+				<li><a href="#Recording">Recording</a>
+			</ol>
+			<li><a href="#Participants">Participants</a><ol>
+				<li><a href="#Family-friends-coworkers-flatmates">Family, friends, coworkers, flatmates</a>
+				<li><a href="#Traveling-rideshare-hostel">Traveling, rideshare, hostel</a>
+				<li><a href="#Public-places">Public places, at the mall, on the street</a>
+			</ol>
+			<li><a href="#Research">Research</a><ol>
+				<li><a href="#Dogfood">Dogfood</a>
+				<li><a href="#Be-a-new-user">Be a new user</a>
+				<li><a href="#Review">Review</a>
+				<li><a href="#Benchmark-other-software">Benchmark other software</a>
+				<li><a href="#Benchmark-opinions">Benchmark opinions</a>
+				<li><a href="#Hear-users">Hear users</a>
+				<li><a href="#Ask-users">Ask users</a>
+				<li><a href="#Make-things-differently">Make things differently</a>
+				<li><a href="#Test-mockups">Test mockups</a>
+				<li><a href="#Watch-people-use-the-software">Watch people use the software</a>
+				<li><a href="#Call-for-testing">Call for testing</a>
+				<li><a href="#Get-longtime-users">Get longtime users</a>
+				<li><a href="#Monitor-users">Monitor users</a>
+			</ol>
+			<li><a href="#Reporting">Reporting</a><ol>
+				<li><a href="#List-issues">List issues</a>
+				<li><a href="#List-tasks">List tasks</a>
+				<li><a href="#Tag-bugs">Tag bugs</a>
+				<li><a href="#Identify-paper-cuts">Identify paper cuts</a>
+				<li><a href="#Provide-guidelines">Provide guidelines</a>
+				<li><a href="#Sketch-ideas">Sketch ideas</a>
+				<li><a href="#Fix-small-problems-yourself">Fix small problems yourself</a>
+				<li><a href="#Work-with-one-developer">Work with one developer</a>
+				<li><a href="#Evaluate-new-features">Evaluate new features</a>
+				<li><a href="#Have-a-hackfest">Have a hackfest</a>
+			</ol>
+			<li><a href="#Conclusion">Conclusion</a>
+			<li><a href="#References">References</a>
+			<li><a href="#Thanks">Thanks</a>
+		</ol>
+	</details>
+</nav>
 
 
 
@@ -562,7 +565,21 @@ Similar to <a href="#Tag-bugs">7.3 Tag bugs</a>, this outspoken focus on small u
 <p>Everyone who participates in a usability test and provides valuable feedback.
 <p>…
 
+<script>
+// Automatically open the Contents navigation above a certain screen width
+const contentsDetails = document.getElementById('contents-details');
 
+function toggleDetails() {
+if (window.innerWidth >= 1024) {
+	contentsDetails.setAttribute('open', '');
+} else {
+	contentsDetails.removeAttribute('open');
+}
+}
+
+window.addEventListener('load', toggleDetails);
+window.addEventListener('resize', toggleDetails);
+</script>
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.scrollto.min.js"></script>
