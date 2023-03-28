@@ -32,7 +32,7 @@ nav details {
     padding: .5em 1em;
     border-radius: 1.5em;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e7e9ed;
     z-index: 1000;
     max-height: calc(100% - 3em);
     max-width: 250px;
